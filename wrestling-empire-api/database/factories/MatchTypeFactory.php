@@ -17,8 +17,20 @@ class MatchTypeFactory extends Factory
      */
     public function definition(): array
     {
+        // $match_type = $this->faker->randomElement([
+        //     'Singles', 
+        //     'Tag Team', 
+        //     'Team', 
+        //     'Triple Threat', 
+		// 	'Fatal Four-Way', 
+        //     'Handicap', 
+        //     'Gauntlet', 
+        //     'Battle Royale', 
+		// 	'Royal Rumble'
+        // ]);
+
         return [
-            //
+            // 'name' => $match_type
         ];
     }
 }

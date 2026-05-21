@@ -17,8 +17,15 @@ class TeamFactory extends Factory
      */
     public function definition(): array
     {
+        $has_disbanded = $this->faker->boolean(20);
         return [
-            //
+            'name' => $this->faker->name(),
+            'year_start' => $this->faker->year(),
+            'month_start' => $this->faker->numberBetween(1, 12),
+            'week_start' => $this->faker->numberBetween(1, 4),
+            'year_end' => $has_disbanded ? $this->faker->year() : NULL,
+            'month_end' => $has_disbanded ? $this->faker->numberBetween(1, 12) : NULL,
+            'week_end' => $has_disbanded ? $this->faker->numberBetween(1, 4) : NULL,
         ];
     }
 }

@@ -2,7 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\Championship;
 use App\Models\Event;
+use App\Models\FinishType;
+use App\Models\MatchType;
+use App\Models\Show;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,8 +21,15 @@ class EventFactory extends Factory
      */
     public function definition(): array
     {
+        $type = $this->faker->randomElement(['PROMO', 'MATCH']);
+        $placement = $this->faker->randomElement(['UNDER', 'MID', 'SEMI', 'MAIN']);
+        $is_title_match = $this->faker->boolean(50);
         return [
-            //
+            'type' => $type,
+            'placement' => $placement,
+            'match_type_id' => $type == 'MATCH' ? MatchType::inRandomOrder()->first()->id : NULL,
+            'championship_id' => $is_title_match ? Championship::factory() : NULL,
+            'show_id' => Show::inRandomOrder()->first()->id,
         ];
     }
 }

@@ -19,4 +19,9 @@ class Promotion extends Model
     public function shows() {
         return $this->hasMany(Show::class);
     }
+
+    /** Returns the championships under this promotion */
+    public function championships() {
+        return $this->hasMany(Championship::class);
+    }
 }

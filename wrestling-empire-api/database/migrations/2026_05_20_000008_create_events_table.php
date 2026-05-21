@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('type'); // PROMO or MATCH
-            $table->string('placement'); // UNDER, MID, SEMI, OR MAIN
-            $table->foreignId('match_type_id')->constrained();
-            $table->foreignId('finish_type_id')->constrained()->nullable();
+            $table->enum('type', ['PROMO', 'MATCH', 'SEGMENT', 'BRAWL']); // PROMO or MATCH
+            $table->enum('placement', ['UNDER', 'MID', 'SEMI', 'MAIN']); // UNDER, MID, SEMI, OR MAIN
+            $table->foreignId('match_type_id')->nullable()->constrained();
+            $table->foreignId('championship_id')->nullable()->constrained();
             $table->foreignId('show_id')->constrained();
             $table->timestamps();
         });

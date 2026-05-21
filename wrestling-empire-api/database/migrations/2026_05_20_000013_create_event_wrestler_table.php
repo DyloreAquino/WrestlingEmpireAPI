@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('event_id')->constrained();
             $table->foreignId('wrestler_id')->constrained();
             $table->boolean('is_winner')->default(false);
+            $table->enum('finish_type', ['PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']);
             $table->timestamps();
         });
     }

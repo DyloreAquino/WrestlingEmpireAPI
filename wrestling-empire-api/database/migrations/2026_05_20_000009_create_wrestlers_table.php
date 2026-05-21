@@ -16,11 +16,11 @@ return new class extends Migration
             $table->timestamps();
             // Bio Info
             $table->string('name');
-            $table->string('gender');
+            $table->enum('gender', ['MALE', 'FEMALE', 'N/A']);
             // Wrestler info
             $table->string('finisher_name');
-            $table->string('allegiance'); // HEEL or FACE
-            $table->string('role'); // Wrestler, Manager, Booker, Referee, or Civilian
+            $table->enum('allegiance', ['HEEL', 'FACE', 'TWEENER']);
+            $table->enum('role', ['WRESTLER', 'MANAGER', 'BOOKER', 'REFEREE', 'CIVILIAN']);
             $table->foreignId('territory_id')->constrained();
             $table->foreignId('promotion_id')->constrained();
             // Wrestler Attributes

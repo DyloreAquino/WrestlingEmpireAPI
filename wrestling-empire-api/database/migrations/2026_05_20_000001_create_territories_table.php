@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('territories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('likes')->nullable();
+            $table->string('dislikes')->nullable();
             $table->timestamps();
         });
     }

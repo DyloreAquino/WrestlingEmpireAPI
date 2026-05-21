@@ -11,7 +11,12 @@ class Championship extends Model
     use HasFactory;
 
     /** Returns the title reigns of this championship. */
-    public function title_reigns() {
+    public function titleReigns() {
         return $this->hasMany(TitleReign::class);
+    }
+
+    /** Returns the promotion this championship belongs to. */
+    public function promotion() {
+        return $this->belongsTo(Promotion::class);
     }
 }

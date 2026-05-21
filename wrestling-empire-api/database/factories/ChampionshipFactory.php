@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Championship;
+use App\Models\Promotion;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,8 +18,11 @@ class ChampionshipFactory extends Factory
      */
     public function definition(): array
     {
+        $division = $this->faker->randomElement(['TAG', 'WORLD', 'MID', 'WOMENS']);
         return [
-            //
+            'name' => $this->faker->name(),
+            'division' => $division,
+            'promotion_id' => Promotion::inRandomOrder()->first()->id,
         ];
     }
 }

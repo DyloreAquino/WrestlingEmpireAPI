@@ -23,17 +23,12 @@ class Event extends Model
     }
 
     /** Returns the match type of this event. */
-    public function match_type() {
+    public function matchType() {
         return $this->belongsTo(MatchType::class);
     }
 
-    /** Returns the finish type of this event. */
-    public function finish_type() {
-        return $this->belongsTo(FinishType::class);
-    }
-
     /** Returns the match stipulations set for this event. */
-    public function match_stipulation() {
+    public function matchStipulations() {
         return $this->belongsToMany(Stipulation::class);
     }
 }

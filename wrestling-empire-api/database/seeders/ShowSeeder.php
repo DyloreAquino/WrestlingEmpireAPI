@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Show;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,8 @@ class ShowSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Show::factory()
+            ->count(40)
+            ->create();
     }
 }

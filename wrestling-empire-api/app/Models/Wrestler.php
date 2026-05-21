@@ -48,27 +48,27 @@ class Wrestler extends Model
     }
 
     /** Returns the story friend of this wrestler. */
-    public function story_friend() {
+    public function storyFriend() {
         return $this->belongsTo(Wrestler::class, 'story_friend_id');
     }
 
     /** Returns the story enemy of this wrestler. */
-    public function story_enemy() {
+    public function storyEnemy() {
         return $this->belongsTo(Wrestler::class, 'story_enemy_id');
     }
 
     /** Returns the real friend of this wrestler. */
-    public function real_friend() {
+    public function realFriend() {
         return $this->belongsTo(Wrestler::class, 'real_friend_id');
     }
 
     /** Returns the real enemy of this wrestler. */
-    public function real_enemy() {
+    public function realEnemy() {
         return $this->belongsTo(Wrestler::class, 'real_enemy_id');
     }
 
     /** Returns the title reigns of this wrestler. */
-    public function title_reigns() {
+    public function titleReigns() {
         return $this->belongsToMany(TitleReign::class);
     }
 
