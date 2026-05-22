@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\MatchType;
-use App\Http\Requests\StoreMatchTypeRequest;
-use App\Http\Requests\UpdateMatchTypeRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Wrestler;
+use App\Http\Requests\StoreWrestlerRequest;
+use App\Http\Requests\UpdateWrestlerRequest;
 
-class MatchTypeController extends Controller
+class WrestlerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return Wrestler::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class MatchTypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreMatchTypeRequest $request)
+    public function store(StoreWrestlerRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class MatchTypeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(MatchType $matchType)
+    public function show(Wrestler $wrestler)
     {
         //
     }
@@ -43,7 +44,7 @@ class MatchTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(MatchType $matchType)
+    public function edit(Wrestler $wrestler)
     {
         //
     }
@@ -51,7 +52,7 @@ class MatchTypeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateMatchTypeRequest $request, MatchType $matchType)
+    public function update(UpdateWrestlerRequest $request, Wrestler $wrestler)
     {
         //
     }
@@ -59,7 +60,7 @@ class MatchTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(MatchType $matchType)
+    public function destroy(Wrestler $wrestler)
     {
         //
     }

@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Show;
-use App\Http\Requests\StoreShowRequest;
-use App\Http\Requests\UpdateShowRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Team;
+use App\Http\Requests\StoreTeamRequest;
+use App\Http\Requests\UpdateTeamRequest;
 
-class ShowController extends Controller
+class TeamController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return Team::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class ShowController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreShowRequest $request)
+    public function store(StoreTeamRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class ShowController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Show $show)
+    public function show(Team $team)
     {
         //
     }
@@ -43,7 +44,7 @@ class ShowController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Show $show)
+    public function edit(Team $team)
     {
         //
     }
@@ -51,7 +52,7 @@ class ShowController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateShowRequest $request, Show $show)
+    public function update(UpdateTeamRequest $request, Team $team)
     {
         //
     }
@@ -59,7 +60,7 @@ class ShowController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Show $show)
+    public function destroy(Team $team)
     {
         //
     }

@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Wrestler;
-use App\Http\Requests\StoreWrestlerRequest;
-use App\Http\Requests\UpdateWrestlerRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Promotion;
+use App\Http\Requests\StorePromotionRequest;
+use App\Http\Requests\UpdatePromotionRequest;
 
-class WrestlerController extends Controller
+class PromotionController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return Promotion::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class WrestlerController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreWrestlerRequest $request)
+    public function store(StorePromotionRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class WrestlerController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Wrestler $wrestler)
+    public function show(Promotion $promotion)
     {
         //
     }
@@ -43,7 +44,7 @@ class WrestlerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Wrestler $wrestler)
+    public function edit(Promotion $promotion)
     {
         //
     }
@@ -51,7 +52,7 @@ class WrestlerController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateWrestlerRequest $request, Wrestler $wrestler)
+    public function update(UpdatePromotionRequest $request, Promotion $promotion)
     {
         //
     }
@@ -59,7 +60,7 @@ class WrestlerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Wrestler $wrestler)
+    public function destroy(Promotion $promotion)
     {
         //
     }

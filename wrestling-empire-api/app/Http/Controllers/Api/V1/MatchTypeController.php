@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Event;
-use App\Http\Requests\StoreEventRequest;
-use App\Http\Requests\UpdateEventRequest;
+use App\Http\Controllers\Controller;
+use App\Models\MatchType;
+use App\Http\Requests\StoreMatchTypeRequest;
+use App\Http\Requests\UpdateMatchTypeRequest;
 
-class EventController extends Controller
+class MatchTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return MatchType::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreEventRequest $request)
+    public function store(StoreMatchTypeRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Event $event)
+    public function show(MatchType $matchType)
     {
         //
     }
@@ -43,7 +44,7 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Event $event)
+    public function edit(MatchType $matchType)
     {
         //
     }
@@ -51,7 +52,7 @@ class EventController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateEventRequest $request, Event $event)
+    public function update(UpdateMatchTypeRequest $request, MatchType $matchType)
     {
         //
     }
@@ -59,7 +60,7 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Event $event)
+    public function destroy(MatchType $matchType)
     {
         //
     }

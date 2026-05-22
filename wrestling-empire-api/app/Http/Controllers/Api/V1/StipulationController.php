@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Championship;
-use App\Http\Requests\StoreChampionshipRequest;
-use App\Http\Requests\UpdateChampionshipRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Stipulation;
+use App\Http\Requests\StoreStipulationRequest;
+use App\Http\Requests\UpdateStipulationRequest;
 
-class ChampionshipController extends Controller
+class StipulationController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return Stipulation::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class ChampionshipController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreChampionshipRequest $request)
+    public function store(StoreStipulationRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class ChampionshipController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Championship $championship)
+    public function show(Stipulation $stipulation)
     {
         //
     }
@@ -43,7 +44,7 @@ class ChampionshipController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Championship $championship)
+    public function edit(Stipulation $stipulation)
     {
         //
     }
@@ -51,7 +52,7 @@ class ChampionshipController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateChampionshipRequest $request, Championship $championship)
+    public function update(UpdateStipulationRequest $request, Stipulation $stipulation)
     {
         //
     }
@@ -59,7 +60,7 @@ class ChampionshipController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Championship $championship)
+    public function destroy(Stipulation $stipulation)
     {
         //
     }

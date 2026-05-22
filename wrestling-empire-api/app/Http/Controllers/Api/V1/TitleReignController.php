@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\FinishType;
-use App\Http\Requests\StoreFinishTypeRequest;
-use App\Http\Requests\UpdateFinishTypeRequest;
+use App\Http\Controllers\Controller;
+use App\Models\TitleReign;
+use App\Http\Requests\StoreTitleReignRequest;
+use App\Http\Requests\UpdateTitleReignRequest;
 
-class FinishTypeController extends Controller
+class TitleReignController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return TitleReign::all();
     }
 
     /**
@@ -27,7 +28,7 @@ class FinishTypeController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreFinishTypeRequest $request)
+    public function store(StoreTitleReignRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class FinishTypeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(FinishType $finishType)
+    public function show(TitleReign $titleReign)
     {
         //
     }
@@ -43,7 +44,7 @@ class FinishTypeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(FinishType $finishType)
+    public function edit(TitleReign $titleReign)
     {
         //
     }
@@ -51,7 +52,7 @@ class FinishTypeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateFinishTypeRequest $request, FinishType $finishType)
+    public function update(UpdateTitleReignRequest $request, TitleReign $titleReign)
     {
         //
     }
@@ -59,7 +60,7 @@ class FinishTypeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(FinishType $finishType)
+    public function destroy(TitleReign $titleReign)
     {
         //
     }
