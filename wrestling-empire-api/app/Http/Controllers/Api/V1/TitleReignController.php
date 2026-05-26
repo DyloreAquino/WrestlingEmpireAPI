@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\TitleReign;
 use App\Http\Requests\StoreTitleReignRequest;
 use App\Http\Requests\UpdateTitleReignRequest;
+use App\Http\Resources\V1\TitleReignResource;
 
 class TitleReignController extends Controller
 {
@@ -14,7 +15,7 @@ class TitleReignController extends Controller
      */
     public function index()
     {
-        return TitleReign::all();
+        return TitleReignResource::collection(TitleReign::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class TitleReignController extends Controller
      */
     public function show(TitleReign $titleReign)
     {
-        //
+        return new TitleReignResource($titleReign);
     }
 
     /**

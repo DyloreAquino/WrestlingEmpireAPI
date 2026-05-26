@@ -14,6 +14,17 @@ class TitleReignResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'championshipId' => $this->championship_id, 
+            'yearStart' => $this->year_start,
+            'monthStart' => $this->month_start,
+            'weekStart' => $this->week_start,
+            'yearEnd' => $this->year_end,
+            'monthEnd' => $this->month_end,
+            'weekEnd' => $this->week_end,
+            'createdAt' => $this->created_at,
+            'updatedAt' => $this->updated_at
+        ];
     }
 }
