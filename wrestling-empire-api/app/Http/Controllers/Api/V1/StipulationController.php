@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Stipulation;
 use App\Http\Requests\StoreStipulationRequest;
 use App\Http\Requests\UpdateStipulationRequest;
+use App\Http\Resources\V1\StipulationResource;
 
 class StipulationController extends Controller
 {
@@ -14,7 +15,7 @@ class StipulationController extends Controller
      */
     public function index()
     {
-        return Stipulation::all();
+        return StipulationResource::collection(Stipulation::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class StipulationController extends Controller
      */
     public function show(Stipulation $stipulation)
     {
-        //
+        return new StipulationResource($stipulation);
     }
 
     /**
