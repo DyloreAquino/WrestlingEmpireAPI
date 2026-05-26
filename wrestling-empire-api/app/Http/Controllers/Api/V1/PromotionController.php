@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Promotion;
 use App\Http\Requests\StorePromotionRequest;
 use App\Http\Requests\UpdatePromotionRequest;
+use App\Http\Resources\V1\PromotionResource;
 
 class PromotionController extends Controller
 {
@@ -14,7 +15,7 @@ class PromotionController extends Controller
      */
     public function index()
     {
-        return Promotion::all();
+        return PromotionResource::collection(Promotion::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class PromotionController extends Controller
      */
     public function show(Promotion $promotion)
     {
-        //
+        return new PromotionResource($promotion);
     }
 
     /**
