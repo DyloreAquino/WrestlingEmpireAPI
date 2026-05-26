@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Territory;
 use App\Http\Requests\StoreTerritoryRequest;
 use App\Http\Requests\UpdateTerritoryRequest;
+use App\Http\Resources\V1\TerritoryResource;
 
 class TerritoryController extends Controller
 {
@@ -14,7 +15,7 @@ class TerritoryController extends Controller
      */
     public function index()
     {
-        return Territory::all();
+        return TerritoryResource::collection(Territory::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class TerritoryController extends Controller
      */
     public function show(Territory $territory)
     {
-        //
+        return new TerritoryResource($territory);
     }
 
     /**

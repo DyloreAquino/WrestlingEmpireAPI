@@ -14,6 +14,12 @@ class TerritoryResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'likes' => $this->likes,
+            'dislikes' => $this->dislikes,
+            'updatedAt' => $this->updated_at
+        ];
     }
 }
