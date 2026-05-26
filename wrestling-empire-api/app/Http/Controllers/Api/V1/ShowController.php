@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Show;
 use App\Http\Requests\StoreShowRequest;
 use App\Http\Requests\UpdateShowRequest;
+use App\Http\Resources\V1\ShowResource;
 
 class ShowController extends Controller
 {
@@ -14,7 +15,7 @@ class ShowController extends Controller
      */
     public function index()
     {
-        return Show::all();
+        return ShowResource::collection(Show::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class ShowController extends Controller
      */
     public function show(Show $show)
     {
-        //
+        return new ShowResource($show);
     }
 
     /**

@@ -14,6 +14,16 @@ class ShowResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'name' => $this-> name,
+            'year' => $this->year,
+            'month' => $this->month,
+            'week' => $this->week,
+            'type' => $this->type,
+            'territoryId' => $this->territory_id,
+            'createdAt' => $this->created_at,
+            'updatedAt' => $this->updated_at
+        ];
     }
 }
