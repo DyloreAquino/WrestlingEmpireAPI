@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Wrestler;
 use App\Http\Requests\StoreWrestlerRequest;
 use App\Http\Requests\UpdateWrestlerRequest;
+use App\Http\Resources\V1\WrestlerResource;
 
 class WrestlerController extends Controller
 {
@@ -14,7 +15,7 @@ class WrestlerController extends Controller
      */
     public function index()
     {
-        return Wrestler::all();
+        return WrestlerResource::collection(Wrestler::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class WrestlerController extends Controller
      */
     public function show(Wrestler $wrestler)
     {
-        //
+        return new WrestlerResource($wrestler);
     }
 
     /**
