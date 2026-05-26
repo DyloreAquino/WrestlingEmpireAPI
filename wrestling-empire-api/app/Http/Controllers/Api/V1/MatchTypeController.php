@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\MatchType;
 use App\Http\Requests\StoreMatchTypeRequest;
 use App\Http\Requests\UpdateMatchTypeRequest;
+use App\Http\Resources\V1\MatchTypeResource;
 
 class MatchTypeController extends Controller
 {
@@ -14,7 +15,7 @@ class MatchTypeController extends Controller
      */
     public function index()
     {
-        return MatchType::all();
+        return MatchTypeResource::collection(MatchType::all());
     }
 
     /**
@@ -38,7 +39,7 @@ class MatchTypeController extends Controller
      */
     public function show(MatchType $matchType)
     {
-        //
+        return new MatchTypeResource($matchType);
     }
 
     /**
