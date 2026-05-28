@@ -7,15 +7,24 @@ use App\Models\Wrestler;
 use App\Http\Requests\StoreWrestlerRequest;
 use App\Http\Requests\UpdateWrestlerRequest;
 use App\Http\Resources\V1\WrestlerResource;
+use App\Filters\V1\WrestlersFilter;
+use Illuminate\Http\Request;
 
 class WrestlerController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return WrestlerResource::collection(Wrestler::all());
+        $filter = new WrestlersFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return WrestlerResource::collection(Wrestler::all());
+        } else {
+            return WrestlerResource::collection(Wrestler::where($queryItems)->get());
+        }
     }
 
     /**

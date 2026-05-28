@@ -7,15 +7,24 @@ use App\Models\Show;
 use App\Http\Requests\StoreShowRequest;
 use App\Http\Requests\UpdateShowRequest;
 use App\Http\Resources\V1\ShowResource;
+use Illuminate\Http\Request;
+use App\Filters\V1\ShowsFilter;
 
 class ShowController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return ShowResource::collection(Show::all());
+        $filter = new ShowsFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return ShowResource::collection(Show::all());
+        } else {
+            return ShowResource::collection(Show::where($queryItems)->get());
+        }
     }
 
     /**
