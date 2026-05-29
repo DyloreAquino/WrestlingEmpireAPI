@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Filters\V1\EventsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Event;
 use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
 use App\Http\Resources\V1\EventResource;
+use Illuminate\Http\Request;
 
 // TODO: Create EventsQuery
 class EventController extends Controller
@@ -14,9 +16,16 @@ class EventController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return EventResource::collection(Event::all());
+        $filter = new EventsFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return EventResource::collection(Event::all());
+        } else {
+            return EventResource::collection(Event::where($queryItems)->get());
+        }
     }
 
     /**
