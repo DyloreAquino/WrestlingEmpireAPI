@@ -8,6 +8,7 @@ use App\Http\Requests\StoreTeamRequest;
 use App\Http\Requests\UpdateTeamRequest;
 use App\Http\Resources\V1\TeamResource;
 
+// TODO: Create TeamsQuery
 class TeamController extends Controller
 {
     /**

@@ -2,20 +2,29 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Filters\V1\ChampionshipsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Championship;
 use App\Http\Requests\StoreChampionshipRequest;
 use App\Http\Requests\UpdateChampionshipRequest;
 use App\Http\Resources\V1\ChampionshipResource;
+use Illuminate\Http\Request;
 
 class ChampionshipController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return ChampionshipResource::collection(Championship::all());
+        $filter = new ChampionshipsFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return ChampionshipResource::collection(Championship::all());
+        } else {
+            return ChampionshipResource::collection(Championship::where($queryItems)->get());
+        }
     }
 
     /**

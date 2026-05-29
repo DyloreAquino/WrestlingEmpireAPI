@@ -8,6 +8,7 @@ use App\Http\Requests\StoreEventRequest;
 use App\Http\Requests\UpdateEventRequest;
 use App\Http\Resources\V1\EventResource;
 
+// TODO: Create EventsQuery
 class EventController extends Controller
 {
     /**

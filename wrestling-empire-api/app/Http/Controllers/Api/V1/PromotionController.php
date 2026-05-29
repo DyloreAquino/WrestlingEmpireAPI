@@ -8,6 +8,7 @@ use App\Http\Requests\StorePromotionRequest;
 use App\Http\Requests\UpdatePromotionRequest;
 use App\Http\Resources\V1\PromotionResource;
 
+// TODO: Create PromotionsQuery
 class PromotionController extends Controller
 {
     /**

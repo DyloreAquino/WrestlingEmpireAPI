@@ -8,6 +8,7 @@ use App\Http\Requests\StoreTitleReignRequest;
 use App\Http\Requests\UpdateTitleReignRequest;
 use App\Http\Resources\V1\TitleReignResource;
 
+// TODO: Create TitleReignsQuery
 class TitleReignController extends Controller
 {
     /**

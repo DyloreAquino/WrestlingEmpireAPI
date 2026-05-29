@@ -8,6 +8,7 @@ use App\Http\Requests\StoreStipulationRequest;
 use App\Http\Requests\UpdateStipulationRequest;
 use App\Http\Resources\V1\StipulationResource;
 
+// TODO: Create StipulationsQuery
 class StipulationController extends Controller
 {
     /**

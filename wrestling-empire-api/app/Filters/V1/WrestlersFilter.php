@@ -14,7 +14,7 @@ class WrestlersFilter extends ApiFilter {
     'gender' => ['eq'],
     'finisherName' => ['eq'],
     'allegiance' => ['eq'],
-    'role' => ['eq'],
+    'role' => ['eq', 'ne'],
     'territoryId' => ['eq'],
     'promotionId' => ['eq'],
     'popularity' => ['eq', 'gt', 'lt'],
@@ -51,5 +51,6 @@ class WrestlersFilter extends ApiFilter {
     'lt' => '<',
     'gte' => '>=',
     'lte' => '<=',
+    'ne' => '!='
   ];
 }
