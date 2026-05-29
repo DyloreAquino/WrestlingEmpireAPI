@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Filters\V1\TitleReignsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\TitleReign;
 use App\Http\Requests\StoreTitleReignRequest;
 use App\Http\Requests\UpdateTitleReignRequest;
 use App\Http\Resources\V1\TitleReignResource;
+use Illuminate\Http\Request;
 
 // TODO: Create TitleReignsQuery
 class TitleReignController extends Controller
@@ -14,9 +16,16 @@ class TitleReignController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return TitleReignResource::collection(TitleReign::all());
+        $filter = new TitleReignsFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return TitleReignResource::collection(TitleReign::all());
+        } else {
+            return TitleReignResource::collection(TitleReign::where($queryItems)->get());
+        }
     }
 
     /**
