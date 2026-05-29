@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Filters\V1\TeamsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Team;
 use App\Http\Requests\StoreTeamRequest;
 use App\Http\Requests\UpdateTeamRequest;
 use App\Http\Resources\V1\TeamResource;
+use Illuminate\Http\Request;
 
 // TODO: Create TeamsQuery
 class TeamController extends Controller
@@ -14,9 +16,16 @@ class TeamController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return TeamResource::collection(Team::all());
+        $filter = new TeamsFilter();
+        $queryItems =  $filter->transform($request);
+
+        if (count($queryItems) == 0) {
+            return TeamResource::collection(Team::all());
+        } else {
+            return TeamResource::collection(Team::where($queryItems)->get());
+        }
     }
 
     /**

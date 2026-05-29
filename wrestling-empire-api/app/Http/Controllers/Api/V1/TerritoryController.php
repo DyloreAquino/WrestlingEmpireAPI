@@ -8,7 +8,6 @@ use App\Http\Requests\StoreTerritoryRequest;
 use App\Http\Requests\UpdateTerritoryRequest;
 use App\Http\Resources\V1\TerritoryResource;
 
-// TODO: Create TerritoriesQuery
 class TerritoryController extends Controller
 {
     /**

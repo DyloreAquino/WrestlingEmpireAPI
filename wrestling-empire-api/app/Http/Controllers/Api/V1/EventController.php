@@ -10,7 +10,6 @@ use App\Http\Requests\UpdateEventRequest;
 use App\Http\Resources\V1\EventResource;
 use Illuminate\Http\Request;
 
-// TODO: Create EventsQuery
 class EventController extends Controller
 {
     /**

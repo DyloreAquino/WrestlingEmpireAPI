@@ -8,7 +8,6 @@ use App\Http\Requests\StoreMatchTypeRequest;
 use App\Http\Requests\UpdateMatchTypeRequest;
 use App\Http\Resources\V1\MatchTypeResource;
 
-// TODO: Create MatchTypesQuery
 class MatchTypeController extends Controller
 {
     /**
