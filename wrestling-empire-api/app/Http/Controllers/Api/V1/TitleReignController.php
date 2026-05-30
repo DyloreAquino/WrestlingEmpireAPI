@@ -30,7 +30,7 @@ class TitleReignController extends Controller
             $titleReign = $titleReign->with('wrestlers');
         }
 
-        return TitleReignResource::collection($titleReign->paginate()->appends($request->query()));
+        return TitleReignResource::collection($titleReign->get());
     }
 
     /**
@@ -54,7 +54,9 @@ class TitleReignController extends Controller
      */
     public function show(TitleReign $titleReign)
     {
-        return new TitleReignResource($titleReign);
+        return new TitleReignResource(
+            $titleReign->loadMissing('wrestlers')
+        );
     }
 
     /**

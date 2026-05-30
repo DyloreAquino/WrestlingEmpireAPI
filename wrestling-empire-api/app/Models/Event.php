@@ -29,7 +29,7 @@ class Event extends Model
     }
 
     /** Returns the match stipulations set for this event. */
-    public function matchStipulations() {
+    public function stipulations() {
         return $this->belongsToMany(Stipulation::class);
     }
 }

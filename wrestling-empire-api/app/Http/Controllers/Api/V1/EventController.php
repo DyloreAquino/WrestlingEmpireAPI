@@ -26,7 +26,7 @@ class EventController extends Controller
         // $includeStipulations = $request->query('includeStipulations');
 
         $event = $event->with('wrestlers');
-        $event = $event->with('matchStipulations');
+        $event = $event->with('stipulations');
 
 
         return EventResource::collection($event->get());
@@ -53,7 +53,9 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        return new EventResource($event);
+        return new EventResource(
+            $event->loadMissing('wrestlers', 'stipulations')
+        );
     }
 
     /**
