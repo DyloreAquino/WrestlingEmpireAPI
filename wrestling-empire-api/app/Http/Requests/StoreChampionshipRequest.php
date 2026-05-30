@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use Override;
 
 class StoreChampionshipRequest extends FormRequest
 {
@@ -29,5 +30,13 @@ class StoreChampionshipRequest extends FormRequest
             'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
             'promotionId' => ['required', 'numeric'],
         ];
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'promotion_id' => $this->postalCode
+        ]);
     }
 }
