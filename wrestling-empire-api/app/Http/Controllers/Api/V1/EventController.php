@@ -33,19 +33,11 @@ class EventController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreEventRequest $request)
     {
-        //
+        return new EventResource(Event::create($request->all()));
     }
 
     /**
@@ -56,14 +48,6 @@ class EventController extends Controller
         return new EventResource(
             $event->loadMissing('wrestlers', 'stipulations')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Event $event)
-    {
-        //
     }
 
     /**

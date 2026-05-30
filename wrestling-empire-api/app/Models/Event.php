@@ -10,6 +10,14 @@ class Event extends Model
     /** @use HasFactory<\Database\Factories\EventFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'type', 
+        'placement', 
+        'match_type_id', 
+        'championship_id', 
+        'show_id',
+    ];
+
     /** Returns the wrestlers participating in this event. 
      * Pivot: shows the finish type and which wrestler was the winner.
     */
