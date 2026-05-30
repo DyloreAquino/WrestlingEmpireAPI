@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Promotion;
-use App\Http\Requests\StorePromotionRequest;
-use App\Http\Requests\UpdatePromotionRequest;
+use App\Http\Requests\V1\StorePromotionRequest;
+use App\Http\Requests\V1\UpdatePromotionRequest;
 use App\Http\Resources\V1\PromotionResource;
 
 class PromotionController extends Controller

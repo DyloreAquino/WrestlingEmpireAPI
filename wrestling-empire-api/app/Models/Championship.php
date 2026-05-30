@@ -13,7 +13,7 @@ class Championship extends Model
     protected $fillable = [
         'name',
         'division',
-        'promotionId',
+        'promotion_id',
     ];
 
     /** Returns the title reigns of this championship. */

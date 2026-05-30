@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Wrestler;
-use App\Http\Requests\StoreWrestlerRequest;
-use App\Http\Requests\UpdateWrestlerRequest;
+use App\Http\Requests\V1\StoreWrestlerRequest;
+use App\Http\Requests\V1\UpdateWrestlerRequest;
 use App\Http\Resources\V1\WrestlerResource;
 use App\Filters\V1\WrestlersFilter;
 use Illuminate\Http\Request;

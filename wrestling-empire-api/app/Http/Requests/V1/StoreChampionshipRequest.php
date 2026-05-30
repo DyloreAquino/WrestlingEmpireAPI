@@ -36,7 +36,7 @@ class StoreChampionshipRequest extends FormRequest
     protected function prepareForValidation()
     {
         $this->merge([
-            'promotion_id' => $this->postalCode
+            'promotion_id' => $this->promotionId
         ]);
     }
 }

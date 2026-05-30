@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Territory;
-use App\Http\Requests\StoreTerritoryRequest;
-use App\Http\Requests\UpdateTerritoryRequest;
+use App\Http\Requests\V1\StoreTerritoryRequest;
+use App\Http\Requests\V1\UpdateTerritoryRequest;
 use App\Http\Resources\V1\TerritoryResource;
 
 class TerritoryController extends Controller

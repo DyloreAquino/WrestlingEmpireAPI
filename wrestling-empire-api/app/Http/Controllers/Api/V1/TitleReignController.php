@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Filters\V1\TitleReignsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\TitleReign;
-use App\Http\Requests\StoreTitleReignRequest;
-use App\Http\Requests\UpdateTitleReignRequest;
+use App\Http\Requests\V1\StoreTitleReignRequest;
+use App\Http\Requests\V1\UpdateTitleReignRequest;
 use App\Http\Resources\V1\TitleReignResource;
 use Illuminate\Http\Request;
 

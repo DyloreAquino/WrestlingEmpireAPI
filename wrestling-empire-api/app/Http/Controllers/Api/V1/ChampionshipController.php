@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Filters\V1\ChampionshipsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Championship;
-use App\Http\Requests\StoreChampionshipRequest;
-use App\Http\Requests\UpdateChampionshipRequest;
+use App\Http\Requests\V1\StoreChampionshipRequest;
+use App\Http\Requests\V1\UpdateChampionshipRequest;
 use App\Http\Resources\V1\ChampionshipResource;
 use Illuminate\Http\Request;
 

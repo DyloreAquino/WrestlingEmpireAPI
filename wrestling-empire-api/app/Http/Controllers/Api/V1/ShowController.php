@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Show;
-use App\Http\Requests\StoreShowRequest;
-use App\Http\Requests\UpdateShowRequest;
+use App\Http\Requests\V1\StoreShowRequest;
+use App\Http\Requests\V1\UpdateShowRequest;
 use App\Http\Resources\V1\ShowResource;
 use Illuminate\Http\Request;
 use App\Filters\V1\ShowsFilter;

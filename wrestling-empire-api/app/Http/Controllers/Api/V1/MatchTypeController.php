@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\MatchType;
-use App\Http\Requests\StoreMatchTypeRequest;
-use App\Http\Requests\UpdateMatchTypeRequest;
+use App\Http\Requests\V1\StoreMatchTypeRequest;
+use App\Http\Requests\V1\UpdateMatchTypeRequest;
 use App\Http\Resources\V1\MatchTypeResource;
 
 class MatchTypeController extends Controller

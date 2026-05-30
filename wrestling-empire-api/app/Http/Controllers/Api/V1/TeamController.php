@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Filters\V1\TeamsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Team;
-use App\Http\Requests\StoreTeamRequest;
-use App\Http\Requests\UpdateTeamRequest;
+use App\Http\Requests\V1\StoreTeamRequest;
+use App\Http\Requests\V1\UpdateTeamRequest;
 use App\Http\Resources\V1\TeamResource;
 use Illuminate\Http\Request;
 

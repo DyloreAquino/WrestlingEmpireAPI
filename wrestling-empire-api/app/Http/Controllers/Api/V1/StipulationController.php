@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Stipulation;
-use App\Http\Requests\StoreStipulationRequest;
-use App\Http\Requests\UpdateStipulationRequest;
+use App\Http\Requests\V1\StoreStipulationRequest;
+use App\Http\Requests\V1\UpdateStipulationRequest;
 use App\Http\Resources\V1\StipulationResource;
 
 class StipulationController extends Controller

@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Api\V1;
 use App\Filters\V1\EventsFilter;
 use App\Http\Controllers\Controller;
 use App\Models\Event;
-use App\Http\Requests\StoreEventRequest;
-use App\Http\Requests\UpdateEventRequest;
+use App\Http\Requests\V1\StoreEventRequest;
+use App\Http\Requests\V1\UpdateEventRequest;
 use App\Http\Resources\V1\EventResource;
 use Illuminate\Http\Request;
 
