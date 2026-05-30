@@ -20,7 +20,7 @@ class EventSeeder extends Seeder
 
         Event::all()->each(function ($event) {
             $num_of_stips = fake()->numberBetween(0,3);
-            $event->matchStipulations()->attach(
+            $event->stipulations()->attach(
                 Stipulation::inRandomOrder()->take($num_of_stips)->pluck('id')
             );
         });

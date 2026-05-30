@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreChampionshipRequest extends FormRequest
 {
@@ -12,7 +13,8 @@ class StoreChampionshipRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: authorization
+        return true;
     }
 
     /**
@@ -23,7 +25,9 @@ class StoreChampionshipRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required'],
+            'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
+            'promotionId' => ['required', 'numeric'],
         ];
     }
 }

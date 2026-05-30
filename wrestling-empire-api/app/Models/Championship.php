@@ -10,6 +10,12 @@ class Championship extends Model
     /** @use HasFactory<\Database\Factories\ChampionshipFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'division',
+        'promotionId',
+    ];
+
     /** Returns the title reigns of this championship. */
     public function titleReigns() {
         return $this->hasMany(TitleReign::class);

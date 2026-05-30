@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('championships', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('division'); // TAG, WORLD, MID, or WOMENS
+            $table->enum('division', ['TAG', 'WORLD', 'MID', 'WOMENS']);
             $table->foreignId('promotion_id')->constrained();
             $table->timestamps();
         });
