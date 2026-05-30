@@ -18,13 +18,17 @@ class ChampionshipController extends Controller
     public function index(Request $request)
     {
         $filter = new ChampionshipsFilter();
-        $queryItems =  $filter->transform($request);
+        $filterItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return ChampionshipResource::collection(Championship::all());
-        } else {
-            return ChampionshipResource::collection(Championship::where($queryItems)->get());
+        $championship = Championship::where($filterItems);
+
+        $includeTitleReigns = $request->query('includeTitleReigns');
+
+        if ($includeTitleReigns) {
+            $championship = $championship->with('titleReigns.wrestlers');
         }
+
+        return ChampionshipResource::collection($championship->paginate()->appends($request->query()));
     }
 
     /**

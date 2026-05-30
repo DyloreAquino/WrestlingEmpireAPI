@@ -19,13 +19,18 @@ class TitleReignController extends Controller
     public function index(Request $request)
     {
         $filter = new TitleReignsFilter();
-        $queryItems =  $filter->transform($request);
+        $filterItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return TitleReignResource::collection(TitleReign::all());
-        } else {
-            return TitleReignResource::collection(TitleReign::where($queryItems)->get());
+        $titleReign = TitleReign::where($filterItems);
+
+        // $includeWrestlers = $request->query('includeWrestlers');
+        $includeWrestlers = true;
+        
+        if ($includeWrestlers) {
+            $titleReign = $titleReign->with('wrestlers');
         }
+
+        return TitleReignResource::collection($titleReign->paginate()->appends($request->query()));
     }
 
     /**

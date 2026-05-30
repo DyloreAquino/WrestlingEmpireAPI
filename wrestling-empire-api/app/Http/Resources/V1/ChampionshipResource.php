@@ -20,7 +20,8 @@ class ChampionshipResource extends JsonResource
             'division' => $this->division,
             'promotionId' => $this->promotion_id,
             'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'updatedAt' => $this->updated_at,
+            'titleReigns' => TitleReignResource::collection($this->whenLoaded('titleReigns')),
         ];
     }
 }
