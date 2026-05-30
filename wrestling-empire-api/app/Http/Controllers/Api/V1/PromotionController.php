@@ -39,7 +39,9 @@ class PromotionController extends Controller
      */
     public function show(Promotion $promotion)
     {
-        return new PromotionResource($promotion);
+        return new PromotionResource(
+            $promotion->loadMissing('wrestlers', 'championships')
+        );
     }
 
     /**

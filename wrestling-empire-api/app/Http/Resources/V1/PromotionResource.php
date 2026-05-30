@@ -17,6 +17,8 @@ class PromotionResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
+            'championships' => ChampionshipResource::collection($this->whenLoaded('championships')),
         ];
     }
 }
