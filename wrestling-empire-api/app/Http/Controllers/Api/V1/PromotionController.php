@@ -4,8 +4,6 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\Promotion;
-use App\Http\Requests\V1\StorePromotionRequest;
-use App\Http\Requests\V1\UpdatePromotionRequest;
 use App\Http\Resources\V1\PromotionResource;
 
 class PromotionController extends Controller
@@ -19,22 +17,6 @@ class PromotionController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StorePromotionRequest $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      */
     public function show(Promotion $promotion)
@@ -42,29 +24,5 @@ class PromotionController extends Controller
         return new PromotionResource(
             $promotion->loadMissing('wrestlers', 'championships')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Promotion $promotion)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdatePromotionRequest $request, Promotion $promotion)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Promotion $promotion)
-    {
-        //
     }
 }
