@@ -24,7 +24,8 @@ class TeamResource extends JsonResource
             'monthEnd' => $this->month_end,
             'weekEnd' => $this->week_end,
             'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'updatedAt' => $this->updated_at,
+            'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
         ];
     }
 }

@@ -19,13 +19,13 @@ class TeamController extends Controller
     public function index(Request $request)
     {
         $filter = new TeamsFilter();
-        $queryItems =  $filter->transform($request);
+        $filterItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return TeamResource::collection(Team::all());
-        } else {
-            return TeamResource::collection(Team::where($queryItems)->get());
-        }
+        $team = Team::where($filterItems);
+
+        $team = $team->with('wrestlers');
+
+        return TeamResource::collection($team->get());
     }
 
     /**
@@ -49,7 +49,9 @@ class TeamController extends Controller
      */
     public function show(Team $team)
     {
-        return new TeamResource($team);
+        return new TeamResource(
+            $team->loadMissing('wrestlers')
+        );
     }
 
     /**
