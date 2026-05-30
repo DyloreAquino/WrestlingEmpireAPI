@@ -10,7 +10,6 @@ use App\Http\Requests\UpdateTeamRequest;
 use App\Http\Resources\V1\TeamResource;
 use Illuminate\Http\Request;
 
-// TODO: Create TeamsQuery
 class TeamController extends Controller
 {
     /**

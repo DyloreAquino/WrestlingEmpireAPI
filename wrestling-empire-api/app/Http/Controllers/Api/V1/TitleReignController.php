@@ -10,7 +10,6 @@ use App\Http\Requests\UpdateTitleReignRequest;
 use App\Http\Resources\V1\TitleReignResource;
 use Illuminate\Http\Request;
 
-// TODO: Create TitleReignsQuery
 class TitleReignController extends Controller
 {
     /**
