@@ -15,7 +15,8 @@ class TerritoryController extends Controller
      */
     public function index()
     {
-        return TerritoryResource::collection(Territory::all());
+        $territory = Territory::with('wrestlers')->get();
+        return TerritoryResource::collection($territory);
     }
 
     /**
@@ -39,7 +40,9 @@ class TerritoryController extends Controller
      */
     public function show(Territory $territory)
     {
-        return new TerritoryResource($territory);
+        return new TerritoryResource(
+            $territory->loadMissing('wrestlers')
+        );
     }
 
     /**

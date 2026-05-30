@@ -19,7 +19,8 @@ class TerritoryResource extends JsonResource
             'name' => $this->name,
             'likes' => $this->likes,
             'dislikes' => $this->dislikes,
-            'updatedAt' => $this->updated_at
+            'updatedAt' => $this->updated_at,
+            'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
         ];
     }
 }
