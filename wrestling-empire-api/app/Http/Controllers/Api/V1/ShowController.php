@@ -18,13 +18,11 @@ class ShowController extends Controller
     public function index(Request $request)
     {
         $filter = new ShowsFilter();
-        $queryItems =  $filter->transform($request);
+        $filterItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return ShowResource::collection(Show::all());
-        } else {
-            return ShowResource::collection(Show::where($queryItems)->get());
-        }
+        $show = Show::where($filterItems);
+
+        return ShowResource::collection($show->get());
     }
 
     /**
@@ -48,7 +46,9 @@ class ShowController extends Controller
      */
     public function show(Show $show)
     {
-        return new ShowResource($show);
+        return new ShowResource(
+            $show->loadMissing('events.wrestlers', 'events.stipulations')
+        );
     }
 
     /**

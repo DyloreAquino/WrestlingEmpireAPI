@@ -62,7 +62,9 @@ class WrestlerController extends Controller
      */
     public function show(Wrestler $wrestler)
     {
-        return new WrestlerResource($wrestler);
+        return new WrestlerResource(
+            $wrestler->loadMissing('events', 'titleReigns', 'teams')
+        );
     }
 
     /**

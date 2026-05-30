@@ -23,7 +23,8 @@ class ShowResource extends JsonResource
             'type' => $this->type,
             'territoryId' => $this->territory_id,
             'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'updatedAt' => $this->updated_at,
+            'events' => EventResource::collection($this->whenLoaded('events'))
         ];
     }
 }
