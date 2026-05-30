@@ -18,13 +18,18 @@ class EventController extends Controller
     public function index(Request $request)
     {
         $filter = new EventsFilter();
-        $queryItems =  $filter->transform($request);
+        $filterItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return EventResource::collection(Event::all());
-        } else {
-            return EventResource::collection(Event::where($queryItems)->get());
-        }
+        $event = Event::where($filterItems);
+
+        // $includeWrestlers = $request->query('includeWrestlers');
+        // $includeStipulations = $request->query('includeStipulations');
+
+        $event = $event->with('wrestlers');
+        $event = $event->with('matchStipulations');
+
+
+        return EventResource::collection($event->get());
     }
 
     /**

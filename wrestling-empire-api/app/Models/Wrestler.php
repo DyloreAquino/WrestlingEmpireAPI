@@ -14,7 +14,8 @@ class Wrestler extends Model
      * Pivot: shows the finish type and if this wrestler was the winner.
     */
     public function events() {
-        return $this->belongsToMany(Event::class);
+        return $this->belongsToMany(Event::class)
+            ->withPivot(['is_winner', 'finish_type']);
     }
 
     /** Returns all the shows that this wrestler appeared in. */

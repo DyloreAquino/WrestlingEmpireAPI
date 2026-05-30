@@ -22,7 +22,9 @@ class EventResource extends JsonResource
             'championshipId' => $this->championship_id,
             'showId' => $this->show_id,
             'createdAt' => $this->created_at,
-            'updatedAt' => $this->updated_at
+            'updatedAt' => $this->updated_at,
+            'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
+            'stipulations' => StipulationResource::collection($this->whenLoaded('matchStipulations')),
         ];
     }
 }

@@ -28,7 +28,7 @@ class ChampionshipController extends Controller
             $championship = $championship->with('titleReigns.wrestlers');
         }
 
-        return ChampionshipResource::collection($championship->paginate()->appends($request->query()));
+        return ChampionshipResource::collection($championship->get());
     }
 
     /**
@@ -52,7 +52,9 @@ class ChampionshipController extends Controller
      */
     public function show(Championship $championship)
     {
-        return new ChampionshipResource($championship);
+        return new ChampionshipResource(
+            $championship->loadMissing('titleReigns.wrestlers')
+        );
     }
 
     /**
