@@ -20,11 +20,25 @@ class WrestlerController extends Controller
         $filter = new WrestlersFilter();
         $queryItems =  $filter->transform($request);
 
-        if (count($queryItems) == 0) {
-            return WrestlerResource::collection(Wrestler::all());
-        } else {
-            return WrestlerResource::collection(Wrestler::where($queryItems)->get());
+        $wrestler = Wrestler::where($queryItems);
+
+        $includeEvents = $request->query('includeEvents');
+        $includeTitleReigns = $request->query('includeTitleReigns');
+        $includeTeams = $request->query('includeTeams');
+
+        if ($includeEvents) {
+            $wrestler = $wrestler->with('events');
         }
+
+        if ($includeTitleReigns) {
+            $wrestler = $wrestler->with('titleReigns');
+        }
+
+        if ($includeTeams) {
+            $wrestler = $wrestler->with('teams');
+        }
+
+        return WrestlerResource::collection($wrestler->get());
     }
 
     /**

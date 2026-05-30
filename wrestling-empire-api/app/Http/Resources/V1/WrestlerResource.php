@@ -37,6 +37,9 @@ class WrestlerResource extends JsonResource
             'storyEnemyId' => $this->story_enemy_id,
             'realFriendId' => $this->real_friend_id,
             'realEnemyId' => $this->real_enemy_id,
+            'events' => EventResource::collection($this->whenLoaded('events')),
+            'titleReigns' => TitleReignResource::collection($this->whenLoaded('titleReigns')),
+            'teams' => TeamResource::collection($this->whenLoaded('teams')),
             'isWinner' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->is_winner),
             'finishType' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->finish_type),
         ];

@@ -24,6 +24,8 @@ class EventResource extends JsonResource
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
             'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
+            'isWinner' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->is_winner),
+            'finishType' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->finish_type),
             'stipulations' => StipulationResource::collection($this->whenLoaded('stipulations')),
         ];
     }
