@@ -28,8 +28,8 @@ class StoreShowRequest extends FormRequest
         return [
             'name' => ['nullable'],
             'year' => ['required', 'integer'],
-            'month' => ['required', 'integer'],
-            'week' => ['required', 'integer'],
+            'month' => ['required', 'integer', 'min:1', 'max:12'],
+            'week' => ['required', 'integer', 'min:1', 'max:4'],
             'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
             'territoryId' => ['required', 'integer']
         ];

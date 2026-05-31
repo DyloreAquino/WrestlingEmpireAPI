@@ -26,7 +26,7 @@ class StoreChampionshipRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required'],
+            'name' => ['required', 'string'],
             'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
             'promotionId' => ['required', 'numeric'],
         ];

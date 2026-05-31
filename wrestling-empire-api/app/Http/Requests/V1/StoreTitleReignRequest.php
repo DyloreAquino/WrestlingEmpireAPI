@@ -27,11 +27,11 @@ class StoreTitleReignRequest extends FormRequest
         return [
             'championshipId' => ['required', 'integer'],
             'yearStart' => ['required', 'integer'],
-            'monthStart' => ['required', 'integer'],
-            'weekStart' => ['required', 'integer'],
+            'monthStart' => ['required', 'integer', 'min:1', 'max:12'],
+            'weekStart' => ['required', 'integer', 'min:1', 'max:4'],
             'yearEnd' => ['nullable', 'integer'],
-            'monthEnd' => ['nullable', 'integer'],
-            'weekEnd' => ['nullable', 'integer'],
+            'monthEnd' => ['required', 'integer', 'min:1', 'max:12'],
+            'weekEnd' => ['required', 'integer', 'min:1', 'max:4'],
         ];
     }
 
