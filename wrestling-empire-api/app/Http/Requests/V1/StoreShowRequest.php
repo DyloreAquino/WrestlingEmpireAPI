@@ -4,6 +4,8 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use Override;
 
 class StoreShowRequest extends FormRequest
 {
@@ -12,7 +14,8 @@ class StoreShowRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: add authorization
+        return true;
     }
 
     /**
@@ -23,7 +26,20 @@ class StoreShowRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['nullable'],
+            'year' => ['required', 'integer'],
+            'month' => ['required', 'integer'],
+            'week' => ['required', 'integer'],
+            'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
+            'territoryId' => ['required', 'integer']
         ];
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'territory_id' => $this->territoryId,
+        ]);
     }
 }

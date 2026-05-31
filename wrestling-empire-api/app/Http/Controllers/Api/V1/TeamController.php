@@ -27,14 +27,7 @@ class TeamController extends Controller
         return TeamResource::collection($team->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
+    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
@@ -51,14 +44,6 @@ class TeamController extends Controller
         return new TeamResource(
             $team->loadMissing('wrestlers')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Team $team)
-    {
-        //
     }
 
     /**

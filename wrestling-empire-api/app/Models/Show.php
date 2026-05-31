@@ -10,6 +10,15 @@ class Show extends Model
     /** @use HasFactory<\Database\Factories\ShowFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'year',
+        'month',
+        'week',
+        'type',
+        'territory_id'
+    ];
+
     /** Returns the events that this show has. */
     public function events() {
         return $this->hasMany(Event::class);

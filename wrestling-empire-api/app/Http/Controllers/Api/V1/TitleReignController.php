@@ -32,14 +32,7 @@ class TitleReignController extends Controller
         return TitleReignResource::collection($titleReign->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
+    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
@@ -56,14 +49,6 @@ class TitleReignController extends Controller
         return new TitleReignResource(
             $titleReign->loadMissing('wrestlers')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(TitleReign $titleReign)
-    {
-        //
     }
 
     /**

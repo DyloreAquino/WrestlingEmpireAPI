@@ -41,14 +41,7 @@ class WrestlerController extends Controller
         return WrestlerResource::collection($wrestler->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
+    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
@@ -65,14 +58,6 @@ class WrestlerController extends Controller
         return new WrestlerResource(
             $wrestler->loadMissing('events', 'titleReigns', 'teams')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Wrestler $wrestler)
-    {
-        //
     }
 
     /**

@@ -25,20 +25,13 @@ class ShowController extends Controller
         return ShowResource::collection($show->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
+    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
     public function store(StoreShowRequest $request)
     {
-        //
+        return new ShowResource(Show::create($request->all()));
     }
 
     /**
@@ -49,14 +42,6 @@ class ShowController extends Controller
         return new ShowResource(
             $show->loadMissing('events.wrestlers', 'events.stipulations')
         );
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Show $show)
-    {
-        //
     }
 
     /**

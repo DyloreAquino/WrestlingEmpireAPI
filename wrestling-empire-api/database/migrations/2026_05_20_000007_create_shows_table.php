@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('year'); // Year of Show
             $table->integer('month'); // Jan to Dec, in integer form
             $table->integer('week'); // 1st to 4th week of the month
-            $table->string('type'); // TV, PPV, or SPECIAL
+            $table->enum('type', ['TV', 'PPV', 'SPECIAL']); // TV, PPV, or SPECIAL
             $table->foreignId('territory_id')->constrained(); // Where show took place
             $table->timestamps();
         });
