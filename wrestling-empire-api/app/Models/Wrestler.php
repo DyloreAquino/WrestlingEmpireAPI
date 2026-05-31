@@ -10,6 +10,28 @@ class Wrestler extends Model
     /** @use HasFactory<\Database\Factories\WrestlerFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'gender',
+        'finisher_name',
+        'allegiance',
+        'role',
+        'territory_id',
+        'promotion_id',
+        'popularity',
+        'strength',
+        'skill',
+        'agility',
+        'stamina',
+        'attitude',
+        'manager_id',
+        'partner_id',
+        'story_friend_id',
+        'story_enemy_id',
+        'real_friend_id',
+        'real_enemy_id'
+    ];
+
     /** Returns the events that this wrestler participated in. 
      * Pivot: shows the finish type and if this wrestler was the winner.
     */

@@ -32,7 +32,6 @@ class TitleReignController extends Controller
         return TitleReignResource::collection($titleReign->get());
     }
 
-    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */

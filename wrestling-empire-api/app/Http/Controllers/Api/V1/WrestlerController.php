@@ -47,7 +47,7 @@ class WrestlerController extends Controller
      */
     public function store(StoreWrestlerRequest $request)
     {
-        //
+        return new WrestlerResource(Wrestler::create($request->all()));
     }
 
     /**
