@@ -33,7 +33,7 @@ class TeamController extends Controller
      */
     public function store(StoreTeamRequest $request)
     {
-        //
+        return new TeamResource(Team::create($request->all()));
     }
 
     /**

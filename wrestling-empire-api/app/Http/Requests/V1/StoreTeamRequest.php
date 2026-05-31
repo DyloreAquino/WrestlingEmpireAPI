@@ -4,6 +4,7 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Override;
 
 class StoreTeamRequest extends FormRequest
 {
@@ -12,7 +13,8 @@ class StoreTeamRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: Add authorization
+        return true;
     }
 
     /**
@@ -23,7 +25,26 @@ class StoreTeamRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'string'],
+            'yearStart' => ['required', 'integer'],
+            'monthStart' => ['required', 'integer'],
+            'weekStart' => ['required', 'integer'],
+            'yearEnd' => ['nullable', 'integer'],
+            'monthEnd' => ['nullable', 'integer'],
+            'weekEnd' => ['nullable', 'integer'],
         ];
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'year_start' => $this->yearStart,
+            'month_start' => $this->monthStart,
+            'week_start' => $this->weekStart,
+            'year_end' => $this->yearEnd,
+            'month_end' => $this->monthEnd,
+            'week_end' => $this->weekEnd,
+        ]);
     }
 }

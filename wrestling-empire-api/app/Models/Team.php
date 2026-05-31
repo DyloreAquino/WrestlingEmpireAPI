@@ -10,6 +10,16 @@ class Team extends Model
     /** @use HasFactory<\Database\Factories\TeamFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'year_start',
+        'month_start',
+        'week_start',
+        'year_end',
+        'month_end',
+        'week_end'
+    ];
+
     /** Return all wrestlers part of this team */
     public function wrestlers() {
         return $this->belongsToMany(Wrestler::class);
