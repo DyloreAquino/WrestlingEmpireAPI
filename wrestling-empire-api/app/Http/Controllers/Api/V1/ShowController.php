@@ -25,7 +25,6 @@ class ShowController extends Controller
         return ShowResource::collection($show->get());
     }
 
-    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
