@@ -10,6 +10,16 @@ class TitleReign extends Model
     /** @use HasFactory<\Database\Factories\TitleReignFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'championship_id',
+        'year_start',
+        'month_start',
+        'week_start',
+        'year_end',
+        'month_end',
+        'week_end'
+    ];
+
     /** Returns the wrestler/s holding this title reign.
      * Supports tag team champions.
      */

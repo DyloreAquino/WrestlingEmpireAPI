@@ -38,7 +38,7 @@ class TitleReignController extends Controller
      */
     public function store(StoreTitleReignRequest $request)
     {
-        //
+        return new TitleReignResource(TitleReign::create($request->all()));
     }
 
     /**
