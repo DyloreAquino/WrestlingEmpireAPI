@@ -41,7 +41,6 @@ class WrestlerController extends Controller
         return WrestlerResource::collection($wrestler->get());
     }
 
-    // TODO: Create store function
     /**
      * Store a newly created resource in storage.
      */
