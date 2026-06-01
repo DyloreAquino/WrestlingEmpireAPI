@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Filters\V1\EventsFilter;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\V1\AssignStipulationsRequest;
 use App\Models\Event;
 use App\Http\Requests\V1\StoreEventRequest;
 use App\Http\Requests\V1\UpdateEventRequest;
@@ -71,7 +72,16 @@ class EventController extends Controller
     }
 
     /**
-     * Special POST function to assign wrestlers to events
+     * Special POST function to assign stipulations to event
+     */
+    public function assignStipulations(AssignStipulationsRequest $request, Event $event)
+    {
+        $event->stipulations()->sync($request->stipulationIds);
+        return response()->json(['message' => 'Stipulations assigned to event.']);
+    }
+
+    /**
+     * Special POST function to assign wrestlers to event
      */
     public function assignWrestlers(AssignWrestlersRequest $request, Event $event)
     {

@@ -35,4 +35,5 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], f
     // Special routes for special functionality
     Route::post('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
     Route::patch('events/{event}/simulate', [EventController::class, 'simulate']);
+    Route::post('events/{event}/stipulations', [EventController::class, 'assignStipulations']);
 });
