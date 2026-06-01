@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Filters\V1\TitleReignsFilter;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\V1\AssignWrestlersRequest;
+use App\Http\Requests\V1\EndDateRequest;
 use App\Models\TitleReign;
 use App\Http\Requests\V1\StoreTitleReignRequest;
 use App\Http\Requests\V1\UpdateTitleReignRequest;
@@ -64,5 +66,27 @@ class TitleReignController extends Controller
     public function destroy(TitleReign $titleReign)
     {
         //
+    }
+
+    /**
+     * Special POST function to assign wrestlers to a title reign.
+     */
+    public function assignWrestlers(AssignWrestlersRequest $request, TitleReign $titleReign)
+    {
+        $titleReign->wrestlers()->sync($request->wrestlerIds);
+        return response()->json(['message' => 'Wrestlers assigned to title reign.']);
+    }
+
+    /**
+     * Special PATCH function to end a title reign
+     * Updates the end dates
+     */
+    public function endReign(EndDateRequest $request, TitleReign $titleReign)
+    {
+        $titleReign->year_end = $request->yearEnd;
+        $titleReign->month_end = $request->monthEnd;
+        $titleReign->week_end = $request->weekEnd;
+        $titleReign->save();
+        return response()->json(['message' => 'Title reign ended.']);
     }
 }

@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Requests\V1;
+
+use Illuminate\Contracts\Validation\ValidationRule;
+use Illuminate\Foundation\Http\FormRequest;
+
+class EndDateRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     */
+    public function authorize(): bool
+    {
+        // TODO: Add Authorization
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, ValidationRule|array<mixed>|string>
+     */
+    public function rules(): array
+    {
+        return [
+            'yearEnd' => ['required', 'integer'],
+            'monthEnd' => ['required', 'integer', 'min:1', 'max:12'],
+            'weekEnd' => ['required', 'integer', 'min:1', 'max:4'],
+        ];
+    }
+}

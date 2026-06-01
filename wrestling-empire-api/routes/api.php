@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\V1\TitleReignController;
 use App\Http\Controllers\Api\V1\WrestlerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Laravel\Prompts\Title;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -33,7 +34,15 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], f
     Route::apiResource('territories', TerritoryController::class)->only(['index', 'show']);
     
     // Special routes for special functionality
+    // Events
     Route::post('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
     Route::patch('events/{event}/simulate', [EventController::class, 'simulate']);
     Route::post('events/{event}/stipulations', [EventController::class, 'assignStipulations']);
+    // Title Reigns
+    Route::post('title_reigns/{titleReign}/wrestlers', [TitleReignController::class, 'assignWrestlers']);
+    Route::patch('title_reigns/{titleReign}/end', [TitleReignController::class, 'endReign']);
+    // Teams
+    Route::post('teams/{team}/wrestlers', [TeamController::class, 'assignWrestlers']);
+    Route::put('teams/{team}/wrestlers', [TeamController::class, 'addWrestlers']);
+    Route::patch('teams/{team}/end', [TeamController::class, 'endTeam']);
 });
