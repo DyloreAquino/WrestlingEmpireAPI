@@ -35,14 +35,14 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], f
     
     // Special routes for special functionality
     // Events
-    Route::post('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
+    Route::put('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
     Route::patch('events/{event}/simulate', [EventController::class, 'simulate']);
-    Route::post('events/{event}/stipulations', [EventController::class, 'assignStipulations']);
+    Route::put('events/{event}/stipulations', [EventController::class, 'assignStipulations']);
     // Title Reigns
-    Route::post('title_reigns/{titleReign}/wrestlers', [TitleReignController::class, 'assignWrestlers']);
+    Route::put('title_reigns/{titleReign}/wrestlers', [TitleReignController::class, 'assignWrestlers']);
     Route::patch('title_reigns/{titleReign}/end', [TitleReignController::class, 'endReign']);
     // Teams
-    Route::post('teams/{team}/wrestlers', [TeamController::class, 'assignWrestlers']);
-    Route::put('teams/{team}/wrestlers', [TeamController::class, 'addWrestlers']);
+    Route::put('teams/{team}/wrestlers', [TeamController::class, 'assignWrestlers']);
+    Route::post('teams/{team}/wrestlers', [TeamController::class, 'addWrestlers']);
     Route::patch('teams/{team}/end', [TeamController::class, 'endTeam']);
 });
