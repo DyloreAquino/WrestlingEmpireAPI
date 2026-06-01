@@ -33,5 +33,6 @@ Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\Api\V1'], f
     Route::apiResource('territories', TerritoryController::class)->only(['index', 'show']);
     
     // Special routes for special functionality
-    
+    Route::post('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
+    Route::patch('events/{event}/simulate', [EventController::class, 'simulate']);
 });

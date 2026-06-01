@@ -7,8 +7,12 @@ use App\Http\Controllers\Controller;
 use App\Models\Event;
 use App\Http\Requests\V1\StoreEventRequest;
 use App\Http\Requests\V1\UpdateEventRequest;
+use App\Http\Requests\V1\AssignWrestlersRequest;
+use App\Http\Requests\V1\SimulateRequest;
 use App\Http\Resources\V1\EventResource;
 use Illuminate\Http\Request;
+
+use function Pest\Laravel\json;
 
 class EventController extends Controller
 {
@@ -64,5 +68,39 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         //
+    }
+
+    /**
+     * Special POST function to assign wrestlers to events
+     */
+    public function assignWrestlers(AssignWrestlersRequest $request, Event $event)
+    {
+        $event->wrestlers()->sync($request->wrestlerIds);
+        return response()->json(['message' => 'Wrestlers assigned to event.']);
+    }
+
+    /**
+     * Special PATCH function to simulate an event
+     * Modifies the is_winner and finish_type of the event_wrestler row
+     */
+    public function simulate(SimulateRequest $request, Event $event)
+    {
+        $eventWrestlerIds = $event->wrestlers()->pluck('wrestlers.id');
+
+        foreach ($request->results as $result) {
+            // Check for if wrestler Id is in the list of wrestlers under this event.
+            if (!$eventWrestlerIds->contains($result['wrestlerId'])) {
+                abort(422, "Wrestler {$result['wrestlerId']} is not in this event.");
+            }
+
+            $event->wrestlers()->updateExistingPivot($result['wrestlerId'],
+                [
+                    'is_winner'=> $result['isWinner'], 
+                    'finish_type' => $result['finishType']
+                ]
+            );
+        }
+
+        return response()->json(['message' => 'Event simulated.']);
     }
 }

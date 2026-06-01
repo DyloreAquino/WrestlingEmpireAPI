@@ -23,7 +23,7 @@ class WrestlerSeeder extends Seeder
                 Event::inRandomOrder()->take(5)->get()
                     ->mapWithKeys(fn($w) => [$w->id => [
                         'is_winner' => fake()->boolean(50),
-                        'finish_type' => fake()->randomElement(['PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']),
+                        'finish_type' => fake()->randomElement(['UNFINISHED', 'PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']),
                     ]])
             );
         });
