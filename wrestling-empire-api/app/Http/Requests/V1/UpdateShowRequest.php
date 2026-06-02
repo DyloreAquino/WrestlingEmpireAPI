@@ -52,8 +52,10 @@ class UpdateShowRequest extends FormRequest
     #[Override]
     protected function prepareForValidation()
     {
-        $this->merge([
-            'territory_id' => $this->territoryId,
-        ]);
+        if ($this->territoryId) {
+            $this->merge([
+                'territory_id' => $this->territoryId,
+            ]);
+        }
     }
 }

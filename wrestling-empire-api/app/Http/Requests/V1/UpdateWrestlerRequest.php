@@ -78,16 +78,26 @@ class UpdateWrestlerRequest extends FormRequest
     #[Override]
     protected function prepareForValidation()
     {
-        $this->merge([
-            'finisher_name' => $this->finisherName,
-            'territory_id' => $this->territoryId,
-            'promotion_id' => $this->promotionId,
-            'manager_id' => $this->managerId,
-            'partner_id' => $this->partnerId,
-            'story_friend_id' => $this->storyFriendId,
-            'story_enemy_id' => $this->storyEnemyId,
-            'real_friend_id' => $this->realFriendId,
-            'real_enemy_id' => $this->realEnemyId,
-        ]);
+        $map = [
+            'finisherName'  => 'finisher_name',
+            'territoryId'   => 'territory_id',
+            'promotionId'   => 'promotion_id',
+            'managerId'     => 'manager_id',
+            'partnerId'     => 'partner_id',
+            'storyFriendId' => 'story_friend_id',
+            'storyEnemyId'  => 'story_enemy_id',
+            'realFriendId'  => 'real_friend_id',
+            'realEnemyId'   => 'real_enemy_id',
+        ];
+
+        $merge = [];
+
+        foreach ($map as $camel => $snake) {
+            if ($this->has($camel)) {
+                $merge[$snake] = $this->$camel;
+            }
+        }
+
+        $this->merge($merge);
     }
 }

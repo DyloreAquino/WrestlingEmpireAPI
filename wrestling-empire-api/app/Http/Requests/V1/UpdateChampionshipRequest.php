@@ -46,8 +46,10 @@ class UpdateChampionshipRequest extends FormRequest
     #[Override]
     protected function prepareForValidation()
     {
-        $this->merge([
-            'promotion_id' => $this->promotionId
-        ]);
+        if ($this->promotionId) {
+            $this->merge([
+                'promotion_id' => $this->promotionId
+            ]);
+        }
     }
 }

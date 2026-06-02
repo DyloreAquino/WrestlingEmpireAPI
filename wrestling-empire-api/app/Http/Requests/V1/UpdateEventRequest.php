@@ -50,10 +50,20 @@ class UpdateEventRequest extends FormRequest
     #[Override]
     protected function prepareForValidation()
     {
-        $this->merge([
-            'match_type_id' => $this->matchTypeId,
-            'championship_id' => $this->championshipId,
-            'show_id' => $this->showId,
-        ]);
+        $map = [
+            'matchTypeId'     => 'match_type_id',
+            'championshipId'  => 'championship_id',
+            'showId'          => 'show_id',
+        ];
+
+        $merge = [];
+
+        foreach ($map as $camel => $snake) {
+            if ($this->has($camel)) {
+                $merge[$snake] = $this->$camel;
+            }
+        }
+
+        $this->merge($merge);
     }
 }

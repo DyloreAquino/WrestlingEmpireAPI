@@ -53,14 +53,24 @@ class UpdateTitleReignRequest extends FormRequest
     #[Override]
     protected function prepareForValidation()
     {
-        $this->merge([
-            'championship_id' => $this->championshipId,
-            'year_start' => $this->yearStart,
-            'month_start' => $this->monthStart,
-            'week_start' => $this->weekStart,
-            'year_end' => $this->yearEnd,
-            'month_end' => $this->monthEnd,
-            'week_end' => $this->weekEnd,
-        ]);
+        $map = [
+            'championshipId' => 'championship_id',
+            'yearStart'      => 'year_start',
+            'monthStart'     => 'month_start',
+            'weekStart'      => 'week_start',
+            'yearEnd'        => 'year_end',
+            'monthEnd'       => 'month_end',
+            'weekEnd'        => 'week_end',
+        ];
+
+        $merge = [];
+
+        foreach ($map as $camel => $snake) {
+            if ($this->has($camel)) {
+                $merge[$snake] = $this->$camel;
+            }
+        }
+
+        $this->merge($merge);
     }
 }
