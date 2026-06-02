@@ -167,7 +167,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: SEGMENT
+        example: MATCH
         type: string
         enumValues:
           - PROMO
@@ -226,7 +226,7 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      type: SEGMENT
+      type: MATCH
       placement: MID
       matchTypeId: 16
       championshipId: 16
@@ -331,7 +331,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: PROMO
+        example: BRAWL
         type: string
         enumValues:
           - PROMO
@@ -346,7 +346,7 @@ endpoints:
         name: placement
         description: ''
         required: true
-        example: MID
+        example: SEMI
         type: string
         enumValues:
           - UNDER
@@ -390,8 +390,8 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      type: PROMO
-      placement: MID
+      type: BRAWL
+      placement: SEMI
       matchTypeId: 16
       championshipId: 16
       showId: 16

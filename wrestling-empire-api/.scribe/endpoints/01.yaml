@@ -380,7 +380,7 @@ endpoints:
         name: gender
         description: ''
         required: true
-        example: N/A
+        example: MALE
         type: string
         enumValues:
           - MALE
@@ -419,7 +419,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: MANAGER
+        example: BOOKER
         type: string
         enumValues:
           - WRESTLER
@@ -586,10 +586,10 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: architecto
-      gender: N/A
+      gender: MALE
       finisherName: architecto
       allegiance: TWEENER
-      role: MANAGER
+      role: BOOKER
       territoryId: 16
       promotionId: 16
       popularity: 22
@@ -715,7 +715,7 @@ endpoints:
         name: gender
         description: ''
         required: true
-        example: N/A
+        example: MALE
         type: string
         enumValues:
           - MALE
@@ -754,7 +754,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: MANAGER
+        example: WRESTLER
         type: string
         enumValues:
           - WRESTLER
@@ -921,10 +921,10 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: architecto
-      gender: N/A
+      gender: MALE
       finisherName: architecto
       allegiance: HEEL
-      role: MANAGER
+      role: WRESTLER
       territoryId: 16
       promotionId: 16
       popularity: 22

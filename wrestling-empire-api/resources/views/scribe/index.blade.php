@@ -381,11 +381,11 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;AEW World Champion&quot;,
-            &quot;division&quot;: &quot;WORLD&quot;,
-            &quot;promotionId&quot;: 5,
+            &quot;name&quot;: &quot;architecto&quot;,
+            &quot;division&quot;: &quot;WOMENS&quot;,
+            &quot;promotionId&quot;: 4,
             &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-02T06:13:22.000000Z&quot;
+            &quot;updatedAt&quot;: &quot;2026-06-02T06:27:57.000000Z&quot;
         },
         {
             &quot;id&quot;: 2,
@@ -913,7 +913,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"division\": \"TAG\",
+    \"division\": \"MID\",
     \"promotionId\": 16
 }"
 </code></pre></div>
@@ -931,7 +931,7 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "division": "TAG",
+    "division": "MID",
     "promotionId": 16
 };
 
@@ -1036,10 +1036,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="division"                data-endpoint="POSTapi-v1-championships"
-               value="TAG"
+               value="MID"
                data-component="body">
     <br>
-<p>Example: <code>TAG</code></p>
+<p>Example: <code>MID</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
         </div>
@@ -1062,7 +1062,7 @@ Must be one of:
 <p>
 </p>
 
-
+<p>Also shows the title reigns of the championship and the current reign.</p>
 
 <span id="example-requests-GETapi-v1-championships--id-">
 <blockquote>Example request:</blockquote>
@@ -1109,11 +1109,11 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;AEW World Champion&quot;,
-        &quot;division&quot;: &quot;WORLD&quot;,
-        &quot;promotionId&quot;: 5,
+        &quot;name&quot;: &quot;architecto&quot;,
+        &quot;division&quot;: &quot;WOMENS&quot;,
+        &quot;promotionId&quot;: 4,
         &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-        &quot;updatedAt&quot;: &quot;2026-06-02T06:13:22.000000Z&quot;,
+        &quot;updatedAt&quot;: &quot;2026-06-02T06:27:57.000000Z&quot;,
         &quot;titleReigns&quot;: [
             {
                 &quot;id&quot;: 1,
@@ -1363,7 +1363,69 @@ access-control-allow-origin: *
                     }
                 ]
             }
-        ]
+        ],
+        &quot;currentReign&quot;: {
+            &quot;id&quot;: 3,
+            &quot;championshipId&quot;: 1,
+            &quot;yearStart&quot;: 1999,
+            &quot;monthStart&quot;: 5,
+            &quot;weekStart&quot;: 4,
+            &quot;yearEnd&quot;: null,
+            &quot;monthEnd&quot;: null,
+            &quot;weekEnd&quot;: null,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+            &quot;wrestlers&quot;: [
+                {
+                    &quot;id&quot;: 14,
+                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                    &quot;name&quot;: &quot;Mrs. Lupe Crist DVM&quot;,
+                    &quot;gender&quot;: &quot;FEMALE&quot;,
+                    &quot;finisherName&quot;: &quot;i&quot;,
+                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
+                    &quot;role&quot;: &quot;REFEREE&quot;,
+                    &quot;territoryId&quot;: 18,
+                    &quot;promotionId&quot;: 8,
+                    &quot;popularity&quot;: 73,
+                    &quot;strength&quot;: 95,
+                    &quot;skill&quot;: 88,
+                    &quot;agility&quot;: 81,
+                    &quot;stamina&quot;: 60,
+                    &quot;attitude&quot;: 65,
+                    &quot;managerId&quot;: null,
+                    &quot;partnerId&quot;: null,
+                    &quot;storyFriendId&quot;: null,
+                    &quot;storyEnemyId&quot;: null,
+                    &quot;realFriendId&quot;: null,
+                    &quot;realEnemyId&quot;: null
+                },
+                {
+                    &quot;id&quot;: 19,
+                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                    &quot;name&quot;: &quot;Alfredo Trantow&quot;,
+                    &quot;gender&quot;: &quot;MALE&quot;,
+                    &quot;finisherName&quot;: &quot;g&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 46,
+                    &quot;promotionId&quot;: 7,
+                    &quot;popularity&quot;: 95,
+                    &quot;strength&quot;: 63,
+                    &quot;skill&quot;: 94,
+                    &quot;agility&quot;: 67,
+                    &quot;stamina&quot;: 83,
+                    &quot;attitude&quot;: 86,
+                    &quot;managerId&quot;: null,
+                    &quot;partnerId&quot;: null,
+                    &quot;storyFriendId&quot;: null,
+                    &quot;storyEnemyId&quot;: null,
+                    &quot;realFriendId&quot;: null,
+                    &quot;realEnemyId&quot;: null
+                }
+            ]
+        }
     }
 }</code>
  </pre>
@@ -1472,7 +1534,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"division\": \"WOMENS\",
+    \"division\": \"MID\",
     \"promotionId\": 16
 }"
 </code></pre></div>
@@ -1490,7 +1552,7 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "division": "WOMENS",
+    "division": "MID",
     "promotionId": 16
 };
 
@@ -1612,10 +1674,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="division"                data-endpoint="PUTapi-v1-championships--id-"
-               value="WOMENS"
+               value="MID"
                data-component="body">
     <br>
-<p>Example: <code>WOMENS</code></p>
+<p>Example: <code>MID</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
         </div>
@@ -5794,7 +5856,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"SEGMENT\",
+    \"type\": \"MATCH\",
     \"placement\": \"MID\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
@@ -5814,7 +5876,7 @@ const headers = {
 };
 
 let body = {
-    "type": "SEGMENT",
+    "type": "MATCH",
     "placement": "MID",
     "matchTypeId": 16,
     "championshipId": 16,
@@ -5910,10 +5972,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-events"
-               value="SEGMENT"
+               value="MATCH"
                data-component="body">
     <br>
-<p>Example: <code>SEGMENT</code></p>
+<p>Example: <code>MATCH</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -6190,8 +6252,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"PROMO\",
-    \"placement\": \"MID\",
+    \"type\": \"BRAWL\",
+    \"placement\": \"SEMI\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
     \"showId\": 16
@@ -6210,8 +6272,8 @@ const headers = {
 };
 
 let body = {
-    "type": "PROMO",
-    "placement": "MID",
+    "type": "BRAWL",
+    "placement": "SEMI",
     "matchTypeId": 16,
     "championshipId": 16,
     "showId": 16
@@ -6323,10 +6385,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="PUTapi-v1-events--id-"
-               value="PROMO"
+               value="BRAWL"
                data-component="body">
     <br>
-<p>Example: <code>PROMO</code></p>
+<p>Example: <code>BRAWL</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -6337,10 +6399,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="placement"                data-endpoint="PUTapi-v1-events--id-"
-               value="MID"
+               value="SEMI"
                data-component="body">
     <br>
-<p>Example: <code>MID</code></p>
+<p>Example: <code>SEMI</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>UNDER</code></li> <li><code>MID</code></li> <li><code>SEMI</code></li> <li><code>MAIN</code></li></ul>
         </div>
@@ -8451,7 +8513,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"year\": 16,
     \"month\": 4,
     \"week\": 3,
-    \"type\": \"PPV\",
+    \"type\": \"SPECIAL\",
     \"territoryId\": 16
 }"
 </code></pre></div>
@@ -8472,7 +8534,7 @@ let body = {
     "year": 16,
     "month": 4,
     "week": 3,
-    "type": "PPV",
+    "type": "SPECIAL",
     "territoryId": 16
 };
 
@@ -8613,10 +8675,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-shows"
-               value="PPV"
+               value="SPECIAL"
                data-component="body">
     <br>
-<p>Example: <code>PPV</code></p>
+<p>Example: <code>SPECIAL</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TV</code></li> <li><code>PPV</code></li> <li><code>SPECIAL</code></li></ul>
         </div>
@@ -11044,7 +11106,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="monthEnd"                data-endpoint="POSTapi-v1-teams"
@@ -11056,7 +11118,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="weekEnd"                data-endpoint="POSTapi-v1-teams"
@@ -11526,7 +11588,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="monthEnd"                data-endpoint="PUTapi-v1-teams--id-"
@@ -11538,7 +11600,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="weekEnd"                data-endpoint="PUTapi-v1-teams--id-"
@@ -13073,11 +13135,11 @@ access-control-allow-origin: *
             &quot;yearStart&quot;: 1974,
             &quot;monthStart&quot;: 4,
             &quot;weekStart&quot;: 3,
-            &quot;yearEnd&quot;: 2010,
-            &quot;monthEnd&quot;: 12,
-            &quot;weekEnd&quot;: 4,
+            &quot;yearEnd&quot;: null,
+            &quot;monthEnd&quot;: null,
+            &quot;weekEnd&quot;: null,
             &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-02T10:27:00.000000Z&quot;,
             &quot;wrestlers&quot;: [
                 {
                     &quot;id&quot;: 10,
@@ -17550,7 +17612,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="monthEnd"                data-endpoint="POSTapi-v1-title_reigns"
@@ -17562,7 +17624,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="weekEnd"                data-endpoint="POSTapi-v1-title_reigns"
@@ -17984,7 +18046,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="monthEnd"                data-endpoint="PUTapi-v1-title_reigns--id-"
@@ -17996,7 +18058,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
- &nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="weekEnd"                data-endpoint="PUTapi-v1-title_reigns--id-"
@@ -19470,10 +19532,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"gender\": \"N\\/A\",
+    \"gender\": \"MALE\",
     \"finisherName\": \"architecto\",
     \"allegiance\": \"TWEENER\",
-    \"role\": \"MANAGER\",
+    \"role\": \"BOOKER\",
     \"territoryId\": 16,
     \"promotionId\": 16,
     \"popularity\": 22,
@@ -19504,10 +19566,10 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "gender": "N\/A",
+    "gender": "MALE",
     "finisherName": "architecto",
     "allegiance": "TWEENER",
-    "role": "MANAGER",
+    "role": "BOOKER",
     "territoryId": 16,
     "promotionId": 16,
     "popularity": 22,
@@ -19625,10 +19687,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="POSTapi-v1-wrestlers"
-               value="N/A"
+               value="MALE"
                data-component="body">
     <br>
-<p>Example: <code>N/A</code></p>
+<p>Example: <code>MALE</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
         </div>
@@ -19665,10 +19727,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-v1-wrestlers"
-               value="MANAGER"
+               value="BOOKER"
                data-component="body">
     <br>
-<p>Example: <code>MANAGER</code></p>
+<p>Example: <code>BOOKER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
         </div>
@@ -20233,10 +20295,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"gender\": \"N\\/A\",
+    \"gender\": \"MALE\",
     \"finisherName\": \"architecto\",
     \"allegiance\": \"HEEL\",
-    \"role\": \"MANAGER\",
+    \"role\": \"WRESTLER\",
     \"territoryId\": 16,
     \"promotionId\": 16,
     \"popularity\": 22,
@@ -20267,10 +20329,10 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "gender": "N\/A",
+    "gender": "MALE",
     "finisherName": "architecto",
     "allegiance": "HEEL",
-    "role": "MANAGER",
+    "role": "WRESTLER",
     "territoryId": 16,
     "promotionId": 16,
     "popularity": 22,
@@ -20405,10 +20467,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="N/A"
+               value="MALE"
                data-component="body">
     <br>
-<p>Example: <code>N/A</code></p>
+<p>Example: <code>MALE</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
         </div>
@@ -20445,10 +20507,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="MANAGER"
+               value="WRESTLER"
                data-component="body">
     <br>
-<p>Example: <code>MANAGER</code></p>
+<p>Example: <code>WRESTLER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
         </div>

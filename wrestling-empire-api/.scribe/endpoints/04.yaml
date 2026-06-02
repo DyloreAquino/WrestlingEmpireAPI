@@ -221,7 +221,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: PPV
+        example: SPECIAL
         type: string
         enumValues:
           - TV
@@ -246,7 +246,7 @@ endpoints:
       year: 16
       month: 4
       week: 3
-      type: PPV
+      type: SPECIAL
       territoryId: 16
     fileParameters: []
     responses: []

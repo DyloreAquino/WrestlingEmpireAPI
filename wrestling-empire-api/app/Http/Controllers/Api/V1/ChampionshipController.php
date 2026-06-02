@@ -54,6 +54,8 @@ class ChampionshipController extends Controller
     /**
      * Display one championship.
      * 
+     * Also shows the title reigns of the championship and the current reign.
+     * 
      * @group Championships
      */
     public function show(Championship $championship)

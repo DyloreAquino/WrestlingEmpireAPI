@@ -243,23 +243,23 @@ endpoints:
         custom: []
         name: monthEnd
         description: 'Must be at least 1. Must not be greater than 12.'
-        required: true
+        required: false
         example: 4
         type: integer
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         deprecated: false
       weekEnd:
         custom: []
         name: weekEnd
         description: 'Must be at least 1. Must not be greater than 4.'
-        required: true
+        required: false
         example: 3
         type: integer
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         deprecated: false
     cleanBodyParameters:
       name: architecto
@@ -423,23 +423,23 @@ endpoints:
         custom: []
         name: monthEnd
         description: 'Must be at least 1. Must not be greater than 12.'
-        required: true
+        required: false
         example: 4
         type: integer
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         deprecated: false
       weekEnd:
         custom: []
         name: weekEnd
         description: 'Must be at least 1. Must not be greater than 4.'
-        required: true
+        required: false
         example: 3
         type: integer
         enumValues: []
         exampleWasSpecified: false
-        nullable: false
+        nullable: true
         deprecated: false
     cleanBodyParameters:
       name: architecto
