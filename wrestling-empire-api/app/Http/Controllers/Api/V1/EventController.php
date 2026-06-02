@@ -18,7 +18,20 @@ use function Pest\Laravel\json;
 class EventController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all events.
+     * 
+     * Also displays event's stipulations and wrestlers assigned to it.
+     * 
+     * @group Events
+     * 
+     * @queryParam id integer Filter by event ID. Operators: [eq]. Example: id[eq]=1
+     * @queryParam createdAt datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: createdAt[gt]=2026-01-01
+     * @queryParam updatedAt datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: updatedAt[gt]=2026-01-01
+     * @queryParam type string Filter by event type (PROMO, MATCH, SEGMENT, BRAWL). Operators: [eq], [ne]. Example: type[eq]=MATCH
+     * @queryParam placement string Filter by card placement (UNDER, MID, SEMI, MAIN). Operators: [eq], [ne]. Example: placement[eq]=MAIN
+     * @queryParam matchTypeId integer Filter by match type ID. Operators: [eq]. Example: matchTypeId[eq]=2
+     * @queryParam championshipId integer Filter by championship ID. Operators: [eq]. Example: championshipId[eq]=1
+     * @queryParam showId integer Filter by show ID. Operators: [eq]. Example: showId[eq]=4
      */
     public function index(Request $request)
     {
@@ -38,7 +51,9 @@ class EventController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new event.
+     * 
+     * @group Events
      */
     public function store(StoreEventRequest $request)
     {
@@ -46,7 +61,9 @@ class EventController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one event.
+     * 
+     * @group Events
      */
     public function show(Event $event)
     {
@@ -56,7 +73,9 @@ class EventController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update an event's information.
+     * 
+     * @group Events
      */
     public function update(UpdateEventRequest $request, Event $event)
     {
@@ -64,7 +83,9 @@ class EventController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete an event.
+     * 
+     * @group Events
      */
     public function destroy(Event $event)
     {
@@ -72,7 +93,9 @@ class EventController extends Controller
     }
 
     /**
-     * Special POST function to assign stipulations to event
+     * Set the stipulations for an event.
+     * 
+     * @group Events
      */
     public function assignStipulations(AssignStipulationsRequest $request, Event $event)
     {
@@ -81,7 +104,9 @@ class EventController extends Controller
     }
 
     /**
-     * Special POST function to assign wrestlers to event
+     * Assign wrestlers to an event.
+     * 
+     * @group Events
      */
     public function assignWrestlers(AssignWrestlersRequest $request, Event $event)
     {
@@ -90,8 +115,11 @@ class EventController extends Controller
     }
 
     /**
-     * Special PATCH function to simulate an event
+     * Simulate an event.
+     * 
      * Modifies the is_winner and finish_type of the event_wrestler row
+     * 
+     * @group Events
      */
     public function simulate(SimulateRequest $request, Event $event)
     {

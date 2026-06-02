@@ -9,7 +9,9 @@ use App\Http\Resources\V1\PromotionResource;
 class PromotionController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all promotions.
+     * 
+     * @group Promotions
      */
     public function index()
     {
@@ -17,7 +19,11 @@ class PromotionController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one promotion.
+     * 
+     * Also shows the wrestlers and championships attributed to this promotion.
+     * 
+     * @group Promotions
      */
     public function show(Promotion $promotion)
     {

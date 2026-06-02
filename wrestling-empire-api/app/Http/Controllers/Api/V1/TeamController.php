@@ -15,7 +15,22 @@ use Illuminate\Http\Request;
 class TeamController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all teams.
+     * 
+     * Also shows the wrestlers associated to each team.
+     * 
+     * @group Teams
+     * 
+     * @queryParam id integer Filter by team ID. Operators: [eq]. Example: id[eq]=1
+     * @queryParam name string Filter by team name. Operators: [eq]. Example: name[eq]=The Bloodline
+     * @queryParam yearStart integer Filter by start year. Operators: [eq], [gt], [lt]. Example: yearStart[gt]=2020
+     * @queryParam monthStart integer Filter by start month. Operators: [eq], [gt], [lt]. Example: monthStart[eq]=8
+     * @queryParam weekStart integer Filter by start week. Operators: [eq], [gt], [lt]. Example: weekStart[eq]=3
+     * @queryParam yearEnd integer Filter by end year. Operators: [eq], [gt], [lt]. Example: yearEnd[lt]=2026
+     * @queryParam monthEnd integer Filter by end month. Operators: [eq], [gt], [lt]. Example: monthEnd[eq]=3
+     * @queryParam weekEnd integer Filter by end week. Operators: [eq], [gt], [lt]. Example: weekEnd[eq]=2
+     * @queryParam createdAt datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: createdAt[gt]=2026-01-01
+     * @queryParam updatedAt datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: updatedAt[gt]=2026-01-01
      */
     public function index(Request $request)
     {
@@ -30,7 +45,9 @@ class TeamController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new team.
+     * 
+     * @group Teams
      */
     public function store(StoreTeamRequest $request)
     {
@@ -38,7 +55,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one team.
+     * 
+     * Also shows the wrestlers associated with the team.
+     * 
+     * @group Teams
      */
     public function show(Team $team)
     {
@@ -48,7 +69,9 @@ class TeamController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a team's information.
+     * 
+     * @group Teams
      */
     public function update(UpdateTeamRequest $request, Team $team)
     {
@@ -56,7 +79,9 @@ class TeamController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a team.
+     * 
+     * @group Teams
      */
     public function destroy(Team $team)
     {
@@ -64,7 +89,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Special POST function to assign wrestlers to a team.
+     * Assign wrestlers to a team.
+     * 
+     * Replaces all members of a team to the list of wrestlers provided.
+     * 
+     * @group Teams
      */
     public function assignWrestlers(AssignWrestlersRequest $request, Team $team)
     {
@@ -73,7 +102,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Special PUT function to add more wrestlers to a team.
+     * Add wrestlers to a team.
+     * 
+     * Appends wrestlers to an already existing roster of a team.
+     * 
+     * @group Teams
      */
     public function addWrestlers(AssignWrestlersRequest $request, Team $team)
     {
@@ -82,8 +115,11 @@ class TeamController extends Controller
     }
 
     /**
-     * Special PATCH function to end a title reign
-     * Updates the end dates
+     * Disband a team.
+     * 
+     * Updates the end dates of a team.
+     * 
+     * @group Teams
      */
     public function endTeam(EndDateRequest $request, Team $team)
     {

@@ -9,7 +9,9 @@ use App\Http\Resources\V1\MatchTypeResource;
 class MatchTypeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all match types.
+     * 
+     * @group Match Types
      */
     public function index()
     {
@@ -17,7 +19,9 @@ class MatchTypeController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one match type.
+     * 
+     * @group Match Types
      */
     public function show(MatchType $matchType)
     {

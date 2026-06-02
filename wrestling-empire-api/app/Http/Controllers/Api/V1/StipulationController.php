@@ -9,7 +9,9 @@ use App\Http\Resources\V1\StipulationResource;
 class StipulationController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all stipulations.
+     * 
+     * @group Stipulations
      */
     public function index()
     {
@@ -17,7 +19,9 @@ class StipulationController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one stipulation.
+     * 
+     * @group Stipulations
      */
     public function show(Stipulation $stipulation)
     {

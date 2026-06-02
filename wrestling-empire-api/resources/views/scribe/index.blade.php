@@ -66,6 +66,28 @@
                     <a href="#authenticating-requests">Authenticating requests</a>
                 </li>
                             </ul>
+                    <ul id="tocify-header-championships" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="championships">
+                    <a href="#championships">Championships</a>
+                </li>
+                                    <ul id="tocify-subheader-championships" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="championships-GETapi-v1-championships">
+                                <a href="#championships-GETapi-v1-championships">Display all championships.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="championships-POSTapi-v1-championships">
+                                <a href="#championships-POSTapi-v1-championships">Create a new championship.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="championships-GETapi-v1-championships--id-">
+                                <a href="#championships-GETapi-v1-championships--id-">Display one championship.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="championships-PUTapi-v1-championships--id-">
+                                <a href="#championships-PUTapi-v1-championships--id-">Update a championship's information.</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="championships-DELETEapi-v1-championships--id-">
+                                <a href="#championships-DELETEapi-v1-championships--id-">Delete a championship.</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-endpoints" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="endpoints">
                     <a href="#endpoints">Endpoints</a>
@@ -74,146 +96,191 @@
                                                     <li class="tocify-item level-2" data-unique="endpoints-GETapi-user">
                                 <a href="#endpoints-GETapi-user">GET api/user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-wrestlers">
-                                <a href="#endpoints-GETapi-v1-wrestlers">Display a listing of the resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-events" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="events">
+                    <a href="#events">Events</a>
+                </li>
+                                    <ul id="tocify-subheader-events" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="events-GETapi-v1-events">
+                                <a href="#events-GETapi-v1-events">Display all events.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-wrestlers">
-                                <a href="#endpoints-POSTapi-v1-wrestlers">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-POSTapi-v1-events">
+                                <a href="#events-POSTapi-v1-events">Create a new event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-wrestlers--id-">
-                                <a href="#endpoints-GETapi-v1-wrestlers--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-GETapi-v1-events--id-">
+                                <a href="#events-GETapi-v1-events--id-">Display one event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-wrestlers--id-">
-                                <a href="#endpoints-PUTapi-v1-wrestlers--id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-PUTapi-v1-events--id-">
+                                <a href="#events-PUTapi-v1-events--id-">Update an event's information.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-wrestlers--id-">
-                                <a href="#endpoints-DELETEapi-v1-wrestlers--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-DELETEapi-v1-events--id-">
+                                <a href="#events-DELETEapi-v1-events--id-">Delete an event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-championships">
-                                <a href="#endpoints-GETapi-v1-championships">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-PUTapi-v1-events--event_id--wrestlers">
+                                <a href="#events-PUTapi-v1-events--event_id--wrestlers">Assign wrestlers to an event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-championships">
-                                <a href="#endpoints-POSTapi-v1-championships">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-PATCHapi-v1-events--event_id--simulate">
+                                <a href="#events-PATCHapi-v1-events--event_id--simulate">Simulate an event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-championships--id-">
-                                <a href="#endpoints-GETapi-v1-championships--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="events-PUTapi-v1-events--event_id--stipulations">
+                                <a href="#events-PUTapi-v1-events--event_id--stipulations">Set the stipulations for an event.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-championships--id-">
-                                <a href="#endpoints-PUTapi-v1-championships--id-">Update the specified resource in storage.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-match-types" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="match-types">
+                    <a href="#match-types">Match Types</a>
+                </li>
+                                    <ul id="tocify-subheader-match-types" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="match-types-GETapi-v1-match_types">
+                                <a href="#match-types-GETapi-v1-match_types">Display all match types.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-championships--id-">
-                                <a href="#endpoints-DELETEapi-v1-championships--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="match-types-GETapi-v1-match_types--id-">
+                                <a href="#match-types-GETapi-v1-match_types--id-">Display one match type.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-events">
-                                <a href="#endpoints-GETapi-v1-events">Display a listing of the resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-promotions" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="promotions">
+                    <a href="#promotions">Promotions</a>
+                </li>
+                                    <ul id="tocify-subheader-promotions" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="promotions-GETapi-v1-promotions">
+                                <a href="#promotions-GETapi-v1-promotions">Display all promotions.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-events">
-                                <a href="#endpoints-POSTapi-v1-events">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="promotions-GETapi-v1-promotions--id-">
+                                <a href="#promotions-GETapi-v1-promotions--id-">Display one promotion.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-events--id-">
-                                <a href="#endpoints-GETapi-v1-events--id-">Display the specified resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-shows" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="shows">
+                    <a href="#shows">Shows</a>
+                </li>
+                                    <ul id="tocify-subheader-shows" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="shows-GETapi-v1-shows">
+                                <a href="#shows-GETapi-v1-shows">Display all shows.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-events--id-">
-                                <a href="#endpoints-PUTapi-v1-events--id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="shows-POSTapi-v1-shows">
+                                <a href="#shows-POSTapi-v1-shows">Create a new show.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-events--id-">
-                                <a href="#endpoints-DELETEapi-v1-events--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="shows-GETapi-v1-shows--id-">
+                                <a href="#shows-GETapi-v1-shows--id-">Display one show.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-shows">
-                                <a href="#endpoints-GETapi-v1-shows">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="shows-PUTapi-v1-shows--id-">
+                                <a href="#shows-PUTapi-v1-shows--id-">Update a show's information.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-shows">
-                                <a href="#endpoints-POSTapi-v1-shows">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="shows-DELETEapi-v1-shows--id-">
+                                <a href="#shows-DELETEapi-v1-shows--id-">Delete a show.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-shows--id-">
-                                <a href="#endpoints-GETapi-v1-shows--id-">Display the specified resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-stipulations" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="stipulations">
+                    <a href="#stipulations">Stipulations</a>
+                </li>
+                                    <ul id="tocify-subheader-stipulations" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="stipulations-GETapi-v1-stipulations">
+                                <a href="#stipulations-GETapi-v1-stipulations">Display all stipulations.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-shows--id-">
-                                <a href="#endpoints-PUTapi-v1-shows--id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="stipulations-GETapi-v1-stipulations--id-">
+                                <a href="#stipulations-GETapi-v1-stipulations--id-">Display one stipulation.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-shows--id-">
-                                <a href="#endpoints-DELETEapi-v1-shows--id-">Remove the specified resource from storage.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-teams" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="teams">
+                    <a href="#teams">Teams</a>
+                </li>
+                                    <ul id="tocify-subheader-teams" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="teams-GETapi-v1-teams">
+                                <a href="#teams-GETapi-v1-teams">Display all teams.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-teams">
-                                <a href="#endpoints-GETapi-v1-teams">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-POSTapi-v1-teams">
+                                <a href="#teams-POSTapi-v1-teams">Create a new team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-teams">
-                                <a href="#endpoints-POSTapi-v1-teams">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-GETapi-v1-teams--id-">
+                                <a href="#teams-GETapi-v1-teams--id-">Display one team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-teams--id-">
-                                <a href="#endpoints-GETapi-v1-teams--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-PUTapi-v1-teams--id-">
+                                <a href="#teams-PUTapi-v1-teams--id-">Update a team's information.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-teams--id-">
-                                <a href="#endpoints-PUTapi-v1-teams--id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-DELETEapi-v1-teams--id-">
+                                <a href="#teams-DELETEapi-v1-teams--id-">Delete a team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-teams--id-">
-                                <a href="#endpoints-DELETEapi-v1-teams--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-PUTapi-v1-teams--team_id--wrestlers">
+                                <a href="#teams-PUTapi-v1-teams--team_id--wrestlers">Assign wrestlers to a team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-title_reigns">
-                                <a href="#endpoints-GETapi-v1-title_reigns">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-POSTapi-v1-teams--team_id--wrestlers">
+                                <a href="#teams-POSTapi-v1-teams--team_id--wrestlers">Add wrestlers to a team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-title_reigns">
-                                <a href="#endpoints-POSTapi-v1-title_reigns">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="teams-PATCHapi-v1-teams--team_id--end">
+                                <a href="#teams-PATCHapi-v1-teams--team_id--end">Disband a team.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-title_reigns--id-">
-                                <a href="#endpoints-GETapi-v1-title_reigns--id-">Display the specified resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-territories" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="territories">
+                    <a href="#territories">Territories</a>
+                </li>
+                                    <ul id="tocify-subheader-territories" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="territories-GETapi-v1-territories">
+                                <a href="#territories-GETapi-v1-territories">Display all territories.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-title_reigns--id-">
-                                <a href="#endpoints-PUTapi-v1-title_reigns--id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="territories-GETapi-v1-territories--id-">
+                                <a href="#territories-GETapi-v1-territories--id-">Display one territory.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-v1-title_reigns--id-">
-                                <a href="#endpoints-DELETEapi-v1-title_reigns--id-">Remove the specified resource from storage.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-title-reigns" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="title-reigns">
+                    <a href="#title-reigns">Title Reigns</a>
+                </li>
+                                    <ul id="tocify-subheader-title-reigns" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="title-reigns-GETapi-v1-title_reigns">
+                                <a href="#title-reigns-GETapi-v1-title_reigns">Display all title reigns.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-match_types">
-                                <a href="#endpoints-GETapi-v1-match_types">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-POSTapi-v1-title_reigns">
+                                <a href="#title-reigns-POSTapi-v1-title_reigns">Create a new title reign.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-match_types--id-">
-                                <a href="#endpoints-GETapi-v1-match_types--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-GETapi-v1-title_reigns--id-">
+                                <a href="#title-reigns-GETapi-v1-title_reigns--id-">Display one title reign.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-promotions">
-                                <a href="#endpoints-GETapi-v1-promotions">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-PUTapi-v1-title_reigns--id-">
+                                <a href="#title-reigns-PUTapi-v1-title_reigns--id-">Update a title reign's information.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-promotions--id-">
-                                <a href="#endpoints-GETapi-v1-promotions--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-DELETEapi-v1-title_reigns--id-">
+                                <a href="#title-reigns-DELETEapi-v1-title_reigns--id-">Delete a title reign.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-stipulations">
-                                <a href="#endpoints-GETapi-v1-stipulations">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-PUTapi-v1-title_reigns--titleReign_id--wrestlers">
+                                <a href="#title-reigns-PUTapi-v1-title_reigns--titleReign_id--wrestlers">Assign wrestlers to a title reign.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-stipulations--id-">
-                                <a href="#endpoints-GETapi-v1-stipulations--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="title-reigns-PATCHapi-v1-title_reigns--titleReign_id--end">
+                                <a href="#title-reigns-PATCHapi-v1-title_reigns--titleReign_id--end">End a title reign.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-territories">
-                                <a href="#endpoints-GETapi-v1-territories">Display a listing of the resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-wrestlers" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="wrestlers">
+                    <a href="#wrestlers">Wrestlers</a>
+                </li>
+                                    <ul id="tocify-subheader-wrestlers" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="wrestlers-GETapi-v1-wrestlers">
+                                <a href="#wrestlers-GETapi-v1-wrestlers">Display all wrestlers.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-v1-territories--id-">
-                                <a href="#endpoints-GETapi-v1-territories--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="wrestlers-POSTapi-v1-wrestlers">
+                                <a href="#wrestlers-POSTapi-v1-wrestlers">Create a new wrestler.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-events--event_id--wrestlers">
-                                <a href="#endpoints-PUTapi-v1-events--event_id--wrestlers">Special POST function to assign wrestlers to event</a>
+                                                                                <li class="tocify-item level-2" data-unique="wrestlers-GETapi-v1-wrestlers--id-">
+                                <a href="#wrestlers-GETapi-v1-wrestlers--id-">Display one wrestler.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-v1-events--event_id--simulate">
-                                <a href="#endpoints-PATCHapi-v1-events--event_id--simulate">Special PATCH function to simulate an event
-Modifies the is_winner and finish_type of the event_wrestler row</a>
+                                                                                <li class="tocify-item level-2" data-unique="wrestlers-PUTapi-v1-wrestlers--id-">
+                                <a href="#wrestlers-PUTapi-v1-wrestlers--id-">Update a wrestler's information.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-events--event_id--stipulations">
-                                <a href="#endpoints-PUTapi-v1-events--event_id--stipulations">Special POST function to assign stipulations to event</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-title_reigns--titleReign_id--wrestlers">
-                                <a href="#endpoints-PUTapi-v1-title_reigns--titleReign_id--wrestlers">Special POST function to assign wrestlers to a title reign.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-v1-title_reigns--titleReign_id--end">
-                                <a href="#endpoints-PATCHapi-v1-title_reigns--titleReign_id--end">Special PATCH function to end a title reign
-Updates the end dates</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-v1-teams--team_id--wrestlers">
-                                <a href="#endpoints-PUTapi-v1-teams--team_id--wrestlers">Special POST function to assign wrestlers to a team.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-v1-teams--team_id--wrestlers">
-                                <a href="#endpoints-POSTapi-v1-teams--team_id--wrestlers">Special PUT function to add more wrestlers to a team.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-v1-teams--team_id--end">
-                                <a href="#endpoints-PATCHapi-v1-teams--team_id--end">Special PATCH function to end a title reign
-Updates the end dates</a>
+                                                                                <li class="tocify-item level-2" data-unique="wrestlers-DELETEapi-v1-wrestlers--id-">
+                                <a href="#wrestlers-DELETEapi-v1-wrestlers--id-">Delete a wrestler.</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -226,7 +293,7 @@ Updates the end dates</a>
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: June 1, 2026</li>
+        <li>Last updated: June 2, 2026</li>
     </ul>
 </div>
 
@@ -245,1773 +312,11 @@ You can switch the language used with the tabs at the top right (or from the nav
         <h1 id="authenticating-requests">Authenticating requests</h1>
 <p>This API is not authenticated.</p>
 
-        <h1 id="endpoints">Endpoints</h1>
+        <h1 id="championships">Championships</h1>
 
     
 
-                                <h2 id="endpoints-GETapi-user">GET api/user</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-user">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/user" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/user"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-user">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-user" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-user"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-user"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-user" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-user">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-user" data-method="GET"
-      data-path="api/user"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-user', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-user"
-                    onclick="tryItOut('GETapi-user');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-user"
-                    onclick="cancelTryOut('GETapi-user');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-user"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/user</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-user"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-user"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-v1-wrestlers">Display a listing of the resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-wrestlers">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/wrestlers" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/wrestlers"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-wrestlers">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Timmy Renner&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;v&quot;,
-            &quot;allegiance&quot;: &quot;FACE&quot;,
-            &quot;role&quot;: &quot;MANAGER&quot;,
-            &quot;territoryId&quot;: 8,
-            &quot;promotionId&quot;: 3,
-            &quot;popularity&quot;: 92,
-            &quot;strength&quot;: 84,
-            &quot;skill&quot;: 83,
-            &quot;agility&quot;: 60,
-            &quot;stamina&quot;: 55,
-            &quot;attitude&quot;: 66,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Elissa Stamm&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;i&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 18,
-            &quot;promotionId&quot;: 6,
-            &quot;popularity&quot;: 72,
-            &quot;strength&quot;: 58,
-            &quot;skill&quot;: 65,
-            &quot;agility&quot;: 68,
-            &quot;stamina&quot;: 73,
-            &quot;attitude&quot;: 52,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Amani Ruecker&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;o&quot;,
-            &quot;allegiance&quot;: &quot;FACE&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 27,
-            &quot;promotionId&quot;: 1,
-            &quot;popularity&quot;: 56,
-            &quot;strength&quot;: 57,
-            &quot;skill&quot;: 93,
-            &quot;agility&quot;: 60,
-            &quot;stamina&quot;: 68,
-            &quot;attitude&quot;: 62,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Krystal Carroll&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;s&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;BOOKER&quot;,
-            &quot;territoryId&quot;: 28,
-            &quot;promotionId&quot;: 7,
-            &quot;popularity&quot;: 93,
-            &quot;strength&quot;: 52,
-            &quot;skill&quot;: 59,
-            &quot;agility&quot;: 95,
-            &quot;stamina&quot;: 78,
-            &quot;attitude&quot;: 56,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Mr. Marcus Labadie I&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;d&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;BOOKER&quot;,
-            &quot;territoryId&quot;: 23,
-            &quot;promotionId&quot;: 7,
-            &quot;popularity&quot;: 79,
-            &quot;strength&quot;: 83,
-            &quot;skill&quot;: 57,
-            &quot;agility&quot;: 69,
-            &quot;stamina&quot;: 67,
-            &quot;attitude&quot;: 68,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Broderick Nolan&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;t&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;MANAGER&quot;,
-            &quot;territoryId&quot;: 19,
-            &quot;promotionId&quot;: 1,
-            &quot;popularity&quot;: 95,
-            &quot;strength&quot;: 89,
-            &quot;skill&quot;: 73,
-            &quot;agility&quot;: 59,
-            &quot;stamina&quot;: 54,
-            &quot;attitude&quot;: 69,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Viola Hilpert&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;p&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 35,
-            &quot;promotionId&quot;: 9,
-            &quot;popularity&quot;: 65,
-            &quot;strength&quot;: 81,
-            &quot;skill&quot;: 86,
-            &quot;agility&quot;: 61,
-            &quot;stamina&quot;: 70,
-            &quot;attitude&quot;: 73,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Morgan Heller Sr.&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;a&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;WRESTLER&quot;,
-            &quot;territoryId&quot;: 36,
-            &quot;promotionId&quot;: 7,
-            &quot;popularity&quot;: 86,
-            &quot;strength&quot;: 63,
-            &quot;skill&quot;: 64,
-            &quot;agility&quot;: 51,
-            &quot;stamina&quot;: 59,
-            &quot;attitude&quot;: 85,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Karlie Boyer&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;s&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;WRESTLER&quot;,
-            &quot;territoryId&quot;: 27,
-            &quot;promotionId&quot;: 8,
-            &quot;popularity&quot;: 69,
-            &quot;strength&quot;: 85,
-            &quot;skill&quot;: 63,
-            &quot;agility&quot;: 87,
-            &quot;stamina&quot;: 99,
-            &quot;attitude&quot;: 64,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Finn Rogahn&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;k&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 4,
-            &quot;promotionId&quot;: 8,
-            &quot;popularity&quot;: 54,
-            &quot;strength&quot;: 97,
-            &quot;skill&quot;: 71,
-            &quot;agility&quot;: 67,
-            &quot;stamina&quot;: 69,
-            &quot;attitude&quot;: 63,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Raina Schaden&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;u&quot;,
-            &quot;allegiance&quot;: &quot;FACE&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 22,
-            &quot;promotionId&quot;: 4,
-            &quot;popularity&quot;: 75,
-            &quot;strength&quot;: 59,
-            &quot;skill&quot;: 81,
-            &quot;agility&quot;: 70,
-            &quot;stamina&quot;: 82,
-            &quot;attitude&quot;: 92,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Alfonzo Mitchell I&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;p&quot;,
-            &quot;allegiance&quot;: &quot;FACE&quot;,
-            &quot;role&quot;: &quot;MANAGER&quot;,
-            &quot;territoryId&quot;: 16,
-            &quot;promotionId&quot;: 3,
-            &quot;popularity&quot;: 84,
-            &quot;strength&quot;: 73,
-            &quot;skill&quot;: 78,
-            &quot;agility&quot;: 93,
-            &quot;stamina&quot;: 59,
-            &quot;attitude&quot;: 64,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Prof. Thurman Collins&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;p&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 33,
-            &quot;promotionId&quot;: 3,
-            &quot;popularity&quot;: 63,
-            &quot;strength&quot;: 71,
-            &quot;skill&quot;: 56,
-            &quot;agility&quot;: 51,
-            &quot;stamina&quot;: 70,
-            &quot;attitude&quot;: 57,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Mrs. Lupe Crist DVM&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;i&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 18,
-            &quot;promotionId&quot;: 8,
-            &quot;popularity&quot;: 73,
-            &quot;strength&quot;: 95,
-            &quot;skill&quot;: 88,
-            &quot;agility&quot;: 81,
-            &quot;stamina&quot;: 60,
-            &quot;attitude&quot;: 65,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Shanie McClure&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;f&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 41,
-            &quot;promotionId&quot;: 4,
-            &quot;popularity&quot;: 56,
-            &quot;strength&quot;: 54,
-            &quot;skill&quot;: 70,
-            &quot;agility&quot;: 57,
-            &quot;stamina&quot;: 50,
-            &quot;attitude&quot;: 71,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Johann Nitzsche MD&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;o&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;WRESTLER&quot;,
-            &quot;territoryId&quot;: 25,
-            &quot;promotionId&quot;: 6,
-            &quot;popularity&quot;: 82,
-            &quot;strength&quot;: 86,
-            &quot;skill&quot;: 87,
-            &quot;agility&quot;: 53,
-            &quot;stamina&quot;: 96,
-            &quot;attitude&quot;: 92,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Sonia Schiller Sr.&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;j&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;REFEREE&quot;,
-            &quot;territoryId&quot;: 26,
-            &quot;promotionId&quot;: 4,
-            &quot;popularity&quot;: 80,
-            &quot;strength&quot;: 68,
-            &quot;skill&quot;: 50,
-            &quot;agility&quot;: 88,
-            &quot;stamina&quot;: 64,
-            &quot;attitude&quot;: 60,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Hermina Schumm&quot;,
-            &quot;gender&quot;: &quot;FEMALE&quot;,
-            &quot;finisherName&quot;: &quot;z&quot;,
-            &quot;allegiance&quot;: &quot;TWEENER&quot;,
-            &quot;role&quot;: &quot;BOOKER&quot;,
-            &quot;territoryId&quot;: 5,
-            &quot;promotionId&quot;: 4,
-            &quot;popularity&quot;: 66,
-            &quot;strength&quot;: 60,
-            &quot;skill&quot;: 76,
-            &quot;agility&quot;: 61,
-            &quot;stamina&quot;: 78,
-            &quot;attitude&quot;: 80,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Alfredo Trantow&quot;,
-            &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;g&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;WRESTLER&quot;,
-            &quot;territoryId&quot;: 46,
-            &quot;promotionId&quot;: 7,
-            &quot;popularity&quot;: 95,
-            &quot;strength&quot;: 63,
-            &quot;skill&quot;: 94,
-            &quot;agility&quot;: 67,
-            &quot;stamina&quot;: 83,
-            &quot;attitude&quot;: 86,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Dr. Alvah Leffler DDS&quot;,
-            &quot;gender&quot;: &quot;N/A&quot;,
-            &quot;finisherName&quot;: &quot;y&quot;,
-            &quot;allegiance&quot;: &quot;HEEL&quot;,
-            &quot;role&quot;: &quot;MANAGER&quot;,
-            &quot;territoryId&quot;: 40,
-            &quot;promotionId&quot;: 9,
-            &quot;popularity&quot;: 92,
-            &quot;strength&quot;: 97,
-            &quot;skill&quot;: 70,
-            &quot;agility&quot;: 55,
-            &quot;stamina&quot;: 76,
-            &quot;attitude&quot;: 90,
-            &quot;managerId&quot;: null,
-            &quot;partnerId&quot;: null,
-            &quot;storyFriendId&quot;: null,
-            &quot;storyEnemyId&quot;: null,
-            &quot;realFriendId&quot;: null,
-            &quot;realEnemyId&quot;: null
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-wrestlers" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-wrestlers"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-wrestlers"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-wrestlers" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-wrestlers">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-wrestlers" data-method="GET"
-      data-path="api/v1/wrestlers"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-wrestlers', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-wrestlers"
-                    onclick="tryItOut('GETapi-v1-wrestlers');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-wrestlers"
-                    onclick="cancelTryOut('GETapi-v1-wrestlers');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-wrestlers"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/wrestlers</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-POSTapi-v1-wrestlers">Store a newly created resource in storage.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-POSTapi-v1-wrestlers">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/v1/wrestlers" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"name\": \"architecto\",
-    \"gender\": \"N\\/A\",
-    \"finisherName\": \"architecto\",
-    \"allegiance\": \"HEEL\",
-    \"role\": \"WRESTLER\",
-    \"territoryId\": 16,
-    \"promotionId\": 16,
-    \"popularity\": 22,
-    \"strength\": 7,
-    \"skill\": 16,
-    \"agility\": 17,
-    \"stamina\": 15,
-    \"attitude\": 8,
-    \"managerId\": 16,
-    \"partnerId\": 16,
-    \"storyFriendId\": 16,
-    \"storyEnemyId\": 16,
-    \"realFriendId\": 16,
-    \"realEnemyId\": 16
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/wrestlers"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "name": "architecto",
-    "gender": "N\/A",
-    "finisherName": "architecto",
-    "allegiance": "HEEL",
-    "role": "WRESTLER",
-    "territoryId": 16,
-    "promotionId": 16,
-    "popularity": 22,
-    "strength": 7,
-    "skill": 16,
-    "agility": 17,
-    "stamina": 15,
-    "attitude": 8,
-    "managerId": 16,
-    "partnerId": 16,
-    "storyFriendId": 16,
-    "storyEnemyId": 16,
-    "realFriendId": 16,
-    "realEnemyId": 16
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-v1-wrestlers">
-</span>
-<span id="execution-results-POSTapi-v1-wrestlers" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-wrestlers"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-wrestlers"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-v1-wrestlers" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-wrestlers">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-v1-wrestlers" data-method="POST"
-      data-path="api/v1/wrestlers"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-wrestlers', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-wrestlers"
-                    onclick="tryItOut('POSTapi-v1-wrestlers');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-wrestlers"
-                    onclick="cancelTryOut('POSTapi-v1-wrestlers');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-wrestlers"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/v1/wrestlers</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="name"                data-endpoint="POSTapi-v1-wrestlers"
-               value="architecto"
-               data-component="body">
-    <br>
-<p>Example: <code>architecto</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="gender"                data-endpoint="POSTapi-v1-wrestlers"
-               value="N/A"
-               data-component="body">
-    <br>
-<p>Example: <code>N/A</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>finisherName</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="finisherName"                data-endpoint="POSTapi-v1-wrestlers"
-               value="architecto"
-               data-component="body">
-    <br>
-<p>Example: <code>architecto</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>allegiance</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="allegiance"                data-endpoint="POSTapi-v1-wrestlers"
-               value="HEEL"
-               data-component="body">
-    <br>
-<p>Example: <code>HEEL</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>HEEL</code></li> <li><code>FACE</code></li> <li><code>TWEENER</code></li></ul>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="role"                data-endpoint="POSTapi-v1-wrestlers"
-               value="WRESTLER"
-               data-component="body">
-    <br>
-<p>Example: <code>WRESTLER</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="territoryId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="promotionId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="popularity"                data-endpoint="POSTapi-v1-wrestlers"
-               value="22"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>22</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>strength</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="strength"                data-endpoint="POSTapi-v1-wrestlers"
-               value="7"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>7</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>skill</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="skill"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>agility</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="agility"                data-endpoint="POSTapi-v1-wrestlers"
-               value="17"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>17</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>stamina</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="stamina"                data-endpoint="POSTapi-v1-wrestlers"
-               value="15"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>15</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>attitude</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="attitude"                data-endpoint="POSTapi-v1-wrestlers"
-               value="8"
-               data-component="body">
-    <br>
-<p>Must be at least 50. Must not be greater than 100. Example: <code>8</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>managerId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="managerId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="partnerId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="storyFriendId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="storyEnemyId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="realFriendId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="realEnemyId"                data-endpoint="POSTapi-v1-wrestlers"
-               value="16"
-               data-component="body">
-    <br>
-<p>Example: <code>16</code></p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-GETapi-v1-wrestlers--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-wrestlers--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/wrestlers/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/wrestlers/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-wrestlers--id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-        &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-        &quot;name&quot;: &quot;Timmy Renner&quot;,
-        &quot;gender&quot;: &quot;MALE&quot;,
-        &quot;finisherName&quot;: &quot;v&quot;,
-        &quot;allegiance&quot;: &quot;FACE&quot;,
-        &quot;role&quot;: &quot;MANAGER&quot;,
-        &quot;territoryId&quot;: 8,
-        &quot;promotionId&quot;: 3,
-        &quot;popularity&quot;: 92,
-        &quot;strength&quot;: 84,
-        &quot;skill&quot;: 83,
-        &quot;agility&quot;: 60,
-        &quot;stamina&quot;: 55,
-        &quot;attitude&quot;: 66,
-        &quot;managerId&quot;: null,
-        &quot;partnerId&quot;: null,
-        &quot;storyFriendId&quot;: null,
-        &quot;storyEnemyId&quot;: null,
-        &quot;realFriendId&quot;: null,
-        &quot;realEnemyId&quot;: null,
-        &quot;events&quot;: [
-            {
-                &quot;id&quot;: 48,
-                &quot;type&quot;: &quot;PROMO&quot;,
-                &quot;placement&quot;: &quot;UNDER&quot;,
-                &quot;matchTypeId&quot;: null,
-                &quot;championshipId&quot;: null,
-                &quot;showId&quot;: 27,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 0,
-                &quot;finishType&quot;: &quot;TIMEOUT&quot;
-            },
-            {
-                &quot;id&quot;: 24,
-                &quot;type&quot;: &quot;PROMO&quot;,
-                &quot;placement&quot;: &quot;SEMI&quot;,
-                &quot;matchTypeId&quot;: null,
-                &quot;championshipId&quot;: 24,
-                &quot;showId&quot;: 22,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 1,
-                &quot;finishType&quot;: &quot;SUBMISSION&quot;
-            },
-            {
-                &quot;id&quot;: 1,
-                &quot;type&quot;: &quot;MATCH&quot;,
-                &quot;placement&quot;: &quot;MID&quot;,
-                &quot;matchTypeId&quot;: 7,
-                &quot;championshipId&quot;: 11,
-                &quot;showId&quot;: 12,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 0,
-                &quot;finishType&quot;: &quot;COUNTOUT&quot;
-            },
-            {
-                &quot;id&quot;: 27,
-                &quot;type&quot;: &quot;MATCH&quot;,
-                &quot;placement&quot;: &quot;MID&quot;,
-                &quot;matchTypeId&quot;: 4,
-                &quot;championshipId&quot;: 26,
-                &quot;showId&quot;: 18,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 1,
-                &quot;finishType&quot;: &quot;SPECIAL&quot;
-            },
-            {
-                &quot;id&quot;: 14,
-                &quot;type&quot;: &quot;MATCH&quot;,
-                &quot;placement&quot;: &quot;UNDER&quot;,
-                &quot;matchTypeId&quot;: 2,
-                &quot;championshipId&quot;: null,
-                &quot;showId&quot;: 5,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 1,
-                &quot;finishType&quot;: &quot;SPECIAL&quot;
-            },
-            {
-                &quot;id&quot;: 16,
-                &quot;type&quot;: &quot;PROMO&quot;,
-                &quot;placement&quot;: &quot;MID&quot;,
-                &quot;matchTypeId&quot;: null,
-                &quot;championshipId&quot;: null,
-                &quot;showId&quot;: 14,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;isWinner&quot;: 1,
-                &quot;finishType&quot;: &quot;PIN&quot;
-            }
-        ],
-        &quot;titleReigns&quot;: [
-            {
-                &quot;id&quot;: 16,
-                &quot;championshipId&quot;: 4,
-                &quot;yearStart&quot;: 2021,
-                &quot;monthStart&quot;: 7,
-                &quot;weekStart&quot;: 2,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 21,
-                &quot;championshipId&quot;: 6,
-                &quot;yearStart&quot;: 1987,
-                &quot;monthStart&quot;: 11,
-                &quot;weekStart&quot;: 3,
-                &quot;yearEnd&quot;: 2003,
-                &quot;monthEnd&quot;: 8,
-                &quot;weekEnd&quot;: 2,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 22,
-                &quot;championshipId&quot;: 6,
-                &quot;yearStart&quot;: 1970,
-                &quot;monthStart&quot;: 3,
-                &quot;weekStart&quot;: 4,
-                &quot;yearEnd&quot;: 1975,
-                &quot;monthEnd&quot;: 5,
-                &quot;weekEnd&quot;: 2,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 26,
-                &quot;championshipId&quot;: 6,
-                &quot;yearStart&quot;: 2001,
-                &quot;monthStart&quot;: 3,
-                &quot;weekStart&quot;: 3,
-                &quot;yearEnd&quot;: 2000,
-                &quot;monthEnd&quot;: 10,
-                &quot;weekEnd&quot;: 4,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 29,
-                &quot;championshipId&quot;: 7,
-                &quot;yearStart&quot;: 1979,
-                &quot;monthStart&quot;: 1,
-                &quot;weekStart&quot;: 2,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 31,
-                &quot;championshipId&quot;: 7,
-                &quot;yearStart&quot;: 2021,
-                &quot;monthStart&quot;: 1,
-                &quot;weekStart&quot;: 2,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 38,
-                &quot;championshipId&quot;: 8,
-                &quot;yearStart&quot;: 2019,
-                &quot;monthStart&quot;: 7,
-                &quot;weekStart&quot;: 1,
-                &quot;yearEnd&quot;: 1995,
-                &quot;monthEnd&quot;: 8,
-                &quot;weekEnd&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 63,
-                &quot;championshipId&quot;: 36,
-                &quot;yearStart&quot;: 2023,
-                &quot;monthStart&quot;: 2,
-                &quot;weekStart&quot;: 1,
-                &quot;yearEnd&quot;: 2003,
-                &quot;monthEnd&quot;: 5,
-                &quot;weekEnd&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 66,
-                &quot;championshipId&quot;: 39,
-                &quot;yearStart&quot;: 2007,
-                &quot;monthStart&quot;: 10,
-                &quot;weekStart&quot;: 4,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
-            }
-        ],
-        &quot;teams&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Prof. Georgianna Paucek MD&quot;,
-                &quot;yearStart&quot;: 2020,
-                &quot;monthStart&quot;: 5,
-                &quot;weekStart&quot;: 3,
-                &quot;yearEnd&quot;: 2012,
-                &quot;monthEnd&quot;: 7,
-                &quot;weekEnd&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;name&quot;: &quot;Anna Nikolaus&quot;,
-                &quot;yearStart&quot;: 2019,
-                &quot;monthStart&quot;: 5,
-                &quot;weekStart&quot;: 4,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Dr. Cortney Reichert&quot;,
-                &quot;yearStart&quot;: 2022,
-                &quot;monthStart&quot;: 3,
-                &quot;weekStart&quot;: 3,
-                &quot;yearEnd&quot;: null,
-                &quot;monthEnd&quot;: null,
-                &quot;weekEnd&quot;: null,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
-            }
-        ]
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-wrestlers--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-wrestlers--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-wrestlers--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-wrestlers--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-wrestlers--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-wrestlers--id-" data-method="GET"
-      data-path="api/v1/wrestlers/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-wrestlers--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-wrestlers--id-"
-                    onclick="tryItOut('GETapi-v1-wrestlers--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-wrestlers--id-"
-                    onclick="cancelTryOut('GETapi-v1-wrestlers--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-wrestlers--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/wrestlers/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-wrestlers--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the wrestler. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-PUTapi-v1-wrestlers--id-">Update the specified resource in storage.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTapi-v1-wrestlers--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/v1/wrestlers/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/wrestlers/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "PUT",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTapi-v1-wrestlers--id-">
-</span>
-<span id="execution-results-PUTapi-v1-wrestlers--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTapi-v1-wrestlers--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-v1-wrestlers--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PUTapi-v1-wrestlers--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-v1-wrestlers--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PUTapi-v1-wrestlers--id-" data-method="PUT"
-      data-path="api/v1/wrestlers/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-wrestlers--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-v1-wrestlers--id-"
-                    onclick="tryItOut('PUTapi-v1-wrestlers--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-v1-wrestlers--id-"
-                    onclick="cancelTryOut('PUTapi-v1-wrestlers--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-v1-wrestlers--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/v1/wrestlers/{id}</code></b>
-        </p>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/v1/wrestlers/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the wrestler. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-DELETEapi-v1-wrestlers--id-">Remove the specified resource from storage.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-v1-wrestlers--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost:8000/api/v1/wrestlers/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/wrestlers/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-v1-wrestlers--id-">
-</span>
-<span id="execution-results-DELETEapi-v1-wrestlers--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-v1-wrestlers--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-v1-wrestlers--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-v1-wrestlers--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-v1-wrestlers--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-v1-wrestlers--id-" data-method="DELETE"
-      data-path="api/v1/wrestlers/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-wrestlers--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-v1-wrestlers--id-"
-                    onclick="tryItOut('DELETEapi-v1-wrestlers--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-v1-wrestlers--id-"
-                    onclick="cancelTryOut('DELETEapi-v1-wrestlers--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-v1-wrestlers--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/v1/wrestlers/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-v1-wrestlers--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="DELETEapi-v1-wrestlers--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the wrestler. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-v1-championships">Display a listing of the resource.</h2>
+                                <h2 id="championships-GETapi-v1-championships">Display all championships.</h2>
 
 <p>
 </p>
@@ -2024,7 +329,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/championships" \
+    --get "http://localhost:8000/api/v1/championships?includeTitleReigns=&amp;id=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01&amp;name=name%5Beq%5D%3DWorld+Heavyweight+Championship&amp;division=division%5Beq%5D%3DWORLD&amp;promotionId=0" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -2033,6 +338,18 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost:8000/api/v1/championships"
 );
+
+const params = {
+    "includeTitleReigns": "0",
+    "id": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+    "name": "name[eq]=World Heavyweight Championship",
+    "division": "division[eq]=WORLD",
+    "promotionId": "0",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -2481,9 +798,104 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>includeTitleReigns</code></b>&nbsp;&nbsp;
+<small>boolean</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <label data-endpoint="GETapi-v1-championships" style="display: none">
+            <input type="radio" name="includeTitleReigns"
+                   value="1"
+                   data-endpoint="GETapi-v1-championships"
+                   data-component="query"             >
+            <code>true</code>
+        </label>
+        <label data-endpoint="GETapi-v1-championships" style="display: none">
+            <input type="radio" name="includeTitleReigns"
+                   value="0"
+                   data-endpoint="GETapi-v1-championships"
+                   data-component="query"             >
+            <code>false</code>
+        </label>
+    <br>
+<p>Include all title reigns associated to this championship, along with the wrestler/s of that reign. Example: <code>false</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-championships"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by championship ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-championships"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-championships"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="GETapi-v1-championships"
+               value="name[eq]=World Heavyweight Championship"
+               data-component="query">
+    <br>
+<p>Filter by championship name. Operators: [eq]. Example: <code>name[eq]=World Heavyweight Championship</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>division</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="division"                data-endpoint="GETapi-v1-championships"
+               value="division[eq]=WORLD"
+               data-component="query">
+    <br>
+<p>Filter by division (WORLD, MID, TAG, WOMENS). Operators: [eq], [ne]. Example: <code>division[eq]=WORLD</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="promotionId"                data-endpoint="GETapi-v1-championships"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by promotion ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-championships">Store a newly created resource in storage.</h2>
+                    <h2 id="championships-POSTapi-v1-championships">Create a new championship.</h2>
 
 <p>
 </p>
@@ -2645,7 +1057,7 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-v1-championships--id-">Display the specified resource.</h2>
+                    <h2 id="championships-GETapi-v1-championships--id-">Display one championship.</h2>
 
 <p>
 </p>
@@ -3042,7 +1454,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-v1-championships--id-">Update the specified resource in storage.</h2>
+                    <h2 id="championships-PUTapi-v1-championships--id-">Update a championship&#039;s information.</h2>
 
 <p>
 </p>
@@ -3170,7 +1582,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-v1-championships--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="championships-DELETEapi-v1-championships--id-">Delete a championship.</h2>
 
 <p>
 </p>
@@ -3294,12 +1706,147 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-v1-events">Display a listing of the resource.</h2>
+                <h1 id="endpoints">Endpoints</h1>
+
+    
+
+                                <h2 id="endpoints-GETapi-user">GET api/user</h2>
 
 <p>
 </p>
 
 
+
+<span id="example-requests-GETapi-user">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/user" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/user"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-user">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-user" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-user"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-user"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-user" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-user">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-user" data-method="GET"
+      data-path="api/user"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-user', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-user"
+                    onclick="tryItOut('GETapi-user');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-user"
+                    onclick="cancelTryOut('GETapi-user');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-user"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/user</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-user"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-user"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                <h1 id="events">Events</h1>
+
+    
+
+                                <h2 id="events-GETapi-v1-events">Display all events.</h2>
+
+<p>
+</p>
+
+<p>Also displays event's stipulations and wrestlers assigned to it.</p>
 
 <span id="example-requests-GETapi-v1-events">
 <blockquote>Example request:</blockquote>
@@ -3307,7 +1854,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/events" \
+    --get "http://localhost:8000/api/v1/events?id=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01&amp;type=type%5Beq%5D%3DMATCH&amp;placement=placement%5Beq%5D%3DMAIN&amp;matchTypeId=0&amp;championshipId=0&amp;showId=0" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -3316,6 +1863,19 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost:8000/api/v1/events"
 );
+
+const params = {
+    "id": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+    "type": "type[eq]=MATCH",
+    "placement": "placement[eq]=MAIN",
+    "matchTypeId": "0",
+    "championshipId": "0",
+    "showId": "0",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -3356,22 +1916,22 @@ access-control-allow-origin: *
             &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
             &quot;wrestlers&quot;: [
                 {
-                    &quot;id&quot;: 1,
+                    &quot;id&quot;: 5,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
                     &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;name&quot;: &quot;Mr. Marcus Labadie I&quot;,
+                    &quot;gender&quot;: &quot;N/A&quot;,
+                    &quot;finisherName&quot;: &quot;d&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;BOOKER&quot;,
+                    &quot;territoryId&quot;: 23,
+                    &quot;promotionId&quot;: 7,
+                    &quot;popularity&quot;: 79,
+                    &quot;strength&quot;: 83,
+                    &quot;skill&quot;: 57,
+                    &quot;agility&quot;: 69,
+                    &quot;stamina&quot;: 67,
+                    &quot;attitude&quot;: 68,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -3379,33 +1939,33 @@ access-control-allow-origin: *
                     &quot;realFriendId&quot;: null,
                     &quot;realEnemyId&quot;: null,
                     &quot;isWinner&quot;: 0,
-                    &quot;finishType&quot;: &quot;COUNTOUT&quot;
+                    &quot;finishType&quot;: &quot;PIN&quot;
                 },
                 {
-                    &quot;id&quot;: 8,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Morgan Heller Sr.&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;a&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
+                    &quot;id&quot;: 21,
+                    &quot;createdAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+                    &quot;name&quot;: &quot;Babie Wicka&quot;,
+                    &quot;gender&quot;: &quot;FEMALE&quot;,
+                    &quot;finisherName&quot;: &quot;Babie Drop&quot;,
+                    &quot;allegiance&quot;: &quot;FACE&quot;,
                     &quot;role&quot;: &quot;WRESTLER&quot;,
-                    &quot;territoryId&quot;: 36,
-                    &quot;promotionId&quot;: 7,
-                    &quot;popularity&quot;: 86,
-                    &quot;strength&quot;: 63,
-                    &quot;skill&quot;: 64,
-                    &quot;agility&quot;: 51,
-                    &quot;stamina&quot;: 59,
-                    &quot;attitude&quot;: 85,
+                    &quot;territoryId&quot;: 8,
+                    &quot;promotionId&quot;: 3,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 99,
+                    &quot;skill&quot;: 99,
+                    &quot;agility&quot;: 99,
+                    &quot;stamina&quot;: 99,
+                    &quot;attitude&quot;: 99,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
                     &quot;storyEnemyId&quot;: null,
                     &quot;realFriendId&quot;: null,
                     &quot;realEnemyId&quot;: null,
-                    &quot;isWinner&quot;: 0,
-                    &quot;finishType&quot;: &quot;TIMEOUT&quot;
+                    &quot;isWinner&quot;: 1,
+                    &quot;finishType&quot;: &quot;PIN&quot;
                 }
             ],
             &quot;stipulations&quot;: []
@@ -7067,9 +5627,106 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-events"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by event ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-events"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-events"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="GETapi-v1-events"
+               value="type[eq]=MATCH"
+               data-component="query">
+    <br>
+<p>Filter by event type (PROMO, MATCH, SEGMENT, BRAWL). Operators: [eq], [ne]. Example: <code>type[eq]=MATCH</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>placement</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="placement"                data-endpoint="GETapi-v1-events"
+               value="placement[eq]=MAIN"
+               data-component="query">
+    <br>
+<p>Filter by card placement (UNDER, MID, SEMI, MAIN). Operators: [eq], [ne]. Example: <code>placement[eq]=MAIN</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>matchTypeId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="matchTypeId"                data-endpoint="GETapi-v1-events"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by match type ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="championshipId"                data-endpoint="GETapi-v1-events"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by championship ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>showId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="showId"                data-endpoint="GETapi-v1-events"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by show ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-events">Store a newly created resource in storage.</h2>
+                    <h2 id="events-POSTapi-v1-events">Create a new event.</h2>
 
 <p>
 </p>
@@ -7086,7 +5743,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"PROMO\",
+    \"type\": \"MATCH\",
     \"placement\": \"MID\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
@@ -7106,7 +5763,7 @@ const headers = {
 };
 
 let body = {
-    "type": "PROMO",
+    "type": "MATCH",
     "placement": "MID",
     "matchTypeId": 16,
     "championshipId": 16,
@@ -7202,10 +5859,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-events"
-               value="PROMO"
+               value="MATCH"
                data-component="body">
     <br>
-<p>Example: <code>PROMO</code></p>
+<p>Example: <code>MATCH</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -7261,7 +5918,7 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-v1-events--id-">Display the specified resource.</h2>
+                    <h2 id="events-GETapi-v1-events--id-">Display one event.</h2>
 
 <p>
 </p>
@@ -7322,48 +5979,48 @@ access-control-allow-origin: *
         &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
         &quot;wrestlers&quot;: [
             {
-                &quot;id&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;name&quot;: &quot;Timmy Renner&quot;,
-                &quot;gender&quot;: &quot;MALE&quot;,
-                &quot;finisherName&quot;: &quot;v&quot;,
+                &quot;id&quot;: 21,
+                &quot;createdAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+                &quot;name&quot;: &quot;Babie Wicka&quot;,
+                &quot;gender&quot;: &quot;FEMALE&quot;,
+                &quot;finisherName&quot;: &quot;Babie Drop&quot;,
                 &quot;allegiance&quot;: &quot;FACE&quot;,
-                &quot;role&quot;: &quot;MANAGER&quot;,
+                &quot;role&quot;: &quot;WRESTLER&quot;,
                 &quot;territoryId&quot;: 8,
                 &quot;promotionId&quot;: 3,
-                &quot;popularity&quot;: 92,
-                &quot;strength&quot;: 84,
-                &quot;skill&quot;: 83,
-                &quot;agility&quot;: 60,
-                &quot;stamina&quot;: 55,
-                &quot;attitude&quot;: 66,
+                &quot;popularity&quot;: 99,
+                &quot;strength&quot;: 99,
+                &quot;skill&quot;: 99,
+                &quot;agility&quot;: 99,
+                &quot;stamina&quot;: 99,
+                &quot;attitude&quot;: 99,
                 &quot;managerId&quot;: null,
                 &quot;partnerId&quot;: null,
                 &quot;storyFriendId&quot;: null,
                 &quot;storyEnemyId&quot;: null,
                 &quot;realFriendId&quot;: null,
                 &quot;realEnemyId&quot;: null,
-                &quot;isWinner&quot;: 0,
-                &quot;finishType&quot;: &quot;COUNTOUT&quot;
+                &quot;isWinner&quot;: 1,
+                &quot;finishType&quot;: &quot;PIN&quot;
             },
             {
-                &quot;id&quot;: 8,
+                &quot;id&quot;: 5,
                 &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
                 &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;name&quot;: &quot;Morgan Heller Sr.&quot;,
-                &quot;gender&quot;: &quot;MALE&quot;,
-                &quot;finisherName&quot;: &quot;a&quot;,
-                &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                &quot;role&quot;: &quot;WRESTLER&quot;,
-                &quot;territoryId&quot;: 36,
+                &quot;name&quot;: &quot;Mr. Marcus Labadie I&quot;,
+                &quot;gender&quot;: &quot;N/A&quot;,
+                &quot;finisherName&quot;: &quot;d&quot;,
+                &quot;allegiance&quot;: &quot;HEEL&quot;,
+                &quot;role&quot;: &quot;BOOKER&quot;,
+                &quot;territoryId&quot;: 23,
                 &quot;promotionId&quot;: 7,
-                &quot;popularity&quot;: 86,
-                &quot;strength&quot;: 63,
-                &quot;skill&quot;: 64,
-                &quot;agility&quot;: 51,
-                &quot;stamina&quot;: 59,
-                &quot;attitude&quot;: 85,
+                &quot;popularity&quot;: 79,
+                &quot;strength&quot;: 83,
+                &quot;skill&quot;: 57,
+                &quot;agility&quot;: 69,
+                &quot;stamina&quot;: 67,
+                &quot;attitude&quot;: 68,
                 &quot;managerId&quot;: null,
                 &quot;partnerId&quot;: null,
                 &quot;storyFriendId&quot;: null,
@@ -7371,7 +6028,7 @@ access-control-allow-origin: *
                 &quot;realFriendId&quot;: null,
                 &quot;realEnemyId&quot;: null,
                 &quot;isWinner&quot;: 0,
-                &quot;finishType&quot;: &quot;TIMEOUT&quot;
+                &quot;finishType&quot;: &quot;PIN&quot;
             }
         ],
         &quot;stipulations&quot;: []
@@ -7465,7 +6122,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-v1-events--id-">Update the specified resource in storage.</h2>
+                    <h2 id="events-PUTapi-v1-events--id-">Update an event&#039;s information.</h2>
 
 <p>
 </p>
@@ -7593,7 +6250,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-v1-events--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="events-DELETEapi-v1-events--id-">Delete an event.</h2>
 
 <p>
 </p>
@@ -7717,7 +6374,1240 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-v1-shows">Display a listing of the resource.</h2>
+                    <h2 id="events-PUTapi-v1-events--event_id--wrestlers">Assign wrestlers to an event.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-v1-events--event_id--wrestlers">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/v1/events/1/wrestlers" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"wrestlerIds\": [
+        16
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/events/1/wrestlers"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "wrestlerIds": [
+        16
+    ]
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-v1-events--event_id--wrestlers">
+</span>
+<span id="execution-results-PUTapi-v1-events--event_id--wrestlers" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-events--event_id--wrestlers"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-events--event_id--wrestlers"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-events--event_id--wrestlers" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-events--event_id--wrestlers">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-v1-events--event_id--wrestlers" data-method="PUT"
+      data-path="api/v1/events/{event_id}/wrestlers"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-events--event_id--wrestlers', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-events--event_id--wrestlers"
+                    onclick="tryItOut('PUTapi-v1-events--event_id--wrestlers');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-events--event_id--wrestlers"
+                    onclick="cancelTryOut('PUTapi-v1-events--event_id--wrestlers');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-events--event_id--wrestlers"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/events/{event_id}/wrestlers</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="event_id"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the event. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
+<small>integer[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="wrestlerIds[0]"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
+               data-component="body">
+        <input type="number" style="display: none"
+               name="wrestlerIds[1]"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the wrestlers table.</p>
+        </div>
+        </form>
+
+                    <h2 id="events-PATCHapi-v1-events--event_id--simulate">Simulate an event.</h2>
+
+<p>
+</p>
+
+<p>Modifies the is_winner and finish_type of the event_wrestler row</p>
+
+<span id="example-requests-PATCHapi-v1-events--event_id--simulate">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost:8000/api/v1/events/1/simulate" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"results\": [
+        {
+            \"wrestlerId\": 16,
+            \"isWinner\": true,
+            \"finishType\": \"SUBMISSION\"
+        }
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/events/1/simulate"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "results": [
+        {
+            "wrestlerId": 16,
+            "isWinner": true,
+            "finishType": "SUBMISSION"
+        }
+    ]
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-v1-events--event_id--simulate">
+</span>
+<span id="execution-results-PATCHapi-v1-events--event_id--simulate" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-v1-events--event_id--simulate"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-v1-events--event_id--simulate"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-v1-events--event_id--simulate" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-v1-events--event_id--simulate">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-v1-events--event_id--simulate" data-method="PATCH"
+      data-path="api/v1/events/{event_id}/simulate"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-v1-events--event_id--simulate', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-v1-events--event_id--simulate"
+                    onclick="tryItOut('PATCHapi-v1-events--event_id--simulate');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-v1-events--event_id--simulate"
+                    onclick="cancelTryOut('PATCHapi-v1-events--event_id--simulate');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-v1-events--event_id--simulate"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/v1/events/{event_id}/simulate</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="event_id"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the event. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>results</code></b>&nbsp;&nbsp;
+<small>object[]</small>&nbsp;
+ &nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 14px; clear: unset;">
+                        <b style="line-height: 2;"><code>wrestlerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="results.0.wrestlerId"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
+               value="16"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
+                    </div>
+                                                                <div style="margin-left: 14px; clear: unset;">
+                        <b style="line-height: 2;"><code>isWinner</code></b>&nbsp;&nbsp;
+<small>boolean</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <label data-endpoint="PATCHapi-v1-events--event_id--simulate" style="display: none">
+            <input type="radio" name="results.0.isWinner"
+                   value="true"
+                   data-endpoint="PATCHapi-v1-events--event_id--simulate"
+                   data-component="body"             >
+            <code>true</code>
+        </label>
+        <label data-endpoint="PATCHapi-v1-events--event_id--simulate" style="display: none">
+            <input type="radio" name="results.0.isWinner"
+                   value="false"
+                   data-endpoint="PATCHapi-v1-events--event_id--simulate"
+                   data-component="body"             >
+            <code>false</code>
+        </label>
+    <br>
+<p>Example: <code>true</code></p>
+                    </div>
+                                                                <div style="margin-left: 14px; clear: unset;">
+                        <b style="line-height: 2;"><code>finishType</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="results.0.finishType"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
+               value="SUBMISSION"
+               data-component="body">
+    <br>
+<p>Example: <code>SUBMISSION</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>UNFINISHED</code></li> <li><code>PIN</code></li> <li><code>SUBMISSION</code></li> <li><code>DISQUALIFICATION</code></li> <li><code>COUNTOUT</code></li> <li><code>TIMEOUT</code></li> <li><code>ELIMINATION</code></li> <li><code>SPECIAL</code></li></ul>
+                    </div>
+                                    </details>
+        </div>
+        </form>
+
+                    <h2 id="events-PUTapi-v1-events--event_id--stipulations">Set the stipulations for an event.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-v1-events--event_id--stipulations">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/v1/events/1/stipulations" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"stipulationIds\": [
+        16
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/events/1/stipulations"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "stipulationIds": [
+        16
+    ]
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-v1-events--event_id--stipulations">
+</span>
+<span id="execution-results-PUTapi-v1-events--event_id--stipulations" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-events--event_id--stipulations"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-events--event_id--stipulations"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-events--event_id--stipulations" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-events--event_id--stipulations">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-v1-events--event_id--stipulations" data-method="PUT"
+      data-path="api/v1/events/{event_id}/stipulations"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-events--event_id--stipulations', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-events--event_id--stipulations"
+                    onclick="tryItOut('PUTapi-v1-events--event_id--stipulations');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-events--event_id--stipulations"
+                    onclick="cancelTryOut('PUTapi-v1-events--event_id--stipulations');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-events--event_id--stipulations"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/events/{event_id}/stipulations</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="event_id"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the event. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>stipulationIds</code></b>&nbsp;&nbsp;
+<small>integer[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="stipulationIds[0]"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
+               data-component="body">
+        <input type="number" style="display: none"
+               name="stipulationIds[1]"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the stipulations table.</p>
+        </div>
+        </form>
+
+                <h1 id="match-types">Match Types</h1>
+
+    
+
+                                <h2 id="match-types-GETapi-v1-match_types">Display all match types.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-match_types">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/match_types" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/match_types"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-match_types">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Singles&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Tag Team&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Team&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Triple Threat&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Fatal Four-way&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Handicap&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Gauntlet&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Battle Royale&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Countdown Elimination&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-match_types" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-match_types"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-match_types"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-match_types" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-match_types">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-match_types" data-method="GET"
+      data-path="api/v1/match_types"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-match_types', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-match_types"
+                    onclick="tryItOut('GETapi-v1-match_types');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-match_types"
+                    onclick="cancelTryOut('GETapi-v1-match_types');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-match_types"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/match_types</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-match_types"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-match_types"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="match-types-GETapi-v1-match_types--id-">Display one match type.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-match_types--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/match_types/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/match_types/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-match_types--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Singles&quot;
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-match_types--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-match_types--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-match_types--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-match_types--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-match_types--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-match_types--id-" data-method="GET"
+      data-path="api/v1/match_types/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-match_types--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-match_types--id-"
+                    onclick="tryItOut('GETapi-v1-match_types--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-match_types--id-"
+                    onclick="cancelTryOut('GETapi-v1-match_types--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-match_types--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/match_types/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-match_types--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-match_types--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-match_types--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the match type. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                <h1 id="promotions">Promotions</h1>
+
+    
+
+                                <h2 id="promotions-GETapi-v1-promotions">Display all promotions.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-promotions">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/promotions" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/promotions"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-promotions">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Wrestling School&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Maple Leaf Grappling&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Super Lucha Libre&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Wrestling Revolution&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Rising Sun Puroresu&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Weekend Warriors&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Strong Style Wrestling&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;All American Wrestling&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Federation Online&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-promotions" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-promotions"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-promotions"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-promotions" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-promotions">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-promotions" data-method="GET"
+      data-path="api/v1/promotions"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-promotions', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-promotions"
+                    onclick="tryItOut('GETapi-v1-promotions');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-promotions"
+                    onclick="cancelTryOut('GETapi-v1-promotions');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-promotions"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/promotions</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-promotions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-promotions"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="promotions-GETapi-v1-promotions--id-">Display one promotion.</h2>
+
+<p>
+</p>
+
+<p>Also shows the wrestlers and championships attributed to this promotion.</p>
+
+<span id="example-requests-GETapi-v1-promotions--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/promotions/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/promotions/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-promotions--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Wrestling School&quot;,
+        &quot;wrestlers&quot;: [
+            {
+                &quot;id&quot;: 3,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;name&quot;: &quot;Amani Ruecker&quot;,
+                &quot;gender&quot;: &quot;N/A&quot;,
+                &quot;finisherName&quot;: &quot;o&quot;,
+                &quot;allegiance&quot;: &quot;FACE&quot;,
+                &quot;role&quot;: &quot;REFEREE&quot;,
+                &quot;territoryId&quot;: 27,
+                &quot;promotionId&quot;: 1,
+                &quot;popularity&quot;: 56,
+                &quot;strength&quot;: 57,
+                &quot;skill&quot;: 93,
+                &quot;agility&quot;: 60,
+                &quot;stamina&quot;: 68,
+                &quot;attitude&quot;: 62,
+                &quot;managerId&quot;: null,
+                &quot;partnerId&quot;: null,
+                &quot;storyFriendId&quot;: null,
+                &quot;storyEnemyId&quot;: null,
+                &quot;realFriendId&quot;: null,
+                &quot;realEnemyId&quot;: null
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;name&quot;: &quot;Broderick Nolan&quot;,
+                &quot;gender&quot;: &quot;MALE&quot;,
+                &quot;finisherName&quot;: &quot;t&quot;,
+                &quot;allegiance&quot;: &quot;TWEENER&quot;,
+                &quot;role&quot;: &quot;MANAGER&quot;,
+                &quot;territoryId&quot;: 19,
+                &quot;promotionId&quot;: 1,
+                &quot;popularity&quot;: 95,
+                &quot;strength&quot;: 89,
+                &quot;skill&quot;: 73,
+                &quot;agility&quot;: 59,
+                &quot;stamina&quot;: 54,
+                &quot;attitude&quot;: 69,
+                &quot;managerId&quot;: null,
+                &quot;partnerId&quot;: null,
+                &quot;storyFriendId&quot;: null,
+                &quot;storyEnemyId&quot;: null,
+                &quot;realFriendId&quot;: null,
+                &quot;realEnemyId&quot;: null
+            }
+        ],
+        &quot;championships&quot;: [
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Prof. Dayna Zboncak V&quot;,
+                &quot;division&quot;: &quot;WOMENS&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Ransom Fisher&quot;,
+                &quot;division&quot;: &quot;TAG&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;name&quot;: &quot;Lela Turner&quot;,
+                &quot;division&quot;: &quot;WORLD&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 16,
+                &quot;name&quot;: &quot;Araceli Dietrich&quot;,
+                &quot;division&quot;: &quot;TAG&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 23,
+                &quot;name&quot;: &quot;Ines Cole&quot;,
+                &quot;division&quot;: &quot;WORLD&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 28,
+                &quot;name&quot;: &quot;Jadyn Reynolds PhD&quot;,
+                &quot;division&quot;: &quot;WORLD&quot;,
+                &quot;promotionId&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            }
+        ]
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-promotions--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-promotions--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-promotions--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-promotions--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-promotions--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-promotions--id-" data-method="GET"
+      data-path="api/v1/promotions/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-promotions--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-promotions--id-"
+                    onclick="tryItOut('GETapi-v1-promotions--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-promotions--id-"
+                    onclick="cancelTryOut('GETapi-v1-promotions--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-promotions--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/promotions/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-promotions--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-promotions--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-promotions--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the promotion. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                <h1 id="shows">Shows</h1>
+
+    
+
+                                <h2 id="shows-GETapi-v1-shows">Display all shows.</h2>
 
 <p>
 </p>
@@ -7730,7 +7620,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/shows" \
+    --get "http://localhost:8000/api/v1/shows?id=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01&amp;name=name%5Beq%5D%3DMonday+Night+Showdown&amp;year=0&amp;month=0&amp;week=0&amp;type=type%5Beq%5D%3DPPV&amp;territoryId=0" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -7739,6 +7629,20 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost:8000/api/v1/shows"
 );
+
+const params = {
+    "id": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+    "name": "name[eq]=Monday Night Showdown",
+    "year": "0",
+    "month": "0",
+    "week": "0",
+    "type": "type[eq]=PPV",
+    "territoryId": "0",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -8283,9 +8187,118 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-shows"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by show ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-shows"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-shows"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="GETapi-v1-shows"
+               value="name[eq]=Monday Night Showdown"
+               data-component="query">
+    <br>
+<p>Filter by show name. Operators: [eq]. Example: <code>name[eq]=Monday Night Showdown</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>year</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="year"                data-endpoint="GETapi-v1-shows"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by year. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>month</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="month"                data-endpoint="GETapi-v1-shows"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by month. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>week</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="week"                data-endpoint="GETapi-v1-shows"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by week. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="GETapi-v1-shows"
+               value="type[eq]=PPV"
+               data-component="query">
+    <br>
+<p>Filter by show type (TV, PPV, SPECIAL). Operators: [eq], [ne]. Example: <code>type[eq]=PPV</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="territoryId"                data-endpoint="GETapi-v1-shows"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by territory ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-shows">Store a newly created resource in storage.</h2>
+                    <h2 id="shows-POSTapi-v1-shows">Create a new show.</h2>
 
 <p>
 </p>
@@ -8305,7 +8318,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"year\": 16,
     \"month\": 4,
     \"week\": 3,
-    \"type\": \"SPECIAL\",
+    \"type\": \"TV\",
     \"territoryId\": 16
 }"
 </code></pre></div>
@@ -8325,7 +8338,7 @@ let body = {
     "year": 16,
     "month": 4,
     "week": 3,
-    "type": "SPECIAL",
+    "type": "TV",
     "territoryId": 16
 };
 
@@ -8466,10 +8479,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-shows"
-               value="SPECIAL"
+               value="TV"
                data-component="body">
     <br>
-<p>Example: <code>SPECIAL</code></p>
+<p>Example: <code>TV</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TV</code></li> <li><code>PPV</code></li> <li><code>SPECIAL</code></li></ul>
         </div>
@@ -8487,12 +8500,12 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-v1-shows--id-">Display the specified resource.</h2>
+                    <h2 id="shows-GETapi-v1-shows--id-">Display one show.</h2>
 
 <p>
 </p>
 
-
+<p>Also shows the show's events, each event's wrestlers and its stipulations.</p>
 
 <span id="example-requests-GETapi-v1-shows--id-">
 <blockquote>Example request:</blockquote>
@@ -8830,7 +8843,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-v1-shows--id-">Update the specified resource in storage.</h2>
+                    <h2 id="shows-PUTapi-v1-shows--id-">Update a show&#039;s information.</h2>
 
 <p>
 </p>
@@ -8958,7 +8971,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-v1-shows--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="shows-DELETEapi-v1-shows--id-">Delete a show.</h2>
 
 <p>
 </p>
@@ -9082,12 +9095,371 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-v1-teams">Display a listing of the resource.</h2>
+                <h1 id="stipulations">Stipulations</h1>
+
+    
+
+                                <h2 id="stipulations-GETapi-v1-stipulations">Display all stipulations.</h2>
 
 <p>
 </p>
 
 
+
+<span id="example-requests-GETapi-v1-stipulations">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/stipulations" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/stipulations"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-stipulations">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Hardcore&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Open Challenge&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Confrontation&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Best of Three&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Ironman&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Last Laugh&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Submission&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Last Man Standing&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Street Fight&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;First Blood&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;Sumo Contest&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;name&quot;: &quot;Shoot Fight&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;name&quot;: &quot;Tag Elimination&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;name&quot;: &quot;War&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;name&quot;: &quot;Elimination&quot;
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;name&quot;: &quot;Escape to Victory&quot;
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;name&quot;: &quot;Furniture Smash&quot;
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;name&quot;: &quot;Ladder&quot;
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;name&quot;: &quot;Hell in a Cell&quot;
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;name&quot;: &quot;Training&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-stipulations" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-stipulations"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-stipulations"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-stipulations" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-stipulations">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-stipulations" data-method="GET"
+      data-path="api/v1/stipulations"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-stipulations', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-stipulations"
+                    onclick="tryItOut('GETapi-v1-stipulations');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-stipulations"
+                    onclick="cancelTryOut('GETapi-v1-stipulations');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-stipulations"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/stipulations</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-stipulations"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-stipulations"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="stipulations-GETapi-v1-stipulations--id-">Display one stipulation.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-stipulations--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/stipulations/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/stipulations/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-stipulations--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Hardcore&quot;
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-stipulations--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-stipulations--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-stipulations--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-stipulations--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-stipulations--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-stipulations--id-" data-method="GET"
+      data-path="api/v1/stipulations/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-stipulations--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-stipulations--id-"
+                    onclick="tryItOut('GETapi-v1-stipulations--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-stipulations--id-"
+                    onclick="cancelTryOut('GETapi-v1-stipulations--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-stipulations--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/stipulations/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-stipulations--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-stipulations--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-stipulations--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the stipulation. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                <h1 id="teams">Teams</h1>
+
+    
+
+                                <h2 id="teams-GETapi-v1-teams">Display all teams.</h2>
+
+<p>
+</p>
+
+<p>Also shows the wrestlers associated to each team.</p>
 
 <span id="example-requests-GETapi-v1-teams">
 <blockquote>Example request:</blockquote>
@@ -9095,7 +9467,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/teams" \
+    --get "http://localhost:8000/api/v1/teams?id=0&amp;name=name%5Beq%5D%3DThe+Bloodline&amp;yearStart=0&amp;monthStart=0&amp;weekStart=0&amp;yearEnd=0&amp;monthEnd=0&amp;weekEnd=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -9104,6 +9476,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost:8000/api/v1/teams"
 );
+
+const params = {
+    "id": "0",
+    "name": "name[eq]=The Bloodline",
+    "yearStart": "0",
+    "monthStart": "0",
+    "weekStart": "0",
+    "yearEnd": "0",
+    "monthEnd": "0",
+    "weekEnd": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -10116,9 +10503,130 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by team ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="GETapi-v1-teams"
+               value="name[eq]=The Bloodline"
+               data-component="query">
+    <br>
+<p>Filter by team name. Operators: [eq]. Example: <code>name[eq]=The Bloodline</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearStart"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start year. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>monthStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthStart"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start month. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>weekStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekStart"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start week. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearEnd"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end year. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthEnd"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end month. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekEnd"                data-endpoint="GETapi-v1-teams"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end week. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-teams"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-teams"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-teams">Store a newly created resource in storage.</h2>
+                    <h2 id="teams-POSTapi-v1-teams">Create a new team.</h2>
 
 <p>
 </p>
@@ -10334,12 +10842,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-v1-teams--id-">Display the specified resource.</h2>
+                    <h2 id="teams-GETapi-v1-teams--id-">Display one team.</h2>
 
 <p>
 </p>
 
-
+<p>Also shows the wrestlers associated with the team.</p>
 
 <span id="example-requests-GETapi-v1-teams--id-">
 <blockquote>Example request:</blockquote>
@@ -10583,7 +11091,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-v1-teams--id-">Update the specified resource in storage.</h2>
+                    <h2 id="teams-PUTapi-v1-teams--id-">Update a team&#039;s information.</h2>
 
 <p>
 </p>
@@ -10711,7 +11219,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-v1-teams--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="teams-DELETEapi-v1-teams--id-">Delete a team.</h2>
 
 <p>
 </p>
@@ -10835,12 +11343,1092 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-v1-title_reigns">Display a listing of the resource.</h2>
+                    <h2 id="teams-PUTapi-v1-teams--team_id--wrestlers">Assign wrestlers to a team.</h2>
+
+<p>
+</p>
+
+<p>Replaces all members of a team to the list of wrestlers provided.</p>
+
+<span id="example-requests-PUTapi-v1-teams--team_id--wrestlers">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/v1/teams/1/wrestlers" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"wrestlerIds\": [
+        16
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/teams/1/wrestlers"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "wrestlerIds": [
+        16
+    ]
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-v1-teams--team_id--wrestlers">
+</span>
+<span id="execution-results-PUTapi-v1-teams--team_id--wrestlers" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-teams--team_id--wrestlers"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-teams--team_id--wrestlers"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-teams--team_id--wrestlers" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-teams--team_id--wrestlers">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-v1-teams--team_id--wrestlers" data-method="PUT"
+      data-path="api/v1/teams/{team_id}/wrestlers"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-teams--team_id--wrestlers', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-teams--team_id--wrestlers"
+                    onclick="tryItOut('PUTapi-v1-teams--team_id--wrestlers');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-teams--team_id--wrestlers"
+                    onclick="cancelTryOut('PUTapi-v1-teams--team_id--wrestlers');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-teams--team_id--wrestlers"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/teams/{team_id}/wrestlers</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="team_id"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the team. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
+<small>integer[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="wrestlerIds[0]"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+               data-component="body">
+        <input type="number" style="display: none"
+               name="wrestlerIds[1]"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the wrestlers table.</p>
+        </div>
+        </form>
+
+                    <h2 id="teams-POSTapi-v1-teams--team_id--wrestlers">Add wrestlers to a team.</h2>
+
+<p>
+</p>
+
+<p>Appends wrestlers to an already existing roster of a team.</p>
+
+<span id="example-requests-POSTapi-v1-teams--team_id--wrestlers">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost:8000/api/v1/teams/1/wrestlers" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"wrestlerIds\": [
+        16
+    ]
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/teams/1/wrestlers"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "wrestlerIds": [
+        16
+    ]
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-v1-teams--team_id--wrestlers">
+</span>
+<span id="execution-results-POSTapi-v1-teams--team_id--wrestlers" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-teams--team_id--wrestlers"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-teams--team_id--wrestlers"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-teams--team_id--wrestlers" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-teams--team_id--wrestlers">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-v1-teams--team_id--wrestlers" data-method="POST"
+      data-path="api/v1/teams/{team_id}/wrestlers"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-teams--team_id--wrestlers', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-teams--team_id--wrestlers"
+                    onclick="tryItOut('POSTapi-v1-teams--team_id--wrestlers');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-teams--team_id--wrestlers"
+                    onclick="cancelTryOut('POSTapi-v1-teams--team_id--wrestlers');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-teams--team_id--wrestlers"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/teams/{team_id}/wrestlers</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="team_id"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the team. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
+<small>integer[]</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="wrestlerIds[0]"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               data-component="body">
+        <input type="number" style="display: none"
+               name="wrestlerIds[1]"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               data-component="body">
+    <br>
+<p>The <code>id</code> of an existing record in the wrestlers table.</p>
+        </div>
+        </form>
+
+                    <h2 id="teams-PATCHapi-v1-teams--team_id--end">Disband a team.</h2>
+
+<p>
+</p>
+
+<p>Updates the end dates of a team.</p>
+
+<span id="example-requests-PATCHapi-v1-teams--team_id--end">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost:8000/api/v1/teams/1/end" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"yearEnd\": 16,
+    \"monthEnd\": 4,
+    \"weekEnd\": 3
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/teams/1/end"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "yearEnd": 16,
+    "monthEnd": 4,
+    "weekEnd": 3
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-v1-teams--team_id--end">
+</span>
+<span id="execution-results-PATCHapi-v1-teams--team_id--end" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-v1-teams--team_id--end"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-v1-teams--team_id--end"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-v1-teams--team_id--end" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-v1-teams--team_id--end">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-v1-teams--team_id--end" data-method="PATCH"
+      data-path="api/v1/teams/{team_id}/end"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-v1-teams--team_id--end', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-v1-teams--team_id--end"
+                    onclick="tryItOut('PATCHapi-v1-teams--team_id--end');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-v1-teams--team_id--end"
+                    onclick="cancelTryOut('PATCHapi-v1-teams--team_id--end');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-v1-teams--team_id--end"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/v1/teams/{team_id}/end</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="team_id"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the team. Example: <code>1</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+        </form>
+
+                <h1 id="territories">Territories</h1>
+
+    
+
+                                <h2 id="territories-GETapi-v1-territories">Display all territories.</h2>
 
 <p>
 </p>
 
 
+
+<span id="example-requests-GETapi-v1-territories">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/territories" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/territories"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-territories">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Alaska&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Canada&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Nunavut&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Greenland&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Iceland&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Quebec&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;North East USA&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;South East USA&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;South West USA&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;North West USA&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;Caribbean&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;name&quot;: &quot;Mexico&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;name&quot;: &quot;Colombia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;name&quot;: &quot;Brazil&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;name&quot;: &quot;Argentina&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;name&quot;: &quot;United Kingdom&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;name&quot;: &quot;West Europe&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;name&quot;: &quot;East Europe&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;name&quot;: &quot;Scandinavia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;name&quot;: &quot;Svalbard&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 21,
+            &quot;name&quot;: &quot;West Russia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 22,
+            &quot;name&quot;: &quot;Russia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 23,
+            &quot;name&quot;: &quot;Siberia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 24,
+            &quot;name&quot;: &quot;Japan&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 25,
+            &quot;name&quot;: &quot;Korea&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 26,
+            &quot;name&quot;: &quot;China&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 27,
+            &quot;name&quot;: &quot;Mongolia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 28,
+            &quot;name&quot;: &quot;Kazakhstan&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 29,
+            &quot;name&quot;: &quot;Afghanistan&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 30,
+            &quot;name&quot;: &quot;Iran&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 31,
+            &quot;name&quot;: &quot;Turkey&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 32,
+            &quot;name&quot;: &quot;Arabia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 33,
+            &quot;name&quot;: &quot;Egypt&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 34,
+            &quot;name&quot;: &quot;Nigeria&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 35,
+            &quot;name&quot;: &quot;Congo&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 36,
+            &quot;name&quot;: &quot;Ethiopia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 37,
+            &quot;name&quot;: &quot;South Africa&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 38,
+            &quot;name&quot;: &quot;Madagascar&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 39,
+            &quot;name&quot;: &quot;India&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 40,
+            &quot;name&quot;: &quot;Thailand&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 41,
+            &quot;name&quot;: &quot;Philippines&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 42,
+            &quot;name&quot;: &quot;Indonesia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 43,
+            &quot;name&quot;: &quot;Papua New Guinea&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 44,
+            &quot;name&quot;: &quot;Australia&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 45,
+            &quot;name&quot;: &quot;New Zealand&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        },
+        {
+            &quot;id&quot;: 46,
+            &quot;name&quot;: &quot;Antarctica&quot;,
+            &quot;likes&quot;: null,
+            &quot;dislikes&quot;: null,
+            &quot;updatedAt&quot;: null
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-territories" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-territories"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-territories"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-territories" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-territories">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-territories" data-method="GET"
+      data-path="api/v1/territories"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-territories', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-territories"
+                    onclick="tryItOut('GETapi-v1-territories');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-territories"
+                    onclick="cancelTryOut('GETapi-v1-territories');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-territories"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/territories</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-territories"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-territories"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="territories-GETapi-v1-territories--id-">Display one territory.</h2>
+
+<p>
+</p>
+
+<p>Also displays the wrestlers from that territory.</p>
+
+<span id="example-requests-GETapi-v1-territories--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/territories/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/territories/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-v1-territories--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Alaska&quot;,
+        &quot;likes&quot;: null,
+        &quot;dislikes&quot;: null,
+        &quot;updatedAt&quot;: null,
+        &quot;wrestlers&quot;: []
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-territories--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-territories--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-territories--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-territories--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-territories--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-v1-territories--id-" data-method="GET"
+      data-path="api/v1/territories/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-territories--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-territories--id-"
+                    onclick="tryItOut('GETapi-v1-territories--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-territories--id-"
+                    onclick="cancelTryOut('GETapi-v1-territories--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-territories--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/territories/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-v1-territories--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-v1-territories--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-territories--id-"
+               value="1"
+               data-component="url">
+    <br>
+<p>The ID of the territory. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                <h1 id="title-reigns">Title Reigns</h1>
+
+    
+
+                                <h2 id="title-reigns-GETapi-v1-title_reigns">Display all title reigns.</h2>
+
+<p>
+</p>
+
+<p>Also shows the wrestlers associated with each title reign.</p>
 
 <span id="example-requests-GETapi-v1-title_reigns">
 <blockquote>Example request:</blockquote>
@@ -10848,7 +12436,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/title_reigns" \
+    --get "http://localhost:8000/api/v1/title_reigns?id=0&amp;championshipId=0&amp;yearStart=0&amp;monthStart=0&amp;weekStart=0&amp;yearEnd=0&amp;monthEnd=0&amp;weekEnd=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
@@ -10857,6 +12445,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost:8000/api/v1/title_reigns"
 );
+
+const params = {
+    "id": "0",
+    "championshipId": "0",
+    "yearStart": "0",
+    "monthStart": "0",
+    "weekStart": "0",
+    "yearEnd": "0",
+    "monthEnd": "0",
+    "weekEnd": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
@@ -15301,9 +16904,130 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by title reign ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="championshipId"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by championship ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearStart"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start year. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>monthStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthStart"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start month. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>weekStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekStart"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by start week. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearEnd"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end year. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthEnd"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end month. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekEnd"                data-endpoint="GETapi-v1-title_reigns"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by end week. Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-title_reigns"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-title_reigns"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-title_reigns">Store a newly created resource in storage.</h2>
+                    <h2 id="title-reigns-POSTapi-v1-title_reigns">Create a new title reign.</h2>
 
 <p>
 </p>
@@ -15519,12 +17243,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-v1-title_reigns--id-">Display the specified resource.</h2>
+                    <h2 id="title-reigns-GETapi-v1-title_reigns--id-">Display one title reign.</h2>
 
 <p>
 </p>
 
-
+<p>Also shows the wrestler associated with this title reign.</p>
 
 <span id="example-requests-GETapi-v1-title_reigns--id-">
 <blockquote>Example request:</blockquote>
@@ -15720,7 +17444,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-v1-title_reigns--id-">Update the specified resource in storage.</h2>
+                    <h2 id="title-reigns-PUTapi-v1-title_reigns--id-">Update a title reign&#039;s information.</h2>
 
 <p>
 </p>
@@ -15848,7 +17572,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-v1-title_reigns--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="title-reigns-DELETEapi-v1-title_reigns--id-">Delete a title reign.</h2>
 
 <p>
 </p>
@@ -15972,2726 +17696,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-GETapi-v1-match_types">Display a listing of the resource.</h2>
+                    <h2 id="title-reigns-PUTapi-v1-title_reigns--titleReign_id--wrestlers">Assign wrestlers to a title reign.</h2>
 
 <p>
 </p>
 
-
-
-<span id="example-requests-GETapi-v1-match_types">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/match_types" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/match_types"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-match_types">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Singles&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Tag Team&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Team&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Triple Threat&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Fatal Four-way&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Handicap&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Gauntlet&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;Battle Royale&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Countdown Elimination&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-match_types" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-match_types"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-match_types"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-match_types" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-match_types">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-match_types" data-method="GET"
-      data-path="api/v1/match_types"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-match_types', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-match_types"
-                    onclick="tryItOut('GETapi-v1-match_types');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-match_types"
-                    onclick="cancelTryOut('GETapi-v1-match_types');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-match_types"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/match_types</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-match_types"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-match_types"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-v1-match_types--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-match_types--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/match_types/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/match_types/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-match_types--id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;Singles&quot;
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-match_types--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-match_types--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-match_types--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-match_types--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-match_types--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-match_types--id-" data-method="GET"
-      data-path="api/v1/match_types/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-match_types--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-match_types--id-"
-                    onclick="tryItOut('GETapi-v1-match_types--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-match_types--id-"
-                    onclick="cancelTryOut('GETapi-v1-match_types--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-match_types--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/match_types/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-match_types--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-match_types--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-match_types--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the match type. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-v1-promotions">Display a listing of the resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-promotions">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/promotions" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/promotions"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-promotions">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Wrestling School&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Maple Leaf Grappling&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Super Lucha Libre&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Wrestling Revolution&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Rising Sun Puroresu&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Weekend Warriors&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Strong Style Wrestling&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;All American Wrestling&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Federation Online&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-promotions" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-promotions"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-promotions"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-promotions" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-promotions">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-promotions" data-method="GET"
-      data-path="api/v1/promotions"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-promotions', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-promotions"
-                    onclick="tryItOut('GETapi-v1-promotions');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-promotions"
-                    onclick="cancelTryOut('GETapi-v1-promotions');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-promotions"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/promotions</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-promotions"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-promotions"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-v1-promotions--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-promotions--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/promotions/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/promotions/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-promotions--id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;Wrestling School&quot;,
-        &quot;wrestlers&quot;: [
-            {
-                &quot;id&quot;: 3,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;name&quot;: &quot;Amani Ruecker&quot;,
-                &quot;gender&quot;: &quot;N/A&quot;,
-                &quot;finisherName&quot;: &quot;o&quot;,
-                &quot;allegiance&quot;: &quot;FACE&quot;,
-                &quot;role&quot;: &quot;REFEREE&quot;,
-                &quot;territoryId&quot;: 27,
-                &quot;promotionId&quot;: 1,
-                &quot;popularity&quot;: 56,
-                &quot;strength&quot;: 57,
-                &quot;skill&quot;: 93,
-                &quot;agility&quot;: 60,
-                &quot;stamina&quot;: 68,
-                &quot;attitude&quot;: 62,
-                &quot;managerId&quot;: null,
-                &quot;partnerId&quot;: null,
-                &quot;storyFriendId&quot;: null,
-                &quot;storyEnemyId&quot;: null,
-                &quot;realFriendId&quot;: null,
-                &quot;realEnemyId&quot;: null
-            },
-            {
-                &quot;id&quot;: 6,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;name&quot;: &quot;Broderick Nolan&quot;,
-                &quot;gender&quot;: &quot;MALE&quot;,
-                &quot;finisherName&quot;: &quot;t&quot;,
-                &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                &quot;role&quot;: &quot;MANAGER&quot;,
-                &quot;territoryId&quot;: 19,
-                &quot;promotionId&quot;: 1,
-                &quot;popularity&quot;: 95,
-                &quot;strength&quot;: 89,
-                &quot;skill&quot;: 73,
-                &quot;agility&quot;: 59,
-                &quot;stamina&quot;: 54,
-                &quot;attitude&quot;: 69,
-                &quot;managerId&quot;: null,
-                &quot;partnerId&quot;: null,
-                &quot;storyFriendId&quot;: null,
-                &quot;storyEnemyId&quot;: null,
-                &quot;realFriendId&quot;: null,
-                &quot;realEnemyId&quot;: null
-            }
-        ],
-        &quot;championships&quot;: [
-            {
-                &quot;id&quot;: 2,
-                &quot;name&quot;: &quot;Prof. Dayna Zboncak V&quot;,
-                &quot;division&quot;: &quot;WOMENS&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;Ransom Fisher&quot;,
-                &quot;division&quot;: &quot;TAG&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 9,
-                &quot;name&quot;: &quot;Lela Turner&quot;,
-                &quot;division&quot;: &quot;WORLD&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 16,
-                &quot;name&quot;: &quot;Araceli Dietrich&quot;,
-                &quot;division&quot;: &quot;TAG&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 23,
-                &quot;name&quot;: &quot;Ines Cole&quot;,
-                &quot;division&quot;: &quot;WORLD&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 28,
-                &quot;name&quot;: &quot;Jadyn Reynolds PhD&quot;,
-                &quot;division&quot;: &quot;WORLD&quot;,
-                &quot;promotionId&quot;: 1,
-                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
-            }
-        ]
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-promotions--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-promotions--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-promotions--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-promotions--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-promotions--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-promotions--id-" data-method="GET"
-      data-path="api/v1/promotions/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-promotions--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-promotions--id-"
-                    onclick="tryItOut('GETapi-v1-promotions--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-promotions--id-"
-                    onclick="cancelTryOut('GETapi-v1-promotions--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-promotions--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/promotions/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-promotions--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-promotions--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-promotions--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the promotion. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-v1-stipulations">Display a listing of the resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-stipulations">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/stipulations" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/stipulations"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-stipulations">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Hardcore&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Open Challenge&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Confrontation&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Best of Three&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Ironman&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Last Laugh&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;Submission&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;Last Man Standing&quot;
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;Street Fight&quot;
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;First Blood&quot;
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;Sumo Contest&quot;
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;name&quot;: &quot;Shoot Fight&quot;
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Tag Elimination&quot;
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;War&quot;
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Elimination&quot;
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;Escape to Victory&quot;
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;Furniture Smash&quot;
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;Ladder&quot;
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;Hell in a Cell&quot;
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;Training&quot;
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-stipulations" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-stipulations"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-stipulations"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-stipulations" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-stipulations">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-stipulations" data-method="GET"
-      data-path="api/v1/stipulations"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-stipulations', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-stipulations"
-                    onclick="tryItOut('GETapi-v1-stipulations');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-stipulations"
-                    onclick="cancelTryOut('GETapi-v1-stipulations');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-stipulations"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/stipulations</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-stipulations"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-stipulations"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-v1-stipulations--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-stipulations--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/stipulations/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/stipulations/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-stipulations--id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;Hardcore&quot;
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-stipulations--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-stipulations--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-stipulations--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-stipulations--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-stipulations--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-stipulations--id-" data-method="GET"
-      data-path="api/v1/stipulations/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-stipulations--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-stipulations--id-"
-                    onclick="tryItOut('GETapi-v1-stipulations--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-stipulations--id-"
-                    onclick="cancelTryOut('GETapi-v1-stipulations--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-stipulations--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/stipulations/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-stipulations--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-stipulations--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-stipulations--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the stipulation. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-v1-territories">Display a listing of the resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-territories">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/territories" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/territories"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-territories">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Alaska&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;Canada&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;Nunavut&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;Greenland&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 10,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Finn Rogahn&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;k&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 4,
-                    &quot;promotionId&quot;: 8,
-                    &quot;popularity&quot;: 54,
-                    &quot;strength&quot;: 97,
-                    &quot;skill&quot;: 71,
-                    &quot;agility&quot;: 67,
-                    &quot;stamina&quot;: 69,
-                    &quot;attitude&quot;: 63,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;Iceland&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 18,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Hermina Schumm&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;z&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;BOOKER&quot;,
-                    &quot;territoryId&quot;: 5,
-                    &quot;promotionId&quot;: 4,
-                    &quot;popularity&quot;: 66,
-                    &quot;strength&quot;: 60,
-                    &quot;skill&quot;: 76,
-                    &quot;agility&quot;: 61,
-                    &quot;stamina&quot;: 78,
-                    &quot;attitude&quot;: 80,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;name&quot;: &quot;Quebec&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;name&quot;: &quot;North East USA&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;name&quot;: &quot;South East USA&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 1,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 9,
-            &quot;name&quot;: &quot;South West USA&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 10,
-            &quot;name&quot;: &quot;North West USA&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 11,
-            &quot;name&quot;: &quot;Caribbean&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 12,
-            &quot;name&quot;: &quot;Mexico&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 13,
-            &quot;name&quot;: &quot;Colombia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 14,
-            &quot;name&quot;: &quot;Brazil&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 15,
-            &quot;name&quot;: &quot;Argentina&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 16,
-            &quot;name&quot;: &quot;United Kingdom&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 12,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Alfonzo Mitchell I&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;p&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 16,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 84,
-                    &quot;strength&quot;: 73,
-                    &quot;skill&quot;: 78,
-                    &quot;agility&quot;: 93,
-                    &quot;stamina&quot;: 59,
-                    &quot;attitude&quot;: 64,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 17,
-            &quot;name&quot;: &quot;West Europe&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 18,
-            &quot;name&quot;: &quot;East Europe&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 2,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Elissa Stamm&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;i&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 18,
-                    &quot;promotionId&quot;: 6,
-                    &quot;popularity&quot;: 72,
-                    &quot;strength&quot;: 58,
-                    &quot;skill&quot;: 65,
-                    &quot;agility&quot;: 68,
-                    &quot;stamina&quot;: 73,
-                    &quot;attitude&quot;: 52,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                },
-                {
-                    &quot;id&quot;: 14,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Mrs. Lupe Crist DVM&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;i&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 18,
-                    &quot;promotionId&quot;: 8,
-                    &quot;popularity&quot;: 73,
-                    &quot;strength&quot;: 95,
-                    &quot;skill&quot;: 88,
-                    &quot;agility&quot;: 81,
-                    &quot;stamina&quot;: 60,
-                    &quot;attitude&quot;: 65,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 19,
-            &quot;name&quot;: &quot;Scandinavia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 6,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Broderick Nolan&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;t&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 19,
-                    &quot;promotionId&quot;: 1,
-                    &quot;popularity&quot;: 95,
-                    &quot;strength&quot;: 89,
-                    &quot;skill&quot;: 73,
-                    &quot;agility&quot;: 59,
-                    &quot;stamina&quot;: 54,
-                    &quot;attitude&quot;: 69,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 20,
-            &quot;name&quot;: &quot;Svalbard&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 21,
-            &quot;name&quot;: &quot;West Russia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 22,
-            &quot;name&quot;: &quot;Russia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 11,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Raina Schaden&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;u&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 22,
-                    &quot;promotionId&quot;: 4,
-                    &quot;popularity&quot;: 75,
-                    &quot;strength&quot;: 59,
-                    &quot;skill&quot;: 81,
-                    &quot;agility&quot;: 70,
-                    &quot;stamina&quot;: 82,
-                    &quot;attitude&quot;: 92,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 23,
-            &quot;name&quot;: &quot;Siberia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 5,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Mr. Marcus Labadie I&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;d&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;BOOKER&quot;,
-                    &quot;territoryId&quot;: 23,
-                    &quot;promotionId&quot;: 7,
-                    &quot;popularity&quot;: 79,
-                    &quot;strength&quot;: 83,
-                    &quot;skill&quot;: 57,
-                    &quot;agility&quot;: 69,
-                    &quot;stamina&quot;: 67,
-                    &quot;attitude&quot;: 68,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 24,
-            &quot;name&quot;: &quot;Japan&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 25,
-            &quot;name&quot;: &quot;Korea&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 16,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Johann Nitzsche MD&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;o&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;WRESTLER&quot;,
-                    &quot;territoryId&quot;: 25,
-                    &quot;promotionId&quot;: 6,
-                    &quot;popularity&quot;: 82,
-                    &quot;strength&quot;: 86,
-                    &quot;skill&quot;: 87,
-                    &quot;agility&quot;: 53,
-                    &quot;stamina&quot;: 96,
-                    &quot;attitude&quot;: 92,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 26,
-            &quot;name&quot;: &quot;China&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 17,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Sonia Schiller Sr.&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;j&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 26,
-                    &quot;promotionId&quot;: 4,
-                    &quot;popularity&quot;: 80,
-                    &quot;strength&quot;: 68,
-                    &quot;skill&quot;: 50,
-                    &quot;agility&quot;: 88,
-                    &quot;stamina&quot;: 64,
-                    &quot;attitude&quot;: 60,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 27,
-            &quot;name&quot;: &quot;Mongolia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 3,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Amani Ruecker&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;o&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 27,
-                    &quot;promotionId&quot;: 1,
-                    &quot;popularity&quot;: 56,
-                    &quot;strength&quot;: 57,
-                    &quot;skill&quot;: 93,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 68,
-                    &quot;attitude&quot;: 62,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                },
-                {
-                    &quot;id&quot;: 9,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Karlie Boyer&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;s&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;WRESTLER&quot;,
-                    &quot;territoryId&quot;: 27,
-                    &quot;promotionId&quot;: 8,
-                    &quot;popularity&quot;: 69,
-                    &quot;strength&quot;: 85,
-                    &quot;skill&quot;: 63,
-                    &quot;agility&quot;: 87,
-                    &quot;stamina&quot;: 99,
-                    &quot;attitude&quot;: 64,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 28,
-            &quot;name&quot;: &quot;Kazakhstan&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 4,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Krystal Carroll&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;s&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;BOOKER&quot;,
-                    &quot;territoryId&quot;: 28,
-                    &quot;promotionId&quot;: 7,
-                    &quot;popularity&quot;: 93,
-                    &quot;strength&quot;: 52,
-                    &quot;skill&quot;: 59,
-                    &quot;agility&quot;: 95,
-                    &quot;stamina&quot;: 78,
-                    &quot;attitude&quot;: 56,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 29,
-            &quot;name&quot;: &quot;Afghanistan&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 30,
-            &quot;name&quot;: &quot;Iran&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 31,
-            &quot;name&quot;: &quot;Turkey&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 32,
-            &quot;name&quot;: &quot;Arabia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 33,
-            &quot;name&quot;: &quot;Egypt&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 13,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Prof. Thurman Collins&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;p&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 33,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 63,
-                    &quot;strength&quot;: 71,
-                    &quot;skill&quot;: 56,
-                    &quot;agility&quot;: 51,
-                    &quot;stamina&quot;: 70,
-                    &quot;attitude&quot;: 57,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 34,
-            &quot;name&quot;: &quot;Nigeria&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 35,
-            &quot;name&quot;: &quot;Congo&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 7,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Viola Hilpert&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;p&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 35,
-                    &quot;promotionId&quot;: 9,
-                    &quot;popularity&quot;: 65,
-                    &quot;strength&quot;: 81,
-                    &quot;skill&quot;: 86,
-                    &quot;agility&quot;: 61,
-                    &quot;stamina&quot;: 70,
-                    &quot;attitude&quot;: 73,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 36,
-            &quot;name&quot;: &quot;Ethiopia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 8,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Morgan Heller Sr.&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;a&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;WRESTLER&quot;,
-                    &quot;territoryId&quot;: 36,
-                    &quot;promotionId&quot;: 7,
-                    &quot;popularity&quot;: 86,
-                    &quot;strength&quot;: 63,
-                    &quot;skill&quot;: 64,
-                    &quot;agility&quot;: 51,
-                    &quot;stamina&quot;: 59,
-                    &quot;attitude&quot;: 85,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 37,
-            &quot;name&quot;: &quot;South Africa&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 38,
-            &quot;name&quot;: &quot;Madagascar&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 39,
-            &quot;name&quot;: &quot;India&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 40,
-            &quot;name&quot;: &quot;Thailand&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 20,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Dr. Alvah Leffler DDS&quot;,
-                    &quot;gender&quot;: &quot;N/A&quot;,
-                    &quot;finisherName&quot;: &quot;y&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 40,
-                    &quot;promotionId&quot;: 9,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 97,
-                    &quot;skill&quot;: 70,
-                    &quot;agility&quot;: 55,
-                    &quot;stamina&quot;: 76,
-                    &quot;attitude&quot;: 90,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 41,
-            &quot;name&quot;: &quot;Philippines&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 15,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Shanie McClure&quot;,
-                    &quot;gender&quot;: &quot;FEMALE&quot;,
-                    &quot;finisherName&quot;: &quot;f&quot;,
-                    &quot;allegiance&quot;: &quot;TWEENER&quot;,
-                    &quot;role&quot;: &quot;REFEREE&quot;,
-                    &quot;territoryId&quot;: 41,
-                    &quot;promotionId&quot;: 4,
-                    &quot;popularity&quot;: 56,
-                    &quot;strength&quot;: 54,
-                    &quot;skill&quot;: 70,
-                    &quot;agility&quot;: 57,
-                    &quot;stamina&quot;: 50,
-                    &quot;attitude&quot;: 71,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        },
-        {
-            &quot;id&quot;: 42,
-            &quot;name&quot;: &quot;Indonesia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 43,
-            &quot;name&quot;: &quot;Papua New Guinea&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 44,
-            &quot;name&quot;: &quot;Australia&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 45,
-            &quot;name&quot;: &quot;New Zealand&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: []
-        },
-        {
-            &quot;id&quot;: 46,
-            &quot;name&quot;: &quot;Antarctica&quot;,
-            &quot;likes&quot;: null,
-            &quot;dislikes&quot;: null,
-            &quot;updatedAt&quot;: null,
-            &quot;wrestlers&quot;: [
-                {
-                    &quot;id&quot;: 19,
-                    &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Alfredo Trantow&quot;,
-                    &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;g&quot;,
-                    &quot;allegiance&quot;: &quot;HEEL&quot;,
-                    &quot;role&quot;: &quot;WRESTLER&quot;,
-                    &quot;territoryId&quot;: 46,
-                    &quot;promotionId&quot;: 7,
-                    &quot;popularity&quot;: 95,
-                    &quot;strength&quot;: 63,
-                    &quot;skill&quot;: 94,
-                    &quot;agility&quot;: 67,
-                    &quot;stamina&quot;: 83,
-                    &quot;attitude&quot;: 86,
-                    &quot;managerId&quot;: null,
-                    &quot;partnerId&quot;: null,
-                    &quot;storyFriendId&quot;: null,
-                    &quot;storyEnemyId&quot;: null,
-                    &quot;realFriendId&quot;: null,
-                    &quot;realEnemyId&quot;: null
-                }
-            ]
-        }
-    ]
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-territories" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-territories"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-territories"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-territories" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-territories">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-territories" data-method="GET"
-      data-path="api/v1/territories"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-territories', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-territories"
-                    onclick="tryItOut('GETapi-v1-territories');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-territories"
-                    onclick="cancelTryOut('GETapi-v1-territories');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-territories"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/territories</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-territories"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-territories"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        </form>
-
-                    <h2 id="endpoints-GETapi-v1-territories--id-">Display the specified resource.</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-v1-territories--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/territories/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/territories/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-v1-territories--id-">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;Alaska&quot;,
-        &quot;likes&quot;: null,
-        &quot;dislikes&quot;: null,
-        &quot;updatedAt&quot;: null,
-        &quot;wrestlers&quot;: []
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-v1-territories--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-v1-territories--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-v1-territories--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-v1-territories--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-v1-territories--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-v1-territories--id-" data-method="GET"
-      data-path="api/v1/territories/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-territories--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-v1-territories--id-"
-                    onclick="tryItOut('GETapi-v1-territories--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-v1-territories--id-"
-                    onclick="cancelTryOut('GETapi-v1-territories--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-v1-territories--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/v1/territories/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-v1-territories--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-v1-territories--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="GETapi-v1-territories--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the territory. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-PUTapi-v1-events--event_id--wrestlers">Special POST function to assign wrestlers to event</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTapi-v1-events--event_id--wrestlers">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/v1/events/1/wrestlers" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"wrestlerIds\": [
-        16
-    ]
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/events/1/wrestlers"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "wrestlerIds": [
-        16
-    ]
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTapi-v1-events--event_id--wrestlers">
-</span>
-<span id="execution-results-PUTapi-v1-events--event_id--wrestlers" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTapi-v1-events--event_id--wrestlers"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-v1-events--event_id--wrestlers"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PUTapi-v1-events--event_id--wrestlers" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-v1-events--event_id--wrestlers">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PUTapi-v1-events--event_id--wrestlers" data-method="PUT"
-      data-path="api/v1/events/{event_id}/wrestlers"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-events--event_id--wrestlers', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-v1-events--event_id--wrestlers"
-                    onclick="tryItOut('PUTapi-v1-events--event_id--wrestlers');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-v1-events--event_id--wrestlers"
-                    onclick="cancelTryOut('PUTapi-v1-events--event_id--wrestlers');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-v1-events--event_id--wrestlers"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/v1/events/{event_id}/wrestlers</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="event_id"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the event. Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
-<small>integer[]</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="wrestlerIds[0]"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
-               data-component="body">
-        <input type="number" style="display: none"
-               name="wrestlerIds[1]"                data-endpoint="PUTapi-v1-events--event_id--wrestlers"
-               data-component="body">
-    <br>
-<p>The <code>id</code> of an existing record in the wrestlers table.</p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-PATCHapi-v1-events--event_id--simulate">Special PATCH function to simulate an event
-Modifies the is_winner and finish_type of the event_wrestler row</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PATCHapi-v1-events--event_id--simulate">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost:8000/api/v1/events/1/simulate" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"results\": [
-        {
-            \"wrestlerId\": 16,
-            \"isWinner\": true,
-            \"finishType\": \"TIMEOUT\"
-        }
-    ]
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/events/1/simulate"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "results": [
-        {
-            "wrestlerId": 16,
-            "isWinner": true,
-            "finishType": "TIMEOUT"
-        }
-    ]
-};
-
-fetch(url, {
-    method: "PATCH",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PATCHapi-v1-events--event_id--simulate">
-</span>
-<span id="execution-results-PATCHapi-v1-events--event_id--simulate" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-v1-events--event_id--simulate"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-v1-events--event_id--simulate"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PATCHapi-v1-events--event_id--simulate" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-v1-events--event_id--simulate">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PATCHapi-v1-events--event_id--simulate" data-method="PATCH"
-      data-path="api/v1/events/{event_id}/simulate"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-v1-events--event_id--simulate', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-v1-events--event_id--simulate"
-                    onclick="tryItOut('PATCHapi-v1-events--event_id--simulate');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-v1-events--event_id--simulate"
-                    onclick="cancelTryOut('PATCHapi-v1-events--event_id--simulate');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-v1-events--event_id--simulate"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/v1/events/{event_id}/simulate</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="event_id"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the event. Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>results</code></b>&nbsp;&nbsp;
-<small>object[]</small>&nbsp;
- &nbsp;
- &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 14px; clear: unset;">
-                        <b style="line-height: 2;"><code>wrestlerId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="results.0.wrestlerId"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="16"
-               data-component="body">
-    <br>
-<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
-                    </div>
-                                                                <div style="margin-left: 14px; clear: unset;">
-                        <b style="line-height: 2;"><code>isWinner</code></b>&nbsp;&nbsp;
-<small>boolean</small>&nbsp;
- &nbsp;
- &nbsp;
-                <label data-endpoint="PATCHapi-v1-events--event_id--simulate" style="display: none">
-            <input type="radio" name="results.0.isWinner"
-                   value="true"
-                   data-endpoint="PATCHapi-v1-events--event_id--simulate"
-                   data-component="body"             >
-            <code>true</code>
-        </label>
-        <label data-endpoint="PATCHapi-v1-events--event_id--simulate" style="display: none">
-            <input type="radio" name="results.0.isWinner"
-                   value="false"
-                   data-endpoint="PATCHapi-v1-events--event_id--simulate"
-                   data-component="body"             >
-            <code>false</code>
-        </label>
-    <br>
-<p>Example: <code>true</code></p>
-                    </div>
-                                                                <div style="margin-left: 14px; clear: unset;">
-                        <b style="line-height: 2;"><code>finishType</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="results.0.finishType"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="TIMEOUT"
-               data-component="body">
-    <br>
-<p>Example: <code>TIMEOUT</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>UNFINISHED</code></li> <li><code>PIN</code></li> <li><code>SUBMISSION</code></li> <li><code>DISQUALIFICATION</code></li> <li><code>COUNTOUT</code></li> <li><code>TIMEOUT</code></li> <li><code>ELIMINATION</code></li> <li><code>SPECIAL</code></li></ul>
-                    </div>
-                                    </details>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-PUTapi-v1-events--event_id--stipulations">Special POST function to assign stipulations to event</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-PUTapi-v1-events--event_id--stipulations">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/v1/events/1/stipulations" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"stipulationIds\": [
-        16
-    ]
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/events/1/stipulations"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "stipulationIds": [
-        16
-    ]
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTapi-v1-events--event_id--stipulations">
-</span>
-<span id="execution-results-PUTapi-v1-events--event_id--stipulations" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTapi-v1-events--event_id--stipulations"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-v1-events--event_id--stipulations"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PUTapi-v1-events--event_id--stipulations" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-v1-events--event_id--stipulations">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PUTapi-v1-events--event_id--stipulations" data-method="PUT"
-      data-path="api/v1/events/{event_id}/stipulations"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-events--event_id--stipulations', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-v1-events--event_id--stipulations"
-                    onclick="tryItOut('PUTapi-v1-events--event_id--stipulations');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-v1-events--event_id--stipulations"
-                    onclick="cancelTryOut('PUTapi-v1-events--event_id--stipulations');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-v1-events--event_id--stipulations"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/v1/events/{event_id}/stipulations</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>event_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="event_id"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the event. Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>stipulationIds</code></b>&nbsp;&nbsp;
-<small>integer[]</small>&nbsp;
-<i>optional</i> &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="stipulationIds[0]"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
-               data-component="body">
-        <input type="number" style="display: none"
-               name="stipulationIds[1]"                data-endpoint="PUTapi-v1-events--event_id--stipulations"
-               data-component="body">
-    <br>
-<p>The <code>id</code> of an existing record in the stipulations table.</p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-PUTapi-v1-title_reigns--titleReign_id--wrestlers">Special POST function to assign wrestlers to a title reign.</h2>
-
-<p>
-</p>
-
-
+<p>Replaces the list of wrestlers associated with this title reign.</p>
 
 <span id="example-requests-PUTapi-v1-title_reigns--titleReign_id--wrestlers">
 <blockquote>Example request:</blockquote>
@@ -18837,13 +17847,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-PATCHapi-v1-title_reigns--titleReign_id--end">Special PATCH function to end a title reign
-Updates the end dates</h2>
+                    <h2 id="title-reigns-PATCHapi-v1-title_reigns--titleReign_id--end">End a title reign.</h2>
 
 <p>
 </p>
 
-
+<p>Updates the end dates of this title reign.</p>
 
 <span id="example-requests-PATCHapi-v1-title_reigns--titleReign_id--end">
 <blockquote>Example request:</blockquote>
@@ -19011,101 +18020,644 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-PUTapi-v1-teams--team_id--wrestlers">Special POST function to assign wrestlers to a team.</h2>
+                <h1 id="wrestlers">Wrestlers</h1>
+
+    
+
+                                <h2 id="wrestlers-GETapi-v1-wrestlers">Display all wrestlers.</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-PUTapi-v1-teams--team_id--wrestlers">
+<span id="example-requests-GETapi-v1-wrestlers">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost:8000/api/v1/teams/1/wrestlers" \
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/wrestlers?includeEvents=&amp;includeTitleReigns=&amp;includeTeams=&amp;id=0&amp;createdAt=createdAt%5Bgt%5D%3D2026-01-01&amp;updatedAt=updatedAt%5Bgt%5D%3D2026-01-01&amp;name=name%5Beq%5D%3DJon+Moxley&amp;gender=gender%5Beq%5D%3DMALE&amp;finisherName=finisherName%5Beq%5D%3DParadigm+Shift&amp;allegiance=allegiance%5Beq%5D%3DFACE&amp;role=role%5Beq%5D%3DWRESTLER&amp;territoryId=0&amp;promotionId=0&amp;popularity=0&amp;strength=0&amp;skill=0&amp;agility=0&amp;stamina=0&amp;attitude=0&amp;managerId=0&amp;partnerId=0&amp;storyFriendId=0&amp;storyEnemyId=0&amp;realFriendId=0&amp;realEnemyId=0" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"wrestlerIds\": [
-        16
-    ]
-}"
-</code></pre></div>
+    --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/teams/1/wrestlers"
+    "http://localhost:8000/api/v1/wrestlers"
 );
+
+const params = {
+    "includeEvents": "0",
+    "includeTitleReigns": "0",
+    "includeTeams": "0",
+    "id": "0",
+    "createdAt": "createdAt[gt]=2026-01-01",
+    "updatedAt": "updatedAt[gt]=2026-01-01",
+    "name": "name[eq]=Jon Moxley",
+    "gender": "gender[eq]=MALE",
+    "finisherName": "finisherName[eq]=Paradigm Shift",
+    "allegiance": "allegiance[eq]=FACE",
+    "role": "role[eq]=WRESTLER",
+    "territoryId": "0",
+    "promotionId": "0",
+    "popularity": "0",
+    "strength": "0",
+    "skill": "0",
+    "agility": "0",
+    "stamina": "0",
+    "attitude": "0",
+    "managerId": "0",
+    "partnerId": "0",
+    "storyFriendId": "0",
+    "storyEnemyId": "0",
+    "realFriendId": "0",
+    "realEnemyId": "0",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
 };
 
-let body = {
-    "wrestlerIds": [
-        16
-    ]
-};
 
 fetch(url, {
-    method: "PUT",
+    method: "GET",
     headers,
-    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
-<span id="example-responses-PUTapi-v1-teams--team_id--wrestlers">
-</span>
-<span id="execution-results-PUTapi-v1-teams--team_id--wrestlers" hidden>
+<span id="example-responses-GETapi-v1-wrestlers">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Timmy Renner&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;v&quot;,
+            &quot;allegiance&quot;: &quot;FACE&quot;,
+            &quot;role&quot;: &quot;MANAGER&quot;,
+            &quot;territoryId&quot;: 8,
+            &quot;promotionId&quot;: 3,
+            &quot;popularity&quot;: 92,
+            &quot;strength&quot;: 84,
+            &quot;skill&quot;: 83,
+            &quot;agility&quot;: 60,
+            &quot;stamina&quot;: 55,
+            &quot;attitude&quot;: 66,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Elissa Stamm&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;i&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 18,
+            &quot;promotionId&quot;: 6,
+            &quot;popularity&quot;: 72,
+            &quot;strength&quot;: 58,
+            &quot;skill&quot;: 65,
+            &quot;agility&quot;: 68,
+            &quot;stamina&quot;: 73,
+            &quot;attitude&quot;: 52,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Amani Ruecker&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;o&quot;,
+            &quot;allegiance&quot;: &quot;FACE&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 27,
+            &quot;promotionId&quot;: 1,
+            &quot;popularity&quot;: 56,
+            &quot;strength&quot;: 57,
+            &quot;skill&quot;: 93,
+            &quot;agility&quot;: 60,
+            &quot;stamina&quot;: 68,
+            &quot;attitude&quot;: 62,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Krystal Carroll&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;s&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;BOOKER&quot;,
+            &quot;territoryId&quot;: 28,
+            &quot;promotionId&quot;: 7,
+            &quot;popularity&quot;: 93,
+            &quot;strength&quot;: 52,
+            &quot;skill&quot;: 59,
+            &quot;agility&quot;: 95,
+            &quot;stamina&quot;: 78,
+            &quot;attitude&quot;: 56,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Mr. Marcus Labadie I&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;d&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;BOOKER&quot;,
+            &quot;territoryId&quot;: 23,
+            &quot;promotionId&quot;: 7,
+            &quot;popularity&quot;: 79,
+            &quot;strength&quot;: 83,
+            &quot;skill&quot;: 57,
+            &quot;agility&quot;: 69,
+            &quot;stamina&quot;: 67,
+            &quot;attitude&quot;: 68,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Broderick Nolan&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;t&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;MANAGER&quot;,
+            &quot;territoryId&quot;: 19,
+            &quot;promotionId&quot;: 1,
+            &quot;popularity&quot;: 95,
+            &quot;strength&quot;: 89,
+            &quot;skill&quot;: 73,
+            &quot;agility&quot;: 59,
+            &quot;stamina&quot;: 54,
+            &quot;attitude&quot;: 69,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Viola Hilpert&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;p&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 35,
+            &quot;promotionId&quot;: 9,
+            &quot;popularity&quot;: 65,
+            &quot;strength&quot;: 81,
+            &quot;skill&quot;: 86,
+            &quot;agility&quot;: 61,
+            &quot;stamina&quot;: 70,
+            &quot;attitude&quot;: 73,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Morgan Heller Sr.&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;a&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 36,
+            &quot;promotionId&quot;: 7,
+            &quot;popularity&quot;: 86,
+            &quot;strength&quot;: 63,
+            &quot;skill&quot;: 64,
+            &quot;agility&quot;: 51,
+            &quot;stamina&quot;: 59,
+            &quot;attitude&quot;: 85,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Karlie Boyer&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;s&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 27,
+            &quot;promotionId&quot;: 8,
+            &quot;popularity&quot;: 69,
+            &quot;strength&quot;: 85,
+            &quot;skill&quot;: 63,
+            &quot;agility&quot;: 87,
+            &quot;stamina&quot;: 99,
+            &quot;attitude&quot;: 64,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Finn Rogahn&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;k&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 4,
+            &quot;promotionId&quot;: 8,
+            &quot;popularity&quot;: 54,
+            &quot;strength&quot;: 97,
+            &quot;skill&quot;: 71,
+            &quot;agility&quot;: 67,
+            &quot;stamina&quot;: 69,
+            &quot;attitude&quot;: 63,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Raina Schaden&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;u&quot;,
+            &quot;allegiance&quot;: &quot;FACE&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 22,
+            &quot;promotionId&quot;: 4,
+            &quot;popularity&quot;: 75,
+            &quot;strength&quot;: 59,
+            &quot;skill&quot;: 81,
+            &quot;agility&quot;: 70,
+            &quot;stamina&quot;: 82,
+            &quot;attitude&quot;: 92,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Alfonzo Mitchell I&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;p&quot;,
+            &quot;allegiance&quot;: &quot;FACE&quot;,
+            &quot;role&quot;: &quot;MANAGER&quot;,
+            &quot;territoryId&quot;: 16,
+            &quot;promotionId&quot;: 3,
+            &quot;popularity&quot;: 84,
+            &quot;strength&quot;: 73,
+            &quot;skill&quot;: 78,
+            &quot;agility&quot;: 93,
+            &quot;stamina&quot;: 59,
+            &quot;attitude&quot;: 64,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Prof. Thurman Collins&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;p&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 33,
+            &quot;promotionId&quot;: 3,
+            &quot;popularity&quot;: 63,
+            &quot;strength&quot;: 71,
+            &quot;skill&quot;: 56,
+            &quot;agility&quot;: 51,
+            &quot;stamina&quot;: 70,
+            &quot;attitude&quot;: 57,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Mrs. Lupe Crist DVM&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;i&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 18,
+            &quot;promotionId&quot;: 8,
+            &quot;popularity&quot;: 73,
+            &quot;strength&quot;: 95,
+            &quot;skill&quot;: 88,
+            &quot;agility&quot;: 81,
+            &quot;stamina&quot;: 60,
+            &quot;attitude&quot;: 65,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Shanie McClure&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;f&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 41,
+            &quot;promotionId&quot;: 4,
+            &quot;popularity&quot;: 56,
+            &quot;strength&quot;: 54,
+            &quot;skill&quot;: 70,
+            &quot;agility&quot;: 57,
+            &quot;stamina&quot;: 50,
+            &quot;attitude&quot;: 71,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Johann Nitzsche MD&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;o&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 25,
+            &quot;promotionId&quot;: 6,
+            &quot;popularity&quot;: 82,
+            &quot;strength&quot;: 86,
+            &quot;skill&quot;: 87,
+            &quot;agility&quot;: 53,
+            &quot;stamina&quot;: 96,
+            &quot;attitude&quot;: 92,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Sonia Schiller Sr.&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;j&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;REFEREE&quot;,
+            &quot;territoryId&quot;: 26,
+            &quot;promotionId&quot;: 4,
+            &quot;popularity&quot;: 80,
+            &quot;strength&quot;: 68,
+            &quot;skill&quot;: 50,
+            &quot;agility&quot;: 88,
+            &quot;stamina&quot;: 64,
+            &quot;attitude&quot;: 60,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Hermina Schumm&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;z&quot;,
+            &quot;allegiance&quot;: &quot;TWEENER&quot;,
+            &quot;role&quot;: &quot;BOOKER&quot;,
+            &quot;territoryId&quot;: 5,
+            &quot;promotionId&quot;: 4,
+            &quot;popularity&quot;: 66,
+            &quot;strength&quot;: 60,
+            &quot;skill&quot;: 76,
+            &quot;agility&quot;: 61,
+            &quot;stamina&quot;: 78,
+            &quot;attitude&quot;: 80,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 19,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Alfredo Trantow&quot;,
+            &quot;gender&quot;: &quot;MALE&quot;,
+            &quot;finisherName&quot;: &quot;g&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 46,
+            &quot;promotionId&quot;: 7,
+            &quot;popularity&quot;: 95,
+            &quot;strength&quot;: 63,
+            &quot;skill&quot;: 94,
+            &quot;agility&quot;: 67,
+            &quot;stamina&quot;: 83,
+            &quot;attitude&quot;: 86,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 20,
+            &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+            &quot;name&quot;: &quot;Dr. Alvah Leffler DDS&quot;,
+            &quot;gender&quot;: &quot;N/A&quot;,
+            &quot;finisherName&quot;: &quot;y&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;MANAGER&quot;,
+            &quot;territoryId&quot;: 40,
+            &quot;promotionId&quot;: 9,
+            &quot;popularity&quot;: 92,
+            &quot;strength&quot;: 97,
+            &quot;skill&quot;: 70,
+            &quot;agility&quot;: 55,
+            &quot;stamina&quot;: 76,
+            &quot;attitude&quot;: 90,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        },
+        {
+            &quot;id&quot;: 21,
+            &quot;createdAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-01T13:43:29.000000Z&quot;,
+            &quot;name&quot;: &quot;Babie Wicka&quot;,
+            &quot;gender&quot;: &quot;FEMALE&quot;,
+            &quot;finisherName&quot;: &quot;Babie Drop&quot;,
+            &quot;allegiance&quot;: &quot;FACE&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 8,
+            &quot;promotionId&quot;: 3,
+            &quot;popularity&quot;: 99,
+            &quot;strength&quot;: 99,
+            &quot;skill&quot;: 99,
+            &quot;agility&quot;: 99,
+            &quot;stamina&quot;: 99,
+            &quot;attitude&quot;: 99,
+            &quot;managerId&quot;: null,
+            &quot;partnerId&quot;: null,
+            &quot;storyFriendId&quot;: null,
+            &quot;storyEnemyId&quot;: null,
+            &quot;realFriendId&quot;: null,
+            &quot;realEnemyId&quot;: null
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-wrestlers" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-PUTapi-v1-teams--team_id--wrestlers"></span>:
+                id="execution-response-status-GETapi-v1-wrestlers"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-v1-teams--team_id--wrestlers"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-wrestlers"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-PUTapi-v1-teams--team_id--wrestlers" hidden>
+<span id="execution-error-GETapi-v1-wrestlers" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-v1-teams--team_id--wrestlers">
+    <pre><code id="execution-error-message-GETapi-v1-wrestlers">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-PUTapi-v1-teams--team_id--wrestlers" data-method="PUT"
-      data-path="api/v1/teams/{team_id}/wrestlers"
+<form id="form-GETapi-v1-wrestlers" data-method="GET"
+      data-path="api/v1/wrestlers"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-teams--team_id--wrestlers', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-wrestlers', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-v1-teams--team_id--wrestlers"
-                    onclick="tryItOut('PUTapi-v1-teams--team_id--wrestlers');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-wrestlers"
+                    onclick="tryItOut('GETapi-v1-wrestlers');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-v1-teams--team_id--wrestlers"
-                    onclick="cancelTryOut('PUTapi-v1-teams--team_id--wrestlers');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-wrestlers"
+                    onclick="cancelTryOut('GETapi-v1-wrestlers');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-v1-teams--team_id--wrestlers"
+                    id="btn-executetryout-GETapi-v1-wrestlers"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
             </button>
             </h3>
             <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/v1/teams/{team_id}/wrestlers</code></b>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/wrestlers</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -19114,7 +18666,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+                              name="Content-Type"                data-endpoint="GETapi-v1-wrestlers"
                value="application/json"
                data-component="header">
     <br>
@@ -19126,69 +18678,388 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
+                              name="Accept"                data-endpoint="GETapi-v1-wrestlers"
                value="application/json"
                data-component="header">
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>includeEvents</code></b>&nbsp;&nbsp;
+<small>boolean</small>&nbsp;
+<i>optional</i> &nbsp;
  &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="team_id"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
-               value="1"
-               data-component="url">
+                <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeEvents"
+                   value="1"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>true</code>
+        </label>
+        <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeEvents"
+                   value="0"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>false</code>
+        </label>
     <br>
-<p>The ID of the team. Example: <code>1</code></p>
+<p>Include all events associated to this wrestler. Example: <code>false</code></p>
             </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
-<small>integer[]</small>&nbsp;
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>includeTitleReigns</code></b>&nbsp;&nbsp;
+<small>boolean</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeTitleReigns"
+                   value="1"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>true</code>
+        </label>
+        <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeTitleReigns"
+                   value="0"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>false</code>
+        </label>
+    <br>
+<p>Include all title reigns associated to this wrestler. Example: <code>false</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>includeTeams</code></b>&nbsp;&nbsp;
+<small>boolean</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeTeams"
+                   value="1"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>true</code>
+        </label>
+        <label data-endpoint="GETapi-v1-wrestlers" style="display: none">
+            <input type="radio" name="includeTeams"
+                   value="0"
+                   data-endpoint="GETapi-v1-wrestlers"
+                   data-component="query"             >
+            <code>false</code>
+        </label>
+    <br>
+<p>Include all teams associated to this wrestler. Example: <code>false</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="wrestlerIds[0]"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
-               data-component="body">
-        <input type="number" style="display: none"
-               name="wrestlerIds[1]"                data-endpoint="PUTapi-v1-teams--team_id--wrestlers"
-               data-component="body">
+               step="any"               name="id"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
     <br>
-<p>The <code>id</code> of an existing record in the wrestlers table.</p>
-        </div>
-        </form>
+<p>Filter by wrestler ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>createdAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="createdAt"                data-endpoint="GETapi-v1-wrestlers"
+               value="createdAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: <code>createdAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>updatedAt</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="updatedAt"                data-endpoint="GETapi-v1-wrestlers"
+               value="updatedAt[gt]=2026-01-01"
+               data-component="query">
+    <br>
+<p>datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: <code>updatedAt[gt]=2026-01-01</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="GETapi-v1-wrestlers"
+               value="name[eq]=Jon Moxley"
+               data-component="query">
+    <br>
+<p>Filter by wrestler name. Operators: [eq]. Example: <code>name[eq]=Jon Moxley</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="gender"                data-endpoint="GETapi-v1-wrestlers"
+               value="gender[eq]=MALE"
+               data-component="query">
+    <br>
+<p>Filter by gender (MALE, FEMALE, N/A). Operators: [eq]. Example: <code>gender[eq]=MALE</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>finisherName</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="finisherName"                data-endpoint="GETapi-v1-wrestlers"
+               value="finisherName[eq]=Paradigm Shift"
+               data-component="query">
+    <br>
+<p>Filter by finisher name. Operators: [eq]. Example: <code>finisherName[eq]=Paradigm Shift</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>allegiance</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="allegiance"                data-endpoint="GETapi-v1-wrestlers"
+               value="allegiance[eq]=FACE"
+               data-component="query">
+    <br>
+<p>Filter by allegiance (HEEL, FACE, TWEENER). Operators: [eq]. Example: <code>allegiance[eq]=FACE</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="role"                data-endpoint="GETapi-v1-wrestlers"
+               value="role[eq]=WRESTLER"
+               data-component="query">
+    <br>
+<p>Filter by role (WRESTLER, MANAGER, BOOKER, REFEREE, CIVILIAN). Operators: [eq], [ne]. Example: <code>role[eq]=WRESTLER</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="territoryId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by territory ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="promotionId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by promotion ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="popularity"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by popularity (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>strength</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="strength"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by strength (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>skill</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="skill"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by skill (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>agility</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="agility"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by agility (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>stamina</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="stamina"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by stamina (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>attitude</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="attitude"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by attitude (50-100). Operators: [eq], [gt], [lt]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>managerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="managerId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by manager ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="partnerId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by partner ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyFriendId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by story friend ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyEnemyId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by story enemy ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realFriendId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by real friend ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realEnemyId"                data-endpoint="GETapi-v1-wrestlers"
+               value="0"
+               data-component="query">
+    <br>
+<p>Filter by real enemy ID. Operators: [eq]. Example: <code>0</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-v1-teams--team_id--wrestlers">Special PUT function to add more wrestlers to a team.</h2>
+                    <h2 id="wrestlers-POSTapi-v1-wrestlers">Create a new wrestler.</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-POSTapi-v1-teams--team_id--wrestlers">
+<span id="example-requests-POSTapi-v1-wrestlers">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/v1/teams/1/wrestlers" \
+    "http://localhost:8000/api/v1/wrestlers" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"wrestlerIds\": [
-        16
-    ]
+    \"name\": \"architecto\",
+    \"gender\": \"MALE\",
+    \"finisherName\": \"architecto\",
+    \"allegiance\": \"HEEL\",
+    \"role\": \"MANAGER\",
+    \"territoryId\": 16,
+    \"promotionId\": 16,
+    \"popularity\": 22,
+    \"strength\": 7,
+    \"skill\": 16,
+    \"agility\": 17,
+    \"stamina\": 15,
+    \"attitude\": 8,
+    \"managerId\": 16,
+    \"partnerId\": 16,
+    \"storyFriendId\": 16,
+    \"storyEnemyId\": 16,
+    \"realFriendId\": 16,
+    \"realEnemyId\": 16
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/teams/1/wrestlers"
+    "http://localhost:8000/api/v1/wrestlers"
 );
 
 const headers = {
@@ -19197,9 +19068,25 @@ const headers = {
 };
 
 let body = {
-    "wrestlerIds": [
-        16
-    ]
+    "name": "architecto",
+    "gender": "MALE",
+    "finisherName": "architecto",
+    "allegiance": "HEEL",
+    "role": "MANAGER",
+    "territoryId": 16,
+    "promotionId": 16,
+    "popularity": 22,
+    "strength": 7,
+    "skill": 16,
+    "agility": 17,
+    "stamina": 15,
+    "attitude": 8,
+    "managerId": 16,
+    "partnerId": 16,
+    "storyFriendId": 16,
+    "storyEnemyId": 16,
+    "realFriendId": 16,
+    "realEnemyId": 16
 };
 
 fetch(url, {
@@ -19210,45 +19097,45 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-POSTapi-v1-teams--team_id--wrestlers">
+<span id="example-responses-POSTapi-v1-wrestlers">
 </span>
-<span id="execution-results-POSTapi-v1-teams--team_id--wrestlers" hidden>
+<span id="execution-results-POSTapi-v1-wrestlers" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-v1-teams--team_id--wrestlers"></span>:
+                id="execution-response-status-POSTapi-v1-wrestlers"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-v1-teams--team_id--wrestlers"
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-wrestlers"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-v1-teams--team_id--wrestlers" hidden>
+<span id="execution-error-POSTapi-v1-wrestlers" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-v1-teams--team_id--wrestlers">
+    <pre><code id="execution-error-message-POSTapi-v1-wrestlers">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-v1-teams--team_id--wrestlers" data-method="POST"
-      data-path="api/v1/teams/{team_id}/wrestlers"
+<form id="form-POSTapi-v1-wrestlers" data-method="POST"
+      data-path="api/v1/wrestlers"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-teams--team_id--wrestlers', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-wrestlers', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-v1-teams--team_id--wrestlers"
-                    onclick="tryItOut('POSTapi-v1-teams--team_id--wrestlers');">Try it out ⚡
+                    id="btn-tryout-POSTapi-v1-wrestlers"
+                    onclick="tryItOut('POSTapi-v1-wrestlers');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-v1-teams--team_id--wrestlers"
-                    onclick="cancelTryOut('POSTapi-v1-teams--team_id--wrestlers');" hidden>Cancel 🛑
+                    id="btn-canceltryout-POSTapi-v1-wrestlers"
+                    onclick="cancelTryOut('POSTapi-v1-wrestlers');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-v1-teams--team_id--wrestlers"
+                    id="btn-executetryout-POSTapi-v1-wrestlers"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -19256,7 +19143,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>api/v1/teams/{team_id}/wrestlers</code></b>
+            <b><code>api/v1/wrestlers</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -19265,7 +19152,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+                              name="Content-Type"                data-endpoint="POSTapi-v1-wrestlers"
                value="application/json"
                data-component="header">
     <br>
@@ -19277,70 +19164,270 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+                              name="Accept"                data-endpoint="POSTapi-v1-wrestlers"
                value="application/json"
                data-component="header">
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="POSTapi-v1-wrestlers"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="gender"                data-endpoint="POSTapi-v1-wrestlers"
+               value="MALE"
+               data-component="body">
+    <br>
+<p>Example: <code>MALE</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>finisherName</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="finisherName"                data-endpoint="POSTapi-v1-wrestlers"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>allegiance</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="allegiance"                data-endpoint="POSTapi-v1-wrestlers"
+               value="HEEL"
+               data-component="body">
+    <br>
+<p>Example: <code>HEEL</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>HEEL</code></li> <li><code>FACE</code></li> <li><code>TWEENER</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="role"                data-endpoint="POSTapi-v1-wrestlers"
+               value="MANAGER"
+               data-component="body">
+    <br>
+<p>Example: <code>MANAGER</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="team_id"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
-               value="1"
-               data-component="url">
+               step="any"               name="territoryId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
     <br>
-<p>The ID of the team. Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>wrestlerIds</code></b>&nbsp;&nbsp;
-<small>integer[]</small>&nbsp;
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="promotionId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="popularity"                data-endpoint="POSTapi-v1-wrestlers"
+               value="22"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>22</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>strength</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="strength"                data-endpoint="POSTapi-v1-wrestlers"
+               value="7"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>7</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>skill</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="skill"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>agility</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="agility"                data-endpoint="POSTapi-v1-wrestlers"
+               value="17"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>17</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>stamina</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="stamina"                data-endpoint="POSTapi-v1-wrestlers"
+               value="15"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>15</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>attitude</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="attitude"                data-endpoint="POSTapi-v1-wrestlers"
+               value="8"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>8</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>managerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="wrestlerIds[0]"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
-               data-component="body">
-        <input type="number" style="display: none"
-               name="wrestlerIds[1]"                data-endpoint="POSTapi-v1-teams--team_id--wrestlers"
+               step="any"               name="managerId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
                data-component="body">
     <br>
-<p>The <code>id</code> of an existing record in the wrestlers table.</p>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="partnerId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyFriendId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyEnemyId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realFriendId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realEnemyId"                data-endpoint="POSTapi-v1-wrestlers"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
         </div>
         </form>
 
-                    <h2 id="endpoints-PATCHapi-v1-teams--team_id--end">Special PATCH function to end a title reign
-Updates the end dates</h2>
+                    <h2 id="wrestlers-GETapi-v1-wrestlers--id-">Display one wrestler.</h2>
 
 <p>
 </p>
 
+<p>Also shows the wrestler's events, title reigns, and teams.</p>
 
-
-<span id="example-requests-PATCHapi-v1-teams--team_id--end">
+<span id="example-requests-GETapi-v1-wrestlers--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost:8000/api/v1/teams/1/end" \
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/wrestlers/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"yearEnd\": 16,
-    \"monthEnd\": 4,
-    \"weekEnd\": 3
-}"
-</code></pre></div>
+    --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/teams/1/end"
+    "http://localhost:8000/api/v1/wrestlers/1"
 );
 
 const headers = {
@@ -19348,67 +19435,310 @@ const headers = {
     "Accept": "application/json",
 };
 
-let body = {
-    "yearEnd": 16,
-    "monthEnd": 4,
-    "weekEnd": 3
-};
 
 fetch(url, {
-    method: "PATCH",
+    method: "GET",
     headers,
-    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
-<span id="example-responses-PATCHapi-v1-teams--team_id--end">
-</span>
-<span id="execution-results-PATCHapi-v1-teams--team_id--end" hidden>
+<span id="example-responses-GETapi-v1-wrestlers--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;id&quot;: 1,
+        &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+        &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+        &quot;name&quot;: &quot;Timmy Renner&quot;,
+        &quot;gender&quot;: &quot;MALE&quot;,
+        &quot;finisherName&quot;: &quot;v&quot;,
+        &quot;allegiance&quot;: &quot;FACE&quot;,
+        &quot;role&quot;: &quot;MANAGER&quot;,
+        &quot;territoryId&quot;: 8,
+        &quot;promotionId&quot;: 3,
+        &quot;popularity&quot;: 92,
+        &quot;strength&quot;: 84,
+        &quot;skill&quot;: 83,
+        &quot;agility&quot;: 60,
+        &quot;stamina&quot;: 55,
+        &quot;attitude&quot;: 66,
+        &quot;managerId&quot;: null,
+        &quot;partnerId&quot;: null,
+        &quot;storyFriendId&quot;: null,
+        &quot;storyEnemyId&quot;: null,
+        &quot;realFriendId&quot;: null,
+        &quot;realEnemyId&quot;: null,
+        &quot;events&quot;: [
+            {
+                &quot;id&quot;: 48,
+                &quot;type&quot;: &quot;PROMO&quot;,
+                &quot;placement&quot;: &quot;UNDER&quot;,
+                &quot;matchTypeId&quot;: null,
+                &quot;championshipId&quot;: null,
+                &quot;showId&quot;: 27,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;isWinner&quot;: 0,
+                &quot;finishType&quot;: &quot;TIMEOUT&quot;
+            },
+            {
+                &quot;id&quot;: 24,
+                &quot;type&quot;: &quot;PROMO&quot;,
+                &quot;placement&quot;: &quot;SEMI&quot;,
+                &quot;matchTypeId&quot;: null,
+                &quot;championshipId&quot;: 24,
+                &quot;showId&quot;: 22,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;isWinner&quot;: 1,
+                &quot;finishType&quot;: &quot;SUBMISSION&quot;
+            },
+            {
+                &quot;id&quot;: 27,
+                &quot;type&quot;: &quot;MATCH&quot;,
+                &quot;placement&quot;: &quot;MID&quot;,
+                &quot;matchTypeId&quot;: 4,
+                &quot;championshipId&quot;: 26,
+                &quot;showId&quot;: 18,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;isWinner&quot;: 1,
+                &quot;finishType&quot;: &quot;SPECIAL&quot;
+            },
+            {
+                &quot;id&quot;: 14,
+                &quot;type&quot;: &quot;MATCH&quot;,
+                &quot;placement&quot;: &quot;UNDER&quot;,
+                &quot;matchTypeId&quot;: 2,
+                &quot;championshipId&quot;: null,
+                &quot;showId&quot;: 5,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;isWinner&quot;: 1,
+                &quot;finishType&quot;: &quot;SPECIAL&quot;
+            },
+            {
+                &quot;id&quot;: 16,
+                &quot;type&quot;: &quot;PROMO&quot;,
+                &quot;placement&quot;: &quot;MID&quot;,
+                &quot;matchTypeId&quot;: null,
+                &quot;championshipId&quot;: null,
+                &quot;showId&quot;: 14,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;isWinner&quot;: 1,
+                &quot;finishType&quot;: &quot;PIN&quot;
+            }
+        ],
+        &quot;titleReigns&quot;: [
+            {
+                &quot;id&quot;: 16,
+                &quot;championshipId&quot;: 4,
+                &quot;yearStart&quot;: 2021,
+                &quot;monthStart&quot;: 7,
+                &quot;weekStart&quot;: 2,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 21,
+                &quot;championshipId&quot;: 6,
+                &quot;yearStart&quot;: 1987,
+                &quot;monthStart&quot;: 11,
+                &quot;weekStart&quot;: 3,
+                &quot;yearEnd&quot;: 2003,
+                &quot;monthEnd&quot;: 8,
+                &quot;weekEnd&quot;: 2,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 22,
+                &quot;championshipId&quot;: 6,
+                &quot;yearStart&quot;: 1970,
+                &quot;monthStart&quot;: 3,
+                &quot;weekStart&quot;: 4,
+                &quot;yearEnd&quot;: 1975,
+                &quot;monthEnd&quot;: 5,
+                &quot;weekEnd&quot;: 2,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 26,
+                &quot;championshipId&quot;: 6,
+                &quot;yearStart&quot;: 2001,
+                &quot;monthStart&quot;: 3,
+                &quot;weekStart&quot;: 3,
+                &quot;yearEnd&quot;: 2000,
+                &quot;monthEnd&quot;: 10,
+                &quot;weekEnd&quot;: 4,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 29,
+                &quot;championshipId&quot;: 7,
+                &quot;yearStart&quot;: 1979,
+                &quot;monthStart&quot;: 1,
+                &quot;weekStart&quot;: 2,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 31,
+                &quot;championshipId&quot;: 7,
+                &quot;yearStart&quot;: 2021,
+                &quot;monthStart&quot;: 1,
+                &quot;weekStart&quot;: 2,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 38,
+                &quot;championshipId&quot;: 8,
+                &quot;yearStart&quot;: 2019,
+                &quot;monthStart&quot;: 7,
+                &quot;weekStart&quot;: 1,
+                &quot;yearEnd&quot;: 1995,
+                &quot;monthEnd&quot;: 8,
+                &quot;weekEnd&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 63,
+                &quot;championshipId&quot;: 36,
+                &quot;yearStart&quot;: 2023,
+                &quot;monthStart&quot;: 2,
+                &quot;weekStart&quot;: 1,
+                &quot;yearEnd&quot;: 2003,
+                &quot;monthEnd&quot;: 5,
+                &quot;weekEnd&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 66,
+                &quot;championshipId&quot;: 39,
+                &quot;yearStart&quot;: 2007,
+                &quot;monthStart&quot;: 10,
+                &quot;weekStart&quot;: 4,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
+            }
+        ],
+        &quot;teams&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;name&quot;: &quot;Prof. Georgianna Paucek MD&quot;,
+                &quot;yearStart&quot;: 2020,
+                &quot;monthStart&quot;: 5,
+                &quot;weekStart&quot;: 3,
+                &quot;yearEnd&quot;: 2012,
+                &quot;monthEnd&quot;: 7,
+                &quot;weekEnd&quot;: 1,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;name&quot;: &quot;Anna Nikolaus&quot;,
+                &quot;yearStart&quot;: 2019,
+                &quot;monthStart&quot;: 5,
+                &quot;weekStart&quot;: 4,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;name&quot;: &quot;Dr. Cortney Reichert&quot;,
+                &quot;yearStart&quot;: 2022,
+                &quot;monthStart&quot;: 3,
+                &quot;weekStart&quot;: 3,
+                &quot;yearEnd&quot;: null,
+                &quot;monthEnd&quot;: null,
+                &quot;weekEnd&quot;: null,
+                &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;
+            }
+        ]
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-wrestlers--id-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-v1-teams--team_id--end"></span>:
+                id="execution-response-status-GETapi-v1-wrestlers--id-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-v1-teams--team_id--end"
+    <pre class="json"><code id="execution-response-content-GETapi-v1-wrestlers--id-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-PATCHapi-v1-teams--team_id--end" hidden>
+<span id="execution-error-GETapi-v1-wrestlers--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-v1-teams--team_id--end">
+    <pre><code id="execution-error-message-GETapi-v1-wrestlers--id-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-PATCHapi-v1-teams--team_id--end" data-method="PATCH"
-      data-path="api/v1/teams/{team_id}/end"
+<form id="form-GETapi-v1-wrestlers--id-" data-method="GET"
+      data-path="api/v1/wrestlers/{id}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-v1-teams--team_id--end', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-wrestlers--id-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-v1-teams--team_id--end"
-                    onclick="tryItOut('PATCHapi-v1-teams--team_id--end');">Try it out ⚡
+                    id="btn-tryout-GETapi-v1-wrestlers--id-"
+                    onclick="tryItOut('GETapi-v1-wrestlers--id-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-v1-teams--team_id--end"
-                    onclick="cancelTryOut('PATCHapi-v1-teams--team_id--end');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-v1-wrestlers--id-"
+                    onclick="cancelTryOut('GETapi-v1-wrestlers--id-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-v1-teams--team_id--end"
+                    id="btn-executetryout-GETapi-v1-wrestlers--id-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
             </button>
             </h3>
             <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/v1/teams/{team_id}/end</code></b>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/wrestlers/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -19417,7 +19747,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+                              name="Content-Type"                data-endpoint="GETapi-v1-wrestlers--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -19429,7 +19759,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+                              name="Accept"                data-endpoint="GETapi-v1-wrestlers--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -19437,55 +19767,270 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>team_id</code></b>&nbsp;&nbsp;
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="team_id"                data-endpoint="PATCHapi-v1-teams--team_id--end"
+               step="any"               name="id"                data-endpoint="GETapi-v1-wrestlers--id-"
                value="1"
                data-component="url">
     <br>
-<p>The ID of the team. Example: <code>1</code></p>
+<p>The ID of the wrestler. Example: <code>1</code></p>
             </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+                    </form>
+
+                    <h2 id="wrestlers-PUTapi-v1-wrestlers--id-">Update a wrestler&#039;s information.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-v1-wrestlers--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost:8000/api/v1/wrestlers/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/wrestlers/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-v1-wrestlers--id-">
+</span>
+<span id="execution-results-PUTapi-v1-wrestlers--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-wrestlers--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-wrestlers--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-wrestlers--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-wrestlers--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-v1-wrestlers--id-" data-method="PUT"
+      data-path="api/v1/wrestlers/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-wrestlers--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-wrestlers--id-"
+                    onclick="tryItOut('PUTapi-v1-wrestlers--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-wrestlers--id-"
+                    onclick="cancelTryOut('PUTapi-v1-wrestlers--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-wrestlers--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/wrestlers/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/v1/wrestlers/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="yearEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
-               value="16"
-               data-component="body">
+               step="any"               name="id"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="1"
+               data-component="url">
     <br>
-<p>Example: <code>16</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<p>The ID of the wrestler. Example: <code>1</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="wrestlers-DELETEapi-v1-wrestlers--id-">Delete a wrestler.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-v1-wrestlers--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/v1/wrestlers/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/wrestlers/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-v1-wrestlers--id-">
+</span>
+<span id="execution-results-DELETEapi-v1-wrestlers--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-v1-wrestlers--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-v1-wrestlers--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-v1-wrestlers--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-v1-wrestlers--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-v1-wrestlers--id-" data-method="DELETE"
+      data-path="api/v1/wrestlers/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-wrestlers--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-v1-wrestlers--id-"
+                    onclick="tryItOut('DELETEapi-v1-wrestlers--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-v1-wrestlers--id-"
+                    onclick="cancelTryOut('DELETEapi-v1-wrestlers--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-v1-wrestlers--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/v1/wrestlers/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-v1-wrestlers--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-v1-wrestlers--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
 <small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               step="any"               name="monthEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
-               value="4"
-               data-component="body">
+               step="any"               name="id"                data-endpoint="DELETEapi-v1-wrestlers--id-"
+               value="1"
+               data-component="url">
     <br>
-<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="weekEnd"                data-endpoint="PATCHapi-v1-teams--team_id--end"
-               value="3"
-               data-component="body">
-    <br>
-<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
-        </div>
-        </form>
+<p>The ID of the wrestler. Example: <code>1</code></p>
+            </div>
+                    </form>
 
             
 

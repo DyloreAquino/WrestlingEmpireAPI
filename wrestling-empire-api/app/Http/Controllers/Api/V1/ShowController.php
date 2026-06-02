@@ -13,7 +13,20 @@ use App\Filters\V1\ShowsFilter;
 class ShowController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all shows.
+     * 
+     * @group Shows
+     * 
+     *
+     * @queryParam id integer Filter by show ID. Operators: [eq]. Example: id[eq]=1
+     * @queryParam createdAt datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: createdAt[gt]=2026-01-01
+     * @queryParam updatedAt datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: updatedAt[gt]=2026-01-01
+     * @queryParam name string Filter by show name. Operators: [eq]. Example: name[eq]=Monday Night Showdown
+     * @queryParam year integer Filter by year. Operators: [eq], [gt], [lt]. Example: year[gt]=2020
+     * @queryParam month integer Filter by month. Operators: [eq], [gt], [lt]. Example: month[eq]=5
+     * @queryParam week integer Filter by week. Operators: [eq], [gt], [lt]. Example: week[eq]=2
+     * @queryParam type string Filter by show type (TV, PPV, SPECIAL). Operators: [eq], [ne]. Example: type[eq]=PPV
+     * @queryParam territoryId integer Filter by territory ID. Operators: [eq]. Example: territoryId[eq]=3
      */
     public function index(Request $request)
     {
@@ -26,7 +39,9 @@ class ShowController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new show.
+     * 
+     * @group Shows
      */
     public function store(StoreShowRequest $request)
     {
@@ -34,7 +49,11 @@ class ShowController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one show.
+     * 
+     * Also shows the show's events, each event's wrestlers and its stipulations.
+     * 
+     * @group Shows
      */
     public function show(Show $show)
     {
@@ -44,7 +63,9 @@ class ShowController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a show's information.
+     * 
+     * @group Shows
      */
     public function update(UpdateShowRequest $request, Show $show)
     {
@@ -52,7 +73,9 @@ class ShowController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a show.
+     * 
+     * @group Shows
      */
     public function destroy(Show $show)
     {

@@ -15,7 +15,22 @@ use Illuminate\Http\Request;
 class TitleReignController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all title reigns.
+     * 
+     * Also shows the wrestlers associated with each title reign.
+     * 
+     * @group Title Reigns
+     * 
+     * @queryParam id integer Filter by title reign ID. Operators: [eq]. Example: id[eq]=1
+     * @queryParam championshipId integer Filter by championship ID. Operators: [eq]. Example: championshipId[eq]=2
+     * @queryParam yearStart integer Filter by start year. Operators: [eq], [gt], [lt]. Example: yearStart[gt]=2020
+     * @queryParam monthStart integer Filter by start month. Operators: [eq], [gt], [lt]. Example: monthStart[eq]=8
+     * @queryParam weekStart integer Filter by start week. Operators: [eq], [gt], [lt]. Example: weekStart[eq]=3
+     * @queryParam yearEnd integer Filter by end year. Operators: [eq], [gt], [lt]. Example: yearEnd[lt]=2026
+     * @queryParam monthEnd integer Filter by end month. Operators: [eq], [gt], [lt]. Example: monthEnd[eq]=3
+     * @queryParam weekEnd integer Filter by end week. Operators: [eq], [gt], [lt]. Example: weekEnd[eq]=2
+     * @queryParam createdAt datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: createdAt[gt]=2026-01-01
+     * @queryParam updatedAt datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: updatedAt[gt]=2026-01-01
      */
     public function index(Request $request)
     {
@@ -35,7 +50,9 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new title reign.
+     * 
+     * @group Title Reigns
      */
     public function store(StoreTitleReignRequest $request)
     {
@@ -43,7 +60,11 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display one title reign.
+     * 
+     * Also shows the wrestler associated with this title reign.
+     * 
+     * @group Title Reigns
      */
     public function show(TitleReign $titleReign)
     {
@@ -53,7 +74,9 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a title reign's information.
+     * 
+     * @group Title Reigns
      */
     public function update(UpdateTitleReignRequest $request, TitleReign $titleReign)
     {
@@ -61,7 +84,9 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a title reign.
+     * 
+     * @group Title Reigns
      */
     public function destroy(TitleReign $titleReign)
     {
@@ -69,7 +94,11 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Special POST function to assign wrestlers to a title reign.
+     * Assign wrestlers to a title reign.
+     * 
+     * Replaces the list of wrestlers associated with this title reign.
+     * 
+     * @group Title Reigns
      */
     public function assignWrestlers(AssignWrestlersRequest $request, TitleReign $titleReign)
     {
@@ -78,8 +107,11 @@ class TitleReignController extends Controller
     }
 
     /**
-     * Special PATCH function to end a title reign
-     * Updates the end dates
+     * End a title reign.
+     * 
+     * Updates the end dates of this title reign.
+     * 
+     * @group Title Reigns
      */
     public function endReign(EndDateRequest $request, TitleReign $titleReign)
     {

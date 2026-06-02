@@ -1,0 +1,95 @@
+name: Territories
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/v1/territories
+    metadata:
+      custom: []
+      groupName: Territories
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display all territories.'
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":[{"id":1,"name":"Alaska","likes":null,"dislikes":null,"updatedAt":null},{"id":2,"name":"Canada","likes":null,"dislikes":null,"updatedAt":null},{"id":3,"name":"Nunavut","likes":null,"dislikes":null,"updatedAt":null},{"id":4,"name":"Greenland","likes":null,"dislikes":null,"updatedAt":null},{"id":5,"name":"Iceland","likes":null,"dislikes":null,"updatedAt":null},{"id":6,"name":"Quebec","likes":null,"dislikes":null,"updatedAt":null},{"id":7,"name":"North East USA","likes":null,"dislikes":null,"updatedAt":null},{"id":8,"name":"South East USA","likes":null,"dislikes":null,"updatedAt":null},{"id":9,"name":"South West USA","likes":null,"dislikes":null,"updatedAt":null},{"id":10,"name":"North West USA","likes":null,"dislikes":null,"updatedAt":null},{"id":11,"name":"Caribbean","likes":null,"dislikes":null,"updatedAt":null},{"id":12,"name":"Mexico","likes":null,"dislikes":null,"updatedAt":null},{"id":13,"name":"Colombia","likes":null,"dislikes":null,"updatedAt":null},{"id":14,"name":"Brazil","likes":null,"dislikes":null,"updatedAt":null},{"id":15,"name":"Argentina","likes":null,"dislikes":null,"updatedAt":null},{"id":16,"name":"United Kingdom","likes":null,"dislikes":null,"updatedAt":null},{"id":17,"name":"West Europe","likes":null,"dislikes":null,"updatedAt":null},{"id":18,"name":"East Europe","likes":null,"dislikes":null,"updatedAt":null},{"id":19,"name":"Scandinavia","likes":null,"dislikes":null,"updatedAt":null},{"id":20,"name":"Svalbard","likes":null,"dislikes":null,"updatedAt":null},{"id":21,"name":"West Russia","likes":null,"dislikes":null,"updatedAt":null},{"id":22,"name":"Russia","likes":null,"dislikes":null,"updatedAt":null},{"id":23,"name":"Siberia","likes":null,"dislikes":null,"updatedAt":null},{"id":24,"name":"Japan","likes":null,"dislikes":null,"updatedAt":null},{"id":25,"name":"Korea","likes":null,"dislikes":null,"updatedAt":null},{"id":26,"name":"China","likes":null,"dislikes":null,"updatedAt":null},{"id":27,"name":"Mongolia","likes":null,"dislikes":null,"updatedAt":null},{"id":28,"name":"Kazakhstan","likes":null,"dislikes":null,"updatedAt":null},{"id":29,"name":"Afghanistan","likes":null,"dislikes":null,"updatedAt":null},{"id":30,"name":"Iran","likes":null,"dislikes":null,"updatedAt":null},{"id":31,"name":"Turkey","likes":null,"dislikes":null,"updatedAt":null},{"id":32,"name":"Arabia","likes":null,"dislikes":null,"updatedAt":null},{"id":33,"name":"Egypt","likes":null,"dislikes":null,"updatedAt":null},{"id":34,"name":"Nigeria","likes":null,"dislikes":null,"updatedAt":null},{"id":35,"name":"Congo","likes":null,"dislikes":null,"updatedAt":null},{"id":36,"name":"Ethiopia","likes":null,"dislikes":null,"updatedAt":null},{"id":37,"name":"South Africa","likes":null,"dislikes":null,"updatedAt":null},{"id":38,"name":"Madagascar","likes":null,"dislikes":null,"updatedAt":null},{"id":39,"name":"India","likes":null,"dislikes":null,"updatedAt":null},{"id":40,"name":"Thailand","likes":null,"dislikes":null,"updatedAt":null},{"id":41,"name":"Philippines","likes":null,"dislikes":null,"updatedAt":null},{"id":42,"name":"Indonesia","likes":null,"dislikes":null,"updatedAt":null},{"id":43,"name":"Papua New Guinea","likes":null,"dislikes":null,"updatedAt":null},{"id":44,"name":"Australia","likes":null,"dislikes":null,"updatedAt":null},{"id":45,"name":"New Zealand","likes":null,"dislikes":null,"updatedAt":null},{"id":46,"name":"Antarctica","likes":null,"dislikes":null,"updatedAt":null}]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/v1/territories/{id}'
+    metadata:
+      custom: []
+      groupName: Territories
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display one territory.'
+      description: 'Also displays the wrestlers from that territory.'
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the territory.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":{"id":1,"name":"Alaska","likes":null,"dislikes":null,"updatedAt":null,"wrestlers":[]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
