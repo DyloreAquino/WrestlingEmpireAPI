@@ -177,7 +177,7 @@ endpoints:
         name: name
         description: ''
         required: false
-        example: null
+        example: architecto
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -233,7 +233,7 @@ endpoints:
       territoryId:
         custom: []
         name: territoryId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the territories table.'
         required: true
         example: 16
         type: integer
@@ -242,6 +242,7 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
+      name: architecto
       year: 16
       month: 4
       week: 3
@@ -403,7 +404,7 @@ endpoints:
       territoryId:
         custom: []
         name: territoryId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the territories table.'
         required: true
         example: 16
         type: integer

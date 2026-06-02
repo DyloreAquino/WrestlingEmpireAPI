@@ -381,11 +381,11 @@ access-control-allow-origin: *
     &quot;data&quot;: [
         {
             &quot;id&quot;: 1,
-            &quot;name&quot;: &quot;Rosella Beer&quot;,
-            &quot;division&quot;: &quot;WOMENS&quot;,
-            &quot;promotionId&quot;: 7,
+            &quot;name&quot;: &quot;AEW World Champion&quot;,
+            &quot;division&quot;: &quot;WORLD&quot;,
+            &quot;promotionId&quot;: 5,
             &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;
+            &quot;updatedAt&quot;: &quot;2026-06-02T06:13:22.000000Z&quot;
         },
         {
             &quot;id&quot;: 2,
@@ -913,8 +913,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"division\": \"WOMENS\",
-    \"promotionId\": 4326.41688
+    \"division\": \"TAG\",
+    \"promotionId\": 16
 }"
 </code></pre></div>
 
@@ -931,8 +931,8 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "division": "WOMENS",
-    "promotionId": 4326.41688
+    "division": "TAG",
+    "promotionId": 16
 };
 
 fetch(url, {
@@ -1036,24 +1036,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="division"                data-endpoint="POSTapi-v1-championships"
-               value="WOMENS"
+               value="TAG"
                data-component="body">
     <br>
-<p>Example: <code>WOMENS</code></p>
+<p>Example: <code>TAG</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
-<small>number</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="promotionId"                data-endpoint="POSTapi-v1-championships"
-               value="4326.41688"
+               value="16"
                data-component="body">
     <br>
-<p>Example: <code>4326.41688</code></p>
+<p>The <code>id</code> of an existing record in the promotions table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -1109,11 +1109,11 @@ access-control-allow-origin: *
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: {
         &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;Rosella Beer&quot;,
-        &quot;division&quot;: &quot;WOMENS&quot;,
-        &quot;promotionId&quot;: 7,
+        &quot;name&quot;: &quot;AEW World Champion&quot;,
+        &quot;division&quot;: &quot;WORLD&quot;,
+        &quot;promotionId&quot;: 5,
         &quot;createdAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
-        &quot;updatedAt&quot;: &quot;2026-06-01T07:18:49.000000Z&quot;,
+        &quot;updatedAt&quot;: &quot;2026-06-02T06:13:22.000000Z&quot;,
         &quot;titleReigns&quot;: [
             {
                 &quot;id&quot;: 1,
@@ -1472,8 +1472,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"division\": \"WORLD\",
-    \"promotionId\": 4326.41688
+    \"division\": \"WOMENS\",
+    \"promotionId\": 16
 }"
 </code></pre></div>
 
@@ -1490,8 +1490,8 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "division": "WORLD",
-    "promotionId": 4326.41688
+    "division": "WOMENS",
+    "promotionId": 16
 };
 
 fetch(url, {
@@ -1612,24 +1612,24 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="division"                data-endpoint="PUTapi-v1-championships--id-"
-               value="WORLD"
+               value="WOMENS"
                data-component="body">
     <br>
-<p>Example: <code>WORLD</code></p>
+<p>Example: <code>WOMENS</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
-<small>number</small>&nbsp;
+<small>integer</small>&nbsp;
  &nbsp;
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="promotionId"                data-endpoint="PUTapi-v1-championships--id-"
-               value="4326.41688"
+               value="16"
                data-component="body">
     <br>
-<p>Example: <code>4326.41688</code></p>
+<p>The <code>id</code> of an existing record in the promotions table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -3055,20 +3055,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -3207,20 +3207,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -3736,20 +3736,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -3979,20 +3979,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -5369,20 +5369,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -5794,8 +5794,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"BRAWL\",
-    \"placement\": \"UNDER\",
+    \"type\": \"SEGMENT\",
+    \"placement\": \"MID\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
     \"showId\": 16
@@ -5814,8 +5814,8 @@ const headers = {
 };
 
 let body = {
-    "type": "BRAWL",
-    "placement": "UNDER",
+    "type": "SEGMENT",
+    "placement": "MID",
     "matchTypeId": 16,
     "championshipId": 16,
     "showId": 16
@@ -5910,10 +5910,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-events"
-               value="BRAWL"
+               value="SEGMENT"
                data-component="body">
     <br>
-<p>Example: <code>BRAWL</code></p>
+<p>Example: <code>SEGMENT</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -5924,10 +5924,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="placement"                data-endpoint="POSTapi-v1-events"
-               value="UNDER"
+               value="MID"
                data-component="body">
     <br>
-<p>Example: <code>UNDER</code></p>
+<p>Example: <code>MID</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>UNDER</code></li> <li><code>MID</code></li> <li><code>SEMI</code></li> <li><code>MAIN</code></li></ul>
         </div>
@@ -5941,7 +5941,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the match_types table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
@@ -5953,7 +5953,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the championships table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>showId</code></b>&nbsp;&nbsp;
@@ -5965,7 +5965,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the shows table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -6190,7 +6190,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"SEGMENT\",
+    \"type\": \"PROMO\",
     \"placement\": \"MID\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
@@ -6210,7 +6210,7 @@ const headers = {
 };
 
 let body = {
-    "type": "SEGMENT",
+    "type": "PROMO",
     "placement": "MID",
     "matchTypeId": 16,
     "championshipId": 16,
@@ -6323,10 +6323,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="PUTapi-v1-events--id-"
-               value="SEGMENT"
+               value="PROMO"
                data-component="body">
     <br>
-<p>Example: <code>SEGMENT</code></p>
+<p>Example: <code>PROMO</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -6354,7 +6354,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the match_types table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
@@ -6366,7 +6366,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the championships table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>showId</code></b>&nbsp;&nbsp;
@@ -6378,7 +6378,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the shows table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -6677,8 +6677,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"results\": [
         {
             \"wrestlerId\": 16,
-            \"isWinner\": false,
-            \"finishType\": \"SPECIAL\"
+            \"isWinner\": true,
+            \"finishType\": \"TIMEOUT\"
         }
     ]
 }"
@@ -6699,8 +6699,8 @@ let body = {
     "results": [
         {
             "wrestlerId": 16,
-            "isWinner": false,
-            "finishType": "SPECIAL"
+            "isWinner": true,
+            "finishType": "TIMEOUT"
         }
     ]
 };
@@ -6842,7 +6842,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>finishType</code></b>&nbsp;&nbsp;
@@ -6851,10 +6851,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="results.0.finishType"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="SPECIAL"
+               value="TIMEOUT"
                data-component="body">
     <br>
-<p>Example: <code>SPECIAL</code></p>
+<p>Example: <code>TIMEOUT</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>UNFINISHED</code></li> <li><code>PIN</code></li> <li><code>SUBMISSION</code></li> <li><code>DISQUALIFICATION</code></li> <li><code>COUNTOUT</code></li> <li><code>TIMEOUT</code></li> <li><code>ELIMINATION</code></li> <li><code>SPECIAL</code></li></ul>
                     </div>
@@ -8447,6 +8447,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
+    \"name\": \"architecto\",
     \"year\": 16,
     \"month\": 4,
     \"week\": 3,
@@ -8467,6 +8468,7 @@ const headers = {
 };
 
 let body = {
+    "name": "architecto",
     "year": 16,
     "month": 4,
     "week": 3,
@@ -8563,10 +8565,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-v1-shows"
-               value=""
+               value="architecto"
                data-component="body">
     <br>
-
+<p>Example: <code>architecto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>year</code></b>&nbsp;&nbsp;
@@ -8628,7 +8630,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the territories table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -9190,7 +9192,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the territories table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -9806,20 +9808,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -9940,20 +9942,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -10050,20 +10052,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -11178,20 +11180,20 @@ access-control-allow-origin: *
             {
                 &quot;id&quot;: 1,
                 &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                &quot;name&quot;: &quot;Timmy Renner&quot;,
+                &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                &quot;name&quot;: &quot;Sigma Boy&quot;,
                 &quot;gender&quot;: &quot;MALE&quot;,
-                &quot;finisherName&quot;: &quot;v&quot;,
-                &quot;allegiance&quot;: &quot;FACE&quot;,
-                &quot;role&quot;: &quot;MANAGER&quot;,
-                &quot;territoryId&quot;: 8,
-                &quot;promotionId&quot;: 3,
-                &quot;popularity&quot;: 92,
-                &quot;strength&quot;: 84,
-                &quot;skill&quot;: 83,
-                &quot;agility&quot;: 60,
-                &quot;stamina&quot;: 55,
-                &quot;attitude&quot;: 66,
+                &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                &quot;allegiance&quot;: &quot;HEEL&quot;,
+                &quot;role&quot;: &quot;WRESTLER&quot;,
+                &quot;territoryId&quot;: 22,
+                &quot;promotionId&quot;: 9,
+                &quot;popularity&quot;: 99,
+                &quot;strength&quot;: 80,
+                &quot;skill&quot;: 78,
+                &quot;agility&quot;: 97,
+                &quot;stamina&quot;: 94,
+                &quot;attitude&quot;: 64,
                 &quot;managerId&quot;: null,
                 &quot;partnerId&quot;: null,
                 &quot;storyFriendId&quot;: null,
@@ -13762,20 +13764,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -14072,20 +14074,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -14134,20 +14136,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -14382,20 +14384,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -14568,20 +14570,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -14692,20 +14694,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -15126,20 +15128,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -16676,20 +16678,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -16862,20 +16864,20 @@ access-control-allow-origin: *
                 {
                     &quot;id&quot;: 1,
                     &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-                    &quot;name&quot;: &quot;Timmy Renner&quot;,
+                    &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+                    &quot;name&quot;: &quot;Sigma Boy&quot;,
                     &quot;gender&quot;: &quot;MALE&quot;,
-                    &quot;finisherName&quot;: &quot;v&quot;,
-                    &quot;allegiance&quot;: &quot;FACE&quot;,
-                    &quot;role&quot;: &quot;MANAGER&quot;,
-                    &quot;territoryId&quot;: 8,
-                    &quot;promotionId&quot;: 3,
-                    &quot;popularity&quot;: 92,
-                    &quot;strength&quot;: 84,
-                    &quot;skill&quot;: 83,
-                    &quot;agility&quot;: 60,
-                    &quot;stamina&quot;: 55,
-                    &quot;attitude&quot;: 66,
+                    &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+                    &quot;allegiance&quot;: &quot;HEEL&quot;,
+                    &quot;role&quot;: &quot;WRESTLER&quot;,
+                    &quot;territoryId&quot;: 22,
+                    &quot;promotionId&quot;: 9,
+                    &quot;popularity&quot;: 99,
+                    &quot;strength&quot;: 80,
+                    &quot;skill&quot;: 78,
+                    &quot;agility&quot;: 97,
+                    &quot;stamina&quot;: 94,
+                    &quot;attitude&quot;: 64,
                     &quot;managerId&quot;: null,
                     &quot;partnerId&quot;: null,
                     &quot;storyFriendId&quot;: null,
@@ -17495,7 +17497,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the championships table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
@@ -17929,7 +17931,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the championships table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
@@ -18541,20 +18543,20 @@ access-control-allow-origin: *
         {
             &quot;id&quot;: 1,
             &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-            &quot;name&quot;: &quot;Timmy Renner&quot;,
+            &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+            &quot;name&quot;: &quot;Sigma Boy&quot;,
             &quot;gender&quot;: &quot;MALE&quot;,
-            &quot;finisherName&quot;: &quot;v&quot;,
-            &quot;allegiance&quot;: &quot;FACE&quot;,
-            &quot;role&quot;: &quot;MANAGER&quot;,
-            &quot;territoryId&quot;: 8,
-            &quot;promotionId&quot;: 3,
-            &quot;popularity&quot;: 92,
-            &quot;strength&quot;: 84,
-            &quot;skill&quot;: 83,
-            &quot;agility&quot;: 60,
-            &quot;stamina&quot;: 55,
-            &quot;attitude&quot;: 66,
+            &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+            &quot;allegiance&quot;: &quot;HEEL&quot;,
+            &quot;role&quot;: &quot;WRESTLER&quot;,
+            &quot;territoryId&quot;: 22,
+            &quot;promotionId&quot;: 9,
+            &quot;popularity&quot;: 99,
+            &quot;strength&quot;: 80,
+            &quot;skill&quot;: 78,
+            &quot;agility&quot;: 97,
+            &quot;stamina&quot;: 94,
+            &quot;attitude&quot;: 64,
             &quot;managerId&quot;: null,
             &quot;partnerId&quot;: null,
             &quot;storyFriendId&quot;: null,
@@ -19470,8 +19472,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"name\": \"architecto\",
     \"gender\": \"N\\/A\",
     \"finisherName\": \"architecto\",
-    \"allegiance\": \"FACE\",
-    \"role\": \"BOOKER\",
+    \"allegiance\": \"TWEENER\",
+    \"role\": \"MANAGER\",
     \"territoryId\": 16,
     \"promotionId\": 16,
     \"popularity\": 22,
@@ -19504,8 +19506,8 @@ let body = {
     "name": "architecto",
     "gender": "N\/A",
     "finisherName": "architecto",
-    "allegiance": "FACE",
-    "role": "BOOKER",
+    "allegiance": "TWEENER",
+    "role": "MANAGER",
     "territoryId": 16,
     "promotionId": 16,
     "popularity": 22,
@@ -19649,10 +19651,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="allegiance"                data-endpoint="POSTapi-v1-wrestlers"
-               value="FACE"
+               value="TWEENER"
                data-component="body">
     <br>
-<p>Example: <code>FACE</code></p>
+<p>Example: <code>TWEENER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>HEEL</code></li> <li><code>FACE</code></li> <li><code>TWEENER</code></li></ul>
         </div>
@@ -19663,10 +19665,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-v1-wrestlers"
-               value="BOOKER"
+               value="MANAGER"
                data-component="body">
     <br>
-<p>Example: <code>BOOKER</code></p>
+<p>Example: <code>MANAGER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
         </div>
@@ -19680,7 +19682,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the territories table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
@@ -19692,7 +19694,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the promotions table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
@@ -19776,7 +19778,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
@@ -19788,7 +19790,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
@@ -19800,7 +19802,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
@@ -19812,7 +19814,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
@@ -19824,7 +19826,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
@@ -19836,7 +19838,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
         </form>
 
@@ -19893,20 +19895,20 @@ access-control-allow-origin: *
     &quot;data&quot;: {
         &quot;id&quot;: 1,
         &quot;createdAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-        &quot;updatedAt&quot;: &quot;2026-06-01T07:18:50.000000Z&quot;,
-        &quot;name&quot;: &quot;Timmy Renner&quot;,
+        &quot;updatedAt&quot;: &quot;2026-06-02T06:05:31.000000Z&quot;,
+        &quot;name&quot;: &quot;Sigma Boy&quot;,
         &quot;gender&quot;: &quot;MALE&quot;,
-        &quot;finisherName&quot;: &quot;v&quot;,
-        &quot;allegiance&quot;: &quot;FACE&quot;,
-        &quot;role&quot;: &quot;MANAGER&quot;,
-        &quot;territoryId&quot;: 8,
-        &quot;promotionId&quot;: 3,
-        &quot;popularity&quot;: 92,
-        &quot;strength&quot;: 84,
-        &quot;skill&quot;: 83,
-        &quot;agility&quot;: 60,
-        &quot;stamina&quot;: 55,
-        &quot;attitude&quot;: 66,
+        &quot;finisherName&quot;: &quot;The Sigma Bomb&quot;,
+        &quot;allegiance&quot;: &quot;HEEL&quot;,
+        &quot;role&quot;: &quot;WRESTLER&quot;,
+        &quot;territoryId&quot;: 22,
+        &quot;promotionId&quot;: 9,
+        &quot;popularity&quot;: 99,
+        &quot;strength&quot;: 80,
+        &quot;skill&quot;: 78,
+        &quot;agility&quot;: 97,
+        &quot;stamina&quot;: 94,
+        &quot;attitude&quot;: 64,
         &quot;managerId&quot;: null,
         &quot;partnerId&quot;: null,
         &quot;storyFriendId&quot;: null,
@@ -20231,10 +20233,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"gender\": \"MALE\",
+    \"gender\": \"N\\/A\",
     \"finisherName\": \"architecto\",
     \"allegiance\": \"HEEL\",
-    \"role\": \"BOOKER\",
+    \"role\": \"MANAGER\",
     \"territoryId\": 16,
     \"promotionId\": 16,
     \"popularity\": 22,
@@ -20265,10 +20267,10 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "gender": "MALE",
+    "gender": "N\/A",
     "finisherName": "architecto",
     "allegiance": "HEEL",
-    "role": "BOOKER",
+    "role": "MANAGER",
     "territoryId": 16,
     "promotionId": 16,
     "popularity": 22,
@@ -20403,10 +20405,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="MALE"
+               value="N/A"
                data-component="body">
     <br>
-<p>Example: <code>MALE</code></p>
+<p>Example: <code>N/A</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
         </div>
@@ -20443,10 +20445,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="PUTapi-v1-wrestlers--id-"
-               value="BOOKER"
+               value="MANAGER"
                data-component="body">
     <br>
-<p>Example: <code>BOOKER</code></p>
+<p>Example: <code>MANAGER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
         </div>
@@ -20460,7 +20462,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the territories table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
@@ -20472,7 +20474,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the promotions table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
@@ -20556,7 +20558,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
@@ -20568,7 +20570,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
@@ -20580,7 +20582,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
@@ -20592,7 +20594,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
@@ -20604,7 +20606,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
@@ -20616,7 +20618,7 @@ Must be one of:
                value="16"
                data-component="body">
     <br>
-<p>Example: <code>16</code></p>
+<p>The <code>id</code> of an existing record in the wrestlers table. Example: <code>16</code></p>
         </div>
         </form>
 

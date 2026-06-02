@@ -332,7 +332,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"data":[{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Timmy Renner","gender":"MALE","finisherName":"v","allegiance":"FACE","role":"MANAGER","territoryId":8,"promotionId":3,"popularity":92,"strength":84,"skill":83,"agility":60,"stamina":55,"attitude":66,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":2,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Elissa Stamm","gender":"FEMALE","finisherName":"i","allegiance":"TWEENER","role":"REFEREE","territoryId":18,"promotionId":6,"popularity":72,"strength":58,"skill":65,"agility":68,"stamina":73,"attitude":52,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":3,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Amani Ruecker","gender":"N\/A","finisherName":"o","allegiance":"FACE","role":"REFEREE","territoryId":27,"promotionId":1,"popularity":56,"strength":57,"skill":93,"agility":60,"stamina":68,"attitude":62,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":4,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Krystal Carroll","gender":"FEMALE","finisherName":"s","allegiance":"HEEL","role":"BOOKER","territoryId":28,"promotionId":7,"popularity":93,"strength":52,"skill":59,"agility":95,"stamina":78,"attitude":56,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":5,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Mr. Marcus Labadie I","gender":"N\/A","finisherName":"d","allegiance":"HEEL","role":"BOOKER","territoryId":23,"promotionId":7,"popularity":79,"strength":83,"skill":57,"agility":69,"stamina":67,"attitude":68,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":6,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Broderick Nolan","gender":"MALE","finisherName":"t","allegiance":"TWEENER","role":"MANAGER","territoryId":19,"promotionId":1,"popularity":95,"strength":89,"skill":73,"agility":59,"stamina":54,"attitude":69,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":7,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Viola Hilpert","gender":"N\/A","finisherName":"p","allegiance":"TWEENER","role":"REFEREE","territoryId":35,"promotionId":9,"popularity":65,"strength":81,"skill":86,"agility":61,"stamina":70,"attitude":73,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":8,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Morgan Heller Sr.","gender":"MALE","finisherName":"a","allegiance":"TWEENER","role":"WRESTLER","territoryId":36,"promotionId":7,"popularity":86,"strength":63,"skill":64,"agility":51,"stamina":59,"attitude":85,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":9,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Karlie Boyer","gender":"FEMALE","finisherName":"s","allegiance":"HEEL","role":"WRESTLER","territoryId":27,"promotionId":8,"popularity":69,"strength":85,"skill":63,"agility":87,"stamina":99,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":10,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Finn Rogahn","gender":"MALE","finisherName":"k","allegiance":"TWEENER","role":"REFEREE","territoryId":4,"promotionId":8,"popularity":54,"strength":97,"skill":71,"agility":67,"stamina":69,"attitude":63,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":11,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Raina Schaden","gender":"FEMALE","finisherName":"u","allegiance":"FACE","role":"REFEREE","territoryId":22,"promotionId":4,"popularity":75,"strength":59,"skill":81,"agility":70,"stamina":82,"attitude":92,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":12,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Alfonzo Mitchell I","gender":"N\/A","finisherName":"p","allegiance":"FACE","role":"MANAGER","territoryId":16,"promotionId":3,"popularity":84,"strength":73,"skill":78,"agility":93,"stamina":59,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":13,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Prof. Thurman Collins","gender":"MALE","finisherName":"p","allegiance":"HEEL","role":"REFEREE","territoryId":33,"promotionId":3,"popularity":63,"strength":71,"skill":56,"agility":51,"stamina":70,"attitude":57,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":14,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Mrs. Lupe Crist DVM","gender":"FEMALE","finisherName":"i","allegiance":"TWEENER","role":"REFEREE","territoryId":18,"promotionId":8,"popularity":73,"strength":95,"skill":88,"agility":81,"stamina":60,"attitude":65,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":15,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Shanie McClure","gender":"FEMALE","finisherName":"f","allegiance":"TWEENER","role":"REFEREE","territoryId":41,"promotionId":4,"popularity":56,"strength":54,"skill":70,"agility":57,"stamina":50,"attitude":71,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":16,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Johann Nitzsche MD","gender":"N\/A","finisherName":"o","allegiance":"HEEL","role":"WRESTLER","territoryId":25,"promotionId":6,"popularity":82,"strength":86,"skill":87,"agility":53,"stamina":96,"attitude":92,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":17,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Sonia Schiller Sr.","gender":"FEMALE","finisherName":"j","allegiance":"HEEL","role":"REFEREE","territoryId":26,"promotionId":4,"popularity":80,"strength":68,"skill":50,"agility":88,"stamina":64,"attitude":60,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":18,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Hermina Schumm","gender":"FEMALE","finisherName":"z","allegiance":"TWEENER","role":"BOOKER","territoryId":5,"promotionId":4,"popularity":66,"strength":60,"skill":76,"agility":61,"stamina":78,"attitude":80,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":19,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Alfredo Trantow","gender":"MALE","finisherName":"g","allegiance":"HEEL","role":"WRESTLER","territoryId":46,"promotionId":7,"popularity":95,"strength":63,"skill":94,"agility":67,"stamina":83,"attitude":86,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":20,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Dr. Alvah Leffler DDS","gender":"N\/A","finisherName":"y","allegiance":"HEEL","role":"MANAGER","territoryId":40,"promotionId":9,"popularity":92,"strength":97,"skill":70,"agility":55,"stamina":76,"attitude":90,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":21,"createdAt":"2026-06-01T13:43:29.000000Z","updatedAt":"2026-06-01T13:43:29.000000Z","name":"Babie Wicka","gender":"FEMALE","finisherName":"Babie Drop","allegiance":"FACE","role":"WRESTLER","territoryId":8,"promotionId":3,"popularity":99,"strength":99,"skill":99,"agility":99,"stamina":99,"attitude":99,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null}]}'
+        content: '{"data":[{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-02T06:05:31.000000Z","name":"Sigma Boy","gender":"MALE","finisherName":"The Sigma Bomb","allegiance":"HEEL","role":"WRESTLER","territoryId":22,"promotionId":9,"popularity":99,"strength":80,"skill":78,"agility":97,"stamina":94,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":2,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Elissa Stamm","gender":"FEMALE","finisherName":"i","allegiance":"TWEENER","role":"REFEREE","territoryId":18,"promotionId":6,"popularity":72,"strength":58,"skill":65,"agility":68,"stamina":73,"attitude":52,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":3,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Amani Ruecker","gender":"N\/A","finisherName":"o","allegiance":"FACE","role":"REFEREE","territoryId":27,"promotionId":1,"popularity":56,"strength":57,"skill":93,"agility":60,"stamina":68,"attitude":62,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":4,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Krystal Carroll","gender":"FEMALE","finisherName":"s","allegiance":"HEEL","role":"BOOKER","territoryId":28,"promotionId":7,"popularity":93,"strength":52,"skill":59,"agility":95,"stamina":78,"attitude":56,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":5,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Mr. Marcus Labadie I","gender":"N\/A","finisherName":"d","allegiance":"HEEL","role":"BOOKER","territoryId":23,"promotionId":7,"popularity":79,"strength":83,"skill":57,"agility":69,"stamina":67,"attitude":68,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":6,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Broderick Nolan","gender":"MALE","finisherName":"t","allegiance":"TWEENER","role":"MANAGER","territoryId":19,"promotionId":1,"popularity":95,"strength":89,"skill":73,"agility":59,"stamina":54,"attitude":69,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":7,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Viola Hilpert","gender":"N\/A","finisherName":"p","allegiance":"TWEENER","role":"REFEREE","territoryId":35,"promotionId":9,"popularity":65,"strength":81,"skill":86,"agility":61,"stamina":70,"attitude":73,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":8,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Morgan Heller Sr.","gender":"MALE","finisherName":"a","allegiance":"TWEENER","role":"WRESTLER","territoryId":36,"promotionId":7,"popularity":86,"strength":63,"skill":64,"agility":51,"stamina":59,"attitude":85,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":9,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Karlie Boyer","gender":"FEMALE","finisherName":"s","allegiance":"HEEL","role":"WRESTLER","territoryId":27,"promotionId":8,"popularity":69,"strength":85,"skill":63,"agility":87,"stamina":99,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":10,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Finn Rogahn","gender":"MALE","finisherName":"k","allegiance":"TWEENER","role":"REFEREE","territoryId":4,"promotionId":8,"popularity":54,"strength":97,"skill":71,"agility":67,"stamina":69,"attitude":63,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":11,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Raina Schaden","gender":"FEMALE","finisherName":"u","allegiance":"FACE","role":"REFEREE","territoryId":22,"promotionId":4,"popularity":75,"strength":59,"skill":81,"agility":70,"stamina":82,"attitude":92,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":12,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Alfonzo Mitchell I","gender":"N\/A","finisherName":"p","allegiance":"FACE","role":"MANAGER","territoryId":16,"promotionId":3,"popularity":84,"strength":73,"skill":78,"agility":93,"stamina":59,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":13,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Prof. Thurman Collins","gender":"MALE","finisherName":"p","allegiance":"HEEL","role":"REFEREE","territoryId":33,"promotionId":3,"popularity":63,"strength":71,"skill":56,"agility":51,"stamina":70,"attitude":57,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":14,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Mrs. Lupe Crist DVM","gender":"FEMALE","finisherName":"i","allegiance":"TWEENER","role":"REFEREE","territoryId":18,"promotionId":8,"popularity":73,"strength":95,"skill":88,"agility":81,"stamina":60,"attitude":65,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":15,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Shanie McClure","gender":"FEMALE","finisherName":"f","allegiance":"TWEENER","role":"REFEREE","territoryId":41,"promotionId":4,"popularity":56,"strength":54,"skill":70,"agility":57,"stamina":50,"attitude":71,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":16,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Johann Nitzsche MD","gender":"N\/A","finisherName":"o","allegiance":"HEEL","role":"WRESTLER","territoryId":25,"promotionId":6,"popularity":82,"strength":86,"skill":87,"agility":53,"stamina":96,"attitude":92,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":17,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Sonia Schiller Sr.","gender":"FEMALE","finisherName":"j","allegiance":"HEEL","role":"REFEREE","territoryId":26,"promotionId":4,"popularity":80,"strength":68,"skill":50,"agility":88,"stamina":64,"attitude":60,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":18,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Hermina Schumm","gender":"FEMALE","finisherName":"z","allegiance":"TWEENER","role":"BOOKER","territoryId":5,"promotionId":4,"popularity":66,"strength":60,"skill":76,"agility":61,"stamina":78,"attitude":80,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":19,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Alfredo Trantow","gender":"MALE","finisherName":"g","allegiance":"HEEL","role":"WRESTLER","territoryId":46,"promotionId":7,"popularity":95,"strength":63,"skill":94,"agility":67,"stamina":83,"attitude":86,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":20,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Dr. Alvah Leffler DDS","gender":"N\/A","finisherName":"y","allegiance":"HEEL","role":"MANAGER","territoryId":40,"promotionId":9,"popularity":92,"strength":97,"skill":70,"agility":55,"stamina":76,"attitude":90,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null},{"id":21,"createdAt":"2026-06-01T13:43:29.000000Z","updatedAt":"2026-06-01T13:43:29.000000Z","name":"Babie Wicka","gender":"FEMALE","finisherName":"Babie Drop","allegiance":"FACE","role":"WRESTLER","territoryId":8,"promotionId":3,"popularity":99,"strength":99,"skill":99,"agility":99,"stamina":99,"attitude":99,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -407,7 +407,7 @@ endpoints:
         name: allegiance
         description: ''
         required: true
-        example: FACE
+        example: TWEENER
         type: string
         enumValues:
           - HEEL
@@ -421,7 +421,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: BOOKER
+        example: MANAGER
         type: string
         enumValues:
           - WRESTLER
@@ -435,7 +435,7 @@ endpoints:
       territoryId:
         custom: []
         name: territoryId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the territories table.'
         required: true
         example: 16
         type: integer
@@ -446,7 +446,7 @@ endpoints:
       promotionId:
         custom: []
         name: promotionId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the promotions table.'
         required: true
         example: 16
         type: integer
@@ -523,7 +523,7 @@ endpoints:
       managerId:
         custom: []
         name: managerId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -534,7 +534,7 @@ endpoints:
       partnerId:
         custom: []
         name: partnerId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -545,7 +545,7 @@ endpoints:
       storyFriendId:
         custom: []
         name: storyFriendId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -556,7 +556,7 @@ endpoints:
       storyEnemyId:
         custom: []
         name: storyEnemyId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -567,7 +567,7 @@ endpoints:
       realFriendId:
         custom: []
         name: realFriendId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -578,7 +578,7 @@ endpoints:
       realEnemyId:
         custom: []
         name: realEnemyId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -590,8 +590,8 @@ endpoints:
       name: architecto
       gender: N/A
       finisherName: architecto
-      allegiance: FACE
-      role: BOOKER
+      allegiance: TWEENER
+      role: MANAGER
       territoryId: 16
       promotionId: 16
       popularity: 22
@@ -654,7 +654,7 @@ endpoints:
       -
         custom: []
         status: 200
-        content: '{"data":{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Timmy Renner","gender":"MALE","finisherName":"v","allegiance":"FACE","role":"MANAGER","territoryId":8,"promotionId":3,"popularity":92,"strength":84,"skill":83,"agility":60,"stamina":55,"attitude":66,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null,"events":[{"id":48,"type":"PROMO","placement":"UNDER","matchTypeId":null,"championshipId":null,"showId":27,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":0,"finishType":"TIMEOUT"},{"id":24,"type":"PROMO","placement":"SEMI","matchTypeId":null,"championshipId":24,"showId":22,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SUBMISSION"},{"id":27,"type":"MATCH","placement":"MID","matchTypeId":4,"championshipId":26,"showId":18,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":14,"type":"MATCH","placement":"UNDER","matchTypeId":2,"championshipId":null,"showId":5,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":16,"type":"PROMO","placement":"MID","matchTypeId":null,"championshipId":null,"showId":14,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"PIN"}],"titleReigns":[{"id":16,"championshipId":4,"yearStart":2021,"monthStart":7,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":21,"championshipId":6,"yearStart":1987,"monthStart":11,"weekStart":3,"yearEnd":2003,"monthEnd":8,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":22,"championshipId":6,"yearStart":1970,"monthStart":3,"weekStart":4,"yearEnd":1975,"monthEnd":5,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":26,"championshipId":6,"yearStart":2001,"monthStart":3,"weekStart":3,"yearEnd":2000,"monthEnd":10,"weekEnd":4,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":29,"championshipId":7,"yearStart":1979,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":31,"championshipId":7,"yearStart":2021,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":38,"championshipId":8,"yearStart":2019,"monthStart":7,"weekStart":1,"yearEnd":1995,"monthEnd":8,"weekEnd":1,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":63,"championshipId":36,"yearStart":2023,"monthStart":2,"weekStart":1,"yearEnd":2003,"monthEnd":5,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":66,"championshipId":39,"yearStart":2007,"monthStart":10,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}],"teams":[{"id":1,"name":"Prof. Georgianna Paucek MD","yearStart":2020,"monthStart":5,"weekStart":3,"yearEnd":2012,"monthEnd":7,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":2,"name":"Anna Nikolaus","yearStart":2019,"monthStart":5,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":3,"name":"Dr. Cortney Reichert","yearStart":2022,"monthStart":3,"weekStart":3,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}]}}'
+        content: '{"data":{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-02T06:05:31.000000Z","name":"Sigma Boy","gender":"MALE","finisherName":"The Sigma Bomb","allegiance":"HEEL","role":"WRESTLER","territoryId":22,"promotionId":9,"popularity":99,"strength":80,"skill":78,"agility":97,"stamina":94,"attitude":64,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null,"events":[{"id":48,"type":"PROMO","placement":"UNDER","matchTypeId":null,"championshipId":null,"showId":27,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":0,"finishType":"TIMEOUT"},{"id":24,"type":"PROMO","placement":"SEMI","matchTypeId":null,"championshipId":24,"showId":22,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SUBMISSION"},{"id":27,"type":"MATCH","placement":"MID","matchTypeId":4,"championshipId":26,"showId":18,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":14,"type":"MATCH","placement":"UNDER","matchTypeId":2,"championshipId":null,"showId":5,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":16,"type":"PROMO","placement":"MID","matchTypeId":null,"championshipId":null,"showId":14,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"PIN"}],"titleReigns":[{"id":16,"championshipId":4,"yearStart":2021,"monthStart":7,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":21,"championshipId":6,"yearStart":1987,"monthStart":11,"weekStart":3,"yearEnd":2003,"monthEnd":8,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":22,"championshipId":6,"yearStart":1970,"monthStart":3,"weekStart":4,"yearEnd":1975,"monthEnd":5,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":26,"championshipId":6,"yearStart":2001,"monthStart":3,"weekStart":3,"yearEnd":2000,"monthEnd":10,"weekEnd":4,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":29,"championshipId":7,"yearStart":1979,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":31,"championshipId":7,"yearStart":2021,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":38,"championshipId":8,"yearStart":2019,"monthStart":7,"weekStart":1,"yearEnd":1995,"monthEnd":8,"weekEnd":1,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":63,"championshipId":36,"yearStart":2023,"monthStart":2,"weekStart":1,"yearEnd":2003,"monthEnd":5,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":66,"championshipId":39,"yearStart":2007,"monthStart":10,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}],"teams":[{"id":1,"name":"Prof. Georgianna Paucek MD","yearStart":2020,"monthStart":5,"weekStart":3,"yearEnd":2012,"monthEnd":7,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":2,"name":"Anna Nikolaus","yearStart":2019,"monthStart":5,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":3,"name":"Dr. Cortney Reichert","yearStart":2022,"monthStart":3,"weekStart":3,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -717,7 +717,7 @@ endpoints:
         name: gender
         description: ''
         required: true
-        example: MALE
+        example: N/A
         type: string
         enumValues:
           - MALE
@@ -756,7 +756,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: BOOKER
+        example: MANAGER
         type: string
         enumValues:
           - WRESTLER
@@ -770,7 +770,7 @@ endpoints:
       territoryId:
         custom: []
         name: territoryId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the territories table.'
         required: true
         example: 16
         type: integer
@@ -781,7 +781,7 @@ endpoints:
       promotionId:
         custom: []
         name: promotionId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the promotions table.'
         required: true
         example: 16
         type: integer
@@ -858,7 +858,7 @@ endpoints:
       managerId:
         custom: []
         name: managerId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -869,7 +869,7 @@ endpoints:
       partnerId:
         custom: []
         name: partnerId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -880,7 +880,7 @@ endpoints:
       storyFriendId:
         custom: []
         name: storyFriendId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -891,7 +891,7 @@ endpoints:
       storyEnemyId:
         custom: []
         name: storyEnemyId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -902,7 +902,7 @@ endpoints:
       realFriendId:
         custom: []
         name: realFriendId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -913,7 +913,7 @@ endpoints:
       realEnemyId:
         custom: []
         name: realEnemyId
-        description: ''
+        description: 'The <code>id</code> of an existing record in the wrestlers table.'
         required: false
         example: 16
         type: integer
@@ -923,10 +923,10 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: architecto
-      gender: MALE
+      gender: N/A
       finisherName: architecto
       allegiance: HEEL
-      role: BOOKER
+      role: MANAGER
       territoryId: 16
       promotionId: 16
       popularity: 22
