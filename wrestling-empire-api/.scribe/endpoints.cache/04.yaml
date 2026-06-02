@@ -223,7 +223,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: TV
+        example: PPV
         type: string
         enumValues:
           - TV
@@ -247,7 +247,7 @@ endpoints:
       year: 16
       month: 4
       week: 3
-      type: TV
+      type: PPV
       territoryId: 16
     fileParameters: []
     responses: []
@@ -343,8 +343,82 @@ endpoints:
       id: 1
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: ''
+        required: false
+        example: null
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      year:
+        custom: []
+        name: year
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      month:
+        custom: []
+        name: month
+        description: 'Must be at least 1. Must not be greater than 12.'
+        required: true
+        example: 4
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      week:
+        custom: []
+        name: week
+        description: 'Must be at least 1. Must not be greater than 4.'
+        required: true
+        example: 3
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      type:
+        custom: []
+        name: type
+        description: ''
+        required: true
+        example: TV
+        type: string
+        enumValues:
+          - TV
+          - PPV
+          - SPECIAL
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      territoryId:
+        custom: []
+        name: territoryId
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      year: 16
+      month: 4
+      week: 3
+      type: TV
+      territoryId: 16
     fileParameters: []
     responses: []
     responseFields: []

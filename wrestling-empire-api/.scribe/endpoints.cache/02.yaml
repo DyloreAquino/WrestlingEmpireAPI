@@ -166,7 +166,7 @@ endpoints:
         name: division
         description: ''
         required: true
-        example: WORLD
+        example: WOMENS
         type: string
         enumValues:
           - TAG
@@ -189,7 +189,7 @@ endpoints:
         deprecated: false
     cleanBodyParameters:
       name: architecto
-      division: WORLD
+      division: WOMENS
       promotionId: 4326.41688
     fileParameters: []
     responses: []
@@ -285,8 +285,48 @@ endpoints:
       id: 1
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      division:
+        custom: []
+        name: division
+        description: ''
+        required: true
+        example: WORLD
+        type: string
+        enumValues:
+          - TAG
+          - WORLD
+          - MID
+          - WOMENS
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      promotionId:
+        custom: []
+        name: promotionId
+        description: ''
+        required: true
+        example: 4326.41688
+        type: number
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: architecto
+      division: WORLD
+      promotionId: 4326.41688
     fileParameters: []
     responses: []
     responseFields: []

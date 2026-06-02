@@ -165,7 +165,7 @@ endpoints:
         name: type
         description: ''
         required: true
-        example: MATCH
+        example: BRAWL
         type: string
         enumValues:
           - PROMO
@@ -180,7 +180,7 @@ endpoints:
         name: placement
         description: ''
         required: true
-        example: MID
+        example: UNDER
         type: string
         enumValues:
           - UNDER
@@ -224,8 +224,8 @@ endpoints:
         nullable: false
         deprecated: false
     cleanBodyParameters:
-      type: MATCH
-      placement: MID
+      type: BRAWL
+      placement: UNDER
       matchTypeId: 16
       championshipId: 16
       showId: 16
@@ -323,8 +323,76 @@ endpoints:
       id: 1
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      type:
+        custom: []
+        name: type
+        description: ''
+        required: true
+        example: SEGMENT
+        type: string
+        enumValues:
+          - PROMO
+          - MATCH
+          - SEGMENT
+          - BRAWL
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      placement:
+        custom: []
+        name: placement
+        description: ''
+        required: true
+        example: MID
+        type: string
+        enumValues:
+          - UNDER
+          - MID
+          - SEMI
+          - MAIN
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      matchTypeId:
+        custom: []
+        name: matchTypeId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      championshipId:
+        custom: []
+        name: championshipId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      showId:
+        custom: []
+        name: showId
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      type: SEGMENT
+      placement: MID
+      matchTypeId: 16
+      championshipId: 16
+      showId: 16
     fileParameters: []
     responses: []
     responseFields: []
@@ -495,7 +563,7 @@ endpoints:
         name: 'results[].isWinner'
         description: ''
         required: true
-        example: true
+        example: false
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -506,7 +574,7 @@ endpoints:
         name: 'results[].finishType'
         description: ''
         required: true
-        example: SUBMISSION
+        example: SPECIAL
         type: string
         enumValues:
           - UNFINISHED
@@ -524,8 +592,8 @@ endpoints:
       results:
         -
           wrestlerId: 16
-          isWinner: true
-          finishType: SUBMISSION
+          isWinner: false
+          finishType: SPECIAL
     fileParameters: []
     responses: []
     responseFields: []

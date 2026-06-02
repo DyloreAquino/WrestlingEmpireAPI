@@ -363,8 +363,92 @@ endpoints:
       id: 1
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      yearStart:
+        custom: []
+        name: yearStart
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      monthStart:
+        custom: []
+        name: monthStart
+        description: 'Must be at least 1. Must not be greater than 12.'
+        required: true
+        example: 4
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      weekStart:
+        custom: []
+        name: weekStart
+        description: 'Must be at least 1. Must not be greater than 4.'
+        required: true
+        example: 3
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      yearEnd:
+        custom: []
+        name: yearEnd
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      monthEnd:
+        custom: []
+        name: monthEnd
+        description: 'Must be at least 1. Must not be greater than 12.'
+        required: true
+        example: 4
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      weekEnd:
+        custom: []
+        name: weekEnd
+        description: 'Must be at least 1. Must not be greater than 4.'
+        required: true
+        example: 3
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: architecto
+      yearStart: 16
+      monthStart: 4
+      weekStart: 3
+      yearEnd: 16
+      monthEnd: 4
+      weekEnd: 3
     fileParameters: []
     responses: []
     responseFields: []

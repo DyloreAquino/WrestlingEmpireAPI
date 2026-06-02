@@ -382,6 +382,341 @@ endpoints:
         name: gender
         description: ''
         required: true
+        example: N/A
+        type: string
+        enumValues:
+          - MALE
+          - FEMALE
+          - N/A
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      finisherName:
+        custom: []
+        name: finisherName
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      allegiance:
+        custom: []
+        name: allegiance
+        description: ''
+        required: true
+        example: FACE
+        type: string
+        enumValues:
+          - HEEL
+          - FACE
+          - TWEENER
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      role:
+        custom: []
+        name: role
+        description: ''
+        required: true
+        example: BOOKER
+        type: string
+        enumValues:
+          - WRESTLER
+          - MANAGER
+          - BOOKER
+          - REFEREE
+          - CIVILIAN
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      territoryId:
+        custom: []
+        name: territoryId
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      promotionId:
+        custom: []
+        name: promotionId
+        description: ''
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      popularity:
+        custom: []
+        name: popularity
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 22
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      strength:
+        custom: []
+        name: strength
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 7
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      skill:
+        custom: []
+        name: skill
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      agility:
+        custom: []
+        name: agility
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      stamina:
+        custom: []
+        name: stamina
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 15
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      attitude:
+        custom: []
+        name: attitude
+        description: 'Must be at least 50. Must not be greater than 100.'
+        required: true
+        example: 8
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      managerId:
+        custom: []
+        name: managerId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      partnerId:
+        custom: []
+        name: partnerId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      storyFriendId:
+        custom: []
+        name: storyFriendId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      storyEnemyId:
+        custom: []
+        name: storyEnemyId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      realFriendId:
+        custom: []
+        name: realFriendId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      realEnemyId:
+        custom: []
+        name: realEnemyId
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      name: architecto
+      gender: N/A
+      finisherName: architecto
+      allegiance: FACE
+      role: BOOKER
+      territoryId: 16
+      promotionId: 16
+      popularity: 22
+      strength: 7
+      skill: 16
+      agility: 17
+      stamina: 15
+      attitude: 8
+      managerId: 16
+      partnerId: 16
+      storyFriendId: 16
+      storyEnemyId: 16
+      realFriendId: 16
+      realEnemyId: 16
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/v1/wrestlers/{id}'
+    metadata:
+      custom: []
+      groupName: Wrestlers
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display one wrestler.'
+      description: "Also shows the wrestler's events, title reigns, and teams."
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the wrestler.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: '{"data":{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Timmy Renner","gender":"MALE","finisherName":"v","allegiance":"FACE","role":"MANAGER","territoryId":8,"promotionId":3,"popularity":92,"strength":84,"skill":83,"agility":60,"stamina":55,"attitude":66,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null,"events":[{"id":48,"type":"PROMO","placement":"UNDER","matchTypeId":null,"championshipId":null,"showId":27,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":0,"finishType":"TIMEOUT"},{"id":24,"type":"PROMO","placement":"SEMI","matchTypeId":null,"championshipId":24,"showId":22,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SUBMISSION"},{"id":27,"type":"MATCH","placement":"MID","matchTypeId":4,"championshipId":26,"showId":18,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":14,"type":"MATCH","placement":"UNDER","matchTypeId":2,"championshipId":null,"showId":5,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":16,"type":"PROMO","placement":"MID","matchTypeId":null,"championshipId":null,"showId":14,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"PIN"}],"titleReigns":[{"id":16,"championshipId":4,"yearStart":2021,"monthStart":7,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":21,"championshipId":6,"yearStart":1987,"monthStart":11,"weekStart":3,"yearEnd":2003,"monthEnd":8,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":22,"championshipId":6,"yearStart":1970,"monthStart":3,"weekStart":4,"yearEnd":1975,"monthEnd":5,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":26,"championshipId":6,"yearStart":2001,"monthStart":3,"weekStart":3,"yearEnd":2000,"monthEnd":10,"weekEnd":4,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":29,"championshipId":7,"yearStart":1979,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":31,"championshipId":7,"yearStart":2021,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":38,"championshipId":8,"yearStart":2019,"monthStart":7,"weekStart":1,"yearEnd":1995,"monthEnd":8,"weekEnd":1,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":63,"championshipId":36,"yearStart":2023,"monthStart":2,"weekStart":1,"yearEnd":2003,"monthEnd":5,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":66,"championshipId":39,"yearStart":2007,"monthStart":10,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}],"teams":[{"id":1,"name":"Prof. Georgianna Paucek MD","yearStart":2020,"monthStart":5,"weekStart":3,"yearEnd":2012,"monthEnd":7,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":2,"name":"Anna Nikolaus","yearStart":2019,"monthStart":5,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":3,"name":"Dr. Cortney Reichert","yearStart":2022,"monthStart":3,"weekStart":3,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}]}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/v1/wrestlers/{id}'
+    metadata:
+      custom: []
+      groupName: Wrestlers
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: "Update a wrestler's information."
+      description: ''
+      authenticated: false
+      deprecated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the wrestler.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      gender:
+        custom: []
+        name: gender
+        description: ''
+        required: true
         example: MALE
         type: string
         enumValues:
@@ -421,7 +756,7 @@ endpoints:
         name: role
         description: ''
         required: true
-        example: MANAGER
+        example: BOOKER
         type: string
         enumValues:
           - WRESTLER
@@ -591,7 +926,7 @@ endpoints:
       gender: MALE
       finisherName: architecto
       allegiance: HEEL
-      role: MANAGER
+      role: BOOKER
       territoryId: 16
       promotionId: 16
       popularity: 22
@@ -606,102 +941,6 @@ endpoints:
       storyEnemyId: 16
       realFriendId: 16
       realEnemyId: 16
-    fileParameters: []
-    responses: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - GET
-    uri: 'api/v1/wrestlers/{id}'
-    metadata:
-      custom: []
-      groupName: Wrestlers
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: 'Display one wrestler.'
-      description: "Also shows the wrestler's events, title reigns, and teams."
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the wrestler.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        custom: []
-        status: 200
-        content: '{"data":{"id":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z","name":"Timmy Renner","gender":"MALE","finisherName":"v","allegiance":"FACE","role":"MANAGER","territoryId":8,"promotionId":3,"popularity":92,"strength":84,"skill":83,"agility":60,"stamina":55,"attitude":66,"managerId":null,"partnerId":null,"storyFriendId":null,"storyEnemyId":null,"realFriendId":null,"realEnemyId":null,"events":[{"id":48,"type":"PROMO","placement":"UNDER","matchTypeId":null,"championshipId":null,"showId":27,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":0,"finishType":"TIMEOUT"},{"id":24,"type":"PROMO","placement":"SEMI","matchTypeId":null,"championshipId":24,"showId":22,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SUBMISSION"},{"id":27,"type":"MATCH","placement":"MID","matchTypeId":4,"championshipId":26,"showId":18,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":14,"type":"MATCH","placement":"UNDER","matchTypeId":2,"championshipId":null,"showId":5,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"SPECIAL"},{"id":16,"type":"PROMO","placement":"MID","matchTypeId":null,"championshipId":null,"showId":14,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z","isWinner":1,"finishType":"PIN"}],"titleReigns":[{"id":16,"championshipId":4,"yearStart":2021,"monthStart":7,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":21,"championshipId":6,"yearStart":1987,"monthStart":11,"weekStart":3,"yearEnd":2003,"monthEnd":8,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":22,"championshipId":6,"yearStart":1970,"monthStart":3,"weekStart":4,"yearEnd":1975,"monthEnd":5,"weekEnd":2,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":26,"championshipId":6,"yearStart":2001,"monthStart":3,"weekStart":3,"yearEnd":2000,"monthEnd":10,"weekEnd":4,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":29,"championshipId":7,"yearStart":1979,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":31,"championshipId":7,"yearStart":2021,"monthStart":1,"weekStart":2,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":38,"championshipId":8,"yearStart":2019,"monthStart":7,"weekStart":1,"yearEnd":1995,"monthEnd":8,"weekEnd":1,"createdAt":"2026-06-01T07:18:49.000000Z","updatedAt":"2026-06-01T07:18:49.000000Z"},{"id":63,"championshipId":36,"yearStart":2023,"monthStart":2,"weekStart":1,"yearEnd":2003,"monthEnd":5,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":66,"championshipId":39,"yearStart":2007,"monthStart":10,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}],"teams":[{"id":1,"name":"Prof. Georgianna Paucek MD","yearStart":2020,"monthStart":5,"weekStart":3,"yearEnd":2012,"monthEnd":7,"weekEnd":1,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":2,"name":"Anna Nikolaus","yearStart":2019,"monthStart":5,"weekStart":4,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"},{"id":3,"name":"Dr. Cortney Reichert","yearStart":2022,"monthStart":3,"weekStart":3,"yearEnd":null,"monthEnd":null,"weekEnd":null,"createdAt":"2026-06-01T07:18:50.000000Z","updatedAt":"2026-06-01T07:18:50.000000Z"}]}}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-  -
-    custom: []
-    httpMethods:
-      - PUT
-      - PATCH
-    uri: 'api/v1/wrestlers/{id}'
-    metadata:
-      custom: []
-      groupName: Wrestlers
-      groupDescription: ''
-      subgroup: ''
-      subgroupDescription: ''
-      title: "Update a wrestler's information."
-      description: ''
-      authenticated: false
-      deprecated: false
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        custom: []
-        name: id
-        description: 'The ID of the wrestler.'
-        required: true
-        example: 1
-        type: integer
-        enumValues: []
-        exampleWasSpecified: false
-        nullable: false
-        deprecated: false
-    cleanUrlParameters:
-      id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
     fileParameters: []
     responses: []
     responseFields: []

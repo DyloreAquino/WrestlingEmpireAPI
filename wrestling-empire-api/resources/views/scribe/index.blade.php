@@ -913,7 +913,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"division\": \"WORLD\",
+    \"division\": \"WOMENS\",
     \"promotionId\": 4326.41688
 }"
 </code></pre></div>
@@ -931,7 +931,7 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "division": "WORLD",
+    "division": "WOMENS",
     "promotionId": 4326.41688
 };
 
@@ -1036,10 +1036,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="division"                data-endpoint="POSTapi-v1-championships"
-               value="WORLD"
+               value="WOMENS"
                data-component="body">
     <br>
-<p>Example: <code>WORLD</code></p>
+<p>Example: <code>WOMENS</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
         </div>
@@ -1469,7 +1469,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/championships/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"architecto\",
+    \"division\": \"WORLD\",
+    \"promotionId\": 4326.41688
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -1482,10 +1488,16 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "architecto",
+    "division": "WORLD",
+    "promotionId": 4326.41688
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -1580,7 +1592,46 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the championship. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-v1-championships--id-"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>division</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="division"                data-endpoint="PUTapi-v1-championships--id-"
+               value="WORLD"
+               data-component="body">
+    <br>
+<p>Example: <code>WORLD</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>TAG</code></li> <li><code>WORLD</code></li> <li><code>MID</code></li> <li><code>WOMENS</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
+<small>number</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="promotionId"                data-endpoint="PUTapi-v1-championships--id-"
+               value="4326.41688"
+               data-component="body">
+    <br>
+<p>Example: <code>4326.41688</code></p>
+        </div>
+        </form>
 
                     <h2 id="championships-DELETEapi-v1-championships--id-">Delete a championship.</h2>
 
@@ -5743,8 +5794,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"type\": \"MATCH\",
-    \"placement\": \"MID\",
+    \"type\": \"BRAWL\",
+    \"placement\": \"UNDER\",
     \"matchTypeId\": 16,
     \"championshipId\": 16,
     \"showId\": 16
@@ -5763,8 +5814,8 @@ const headers = {
 };
 
 let body = {
-    "type": "MATCH",
-    "placement": "MID",
+    "type": "BRAWL",
+    "placement": "UNDER",
     "matchTypeId": 16,
     "championshipId": 16,
     "showId": 16
@@ -5859,10 +5910,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-events"
-               value="MATCH"
+               value="BRAWL"
                data-component="body">
     <br>
-<p>Example: <code>MATCH</code></p>
+<p>Example: <code>BRAWL</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
         </div>
@@ -5873,10 +5924,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="placement"                data-endpoint="POSTapi-v1-events"
-               value="MID"
+               value="UNDER"
                data-component="body">
     <br>
-<p>Example: <code>MID</code></p>
+<p>Example: <code>UNDER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>UNDER</code></li> <li><code>MID</code></li> <li><code>SEMI</code></li> <li><code>MAIN</code></li></ul>
         </div>
@@ -6137,7 +6188,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/events/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"type\": \"SEGMENT\",
+    \"placement\": \"MID\",
+    \"matchTypeId\": 16,
+    \"championshipId\": 16,
+    \"showId\": 16
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -6150,10 +6209,18 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "type": "SEGMENT",
+    "placement": "MID",
+    "matchTypeId": 16,
+    "championshipId": 16,
+    "showId": 16
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -6248,7 +6315,72 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the event. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="PUTapi-v1-events--id-"
+               value="SEGMENT"
+               data-component="body">
+    <br>
+<p>Example: <code>SEGMENT</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>PROMO</code></li> <li><code>MATCH</code></li> <li><code>SEGMENT</code></li> <li><code>BRAWL</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>placement</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="placement"                data-endpoint="PUTapi-v1-events--id-"
+               value="MID"
+               data-component="body">
+    <br>
+<p>Example: <code>MID</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>UNDER</code></li> <li><code>MID</code></li> <li><code>SEMI</code></li> <li><code>MAIN</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>matchTypeId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="matchTypeId"                data-endpoint="PUTapi-v1-events--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="championshipId"                data-endpoint="PUTapi-v1-events--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>showId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="showId"                data-endpoint="PUTapi-v1-events--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+        </form>
 
                     <h2 id="events-DELETEapi-v1-events--id-">Delete an event.</h2>
 
@@ -6545,8 +6677,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"results\": [
         {
             \"wrestlerId\": 16,
-            \"isWinner\": true,
-            \"finishType\": \"SUBMISSION\"
+            \"isWinner\": false,
+            \"finishType\": \"SPECIAL\"
         }
     ]
 }"
@@ -6567,8 +6699,8 @@ let body = {
     "results": [
         {
             "wrestlerId": 16,
-            "isWinner": true,
-            "finishType": "SUBMISSION"
+            "isWinner": false,
+            "finishType": "SPECIAL"
         }
     ]
 };
@@ -6710,7 +6842,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
                     </div>
                                                                 <div style="margin-left: 14px; clear: unset;">
                         <b style="line-height: 2;"><code>finishType</code></b>&nbsp;&nbsp;
@@ -6719,10 +6851,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="results.0.finishType"                data-endpoint="PATCHapi-v1-events--event_id--simulate"
-               value="SUBMISSION"
+               value="SPECIAL"
                data-component="body">
     <br>
-<p>Example: <code>SUBMISSION</code></p>
+<p>Example: <code>SPECIAL</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>UNFINISHED</code></li> <li><code>PIN</code></li> <li><code>SUBMISSION</code></li> <li><code>DISQUALIFICATION</code></li> <li><code>COUNTOUT</code></li> <li><code>TIMEOUT</code></li> <li><code>ELIMINATION</code></li> <li><code>SPECIAL</code></li></ul>
                     </div>
@@ -8318,7 +8450,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     \"year\": 16,
     \"month\": 4,
     \"week\": 3,
-    \"type\": \"TV\",
+    \"type\": \"PPV\",
     \"territoryId\": 16
 }"
 </code></pre></div>
@@ -8338,7 +8470,7 @@ let body = {
     "year": 16,
     "month": 4,
     "week": 3,
-    "type": "TV",
+    "type": "PPV",
     "territoryId": 16
 };
 
@@ -8479,10 +8611,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="type"                data-endpoint="POSTapi-v1-shows"
-               value="TV"
+               value="PPV"
                data-component="body">
     <br>
-<p>Example: <code>TV</code></p>
+<p>Example: <code>PPV</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>TV</code></li> <li><code>PPV</code></li> <li><code>SPECIAL</code></li></ul>
         </div>
@@ -8858,7 +8990,15 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/shows/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"year\": 16,
+    \"month\": 4,
+    \"week\": 3,
+    \"type\": \"TV\",
+    \"territoryId\": 16
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -8871,10 +9011,18 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "year": 16,
+    "month": 4,
+    "week": 3,
+    "type": "TV",
+    "territoryId": 16
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -8969,7 +9117,82 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the show. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-v1-shows--id-"
+               value=""
+               data-component="body">
+    <br>
+
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>year</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="year"                data-endpoint="PUTapi-v1-shows--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>month</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="month"                data-endpoint="PUTapi-v1-shows--id-"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>week</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="week"                data-endpoint="PUTapi-v1-shows--id-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>type</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="type"                data-endpoint="PUTapi-v1-shows--id-"
+               value="TV"
+               data-component="body">
+    <br>
+<p>Example: <code>TV</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>TV</code></li> <li><code>PPV</code></li> <li><code>SPECIAL</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="territoryId"                data-endpoint="PUTapi-v1-shows--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+        </form>
 
                     <h2 id="shows-DELETEapi-v1-shows--id-">Delete a show.</h2>
 
@@ -11106,7 +11329,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/teams/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"architecto\",
+    \"yearStart\": 16,
+    \"monthStart\": 4,
+    \"weekStart\": 3,
+    \"yearEnd\": 16,
+    \"monthEnd\": 4,
+    \"weekEnd\": 3
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -11119,10 +11352,20 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "architecto",
+    "yearStart": 16,
+    "monthStart": 4,
+    "weekStart": 3,
+    "yearEnd": 16,
+    "monthEnd": 4,
+    "weekEnd": 3
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -11217,7 +11460,92 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the team. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-v1-teams--id-"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearStart"                data-endpoint="PUTapi-v1-teams--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>monthStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthStart"                data-endpoint="PUTapi-v1-teams--id-"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>weekStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekStart"                data-endpoint="PUTapi-v1-teams--id-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearEnd"                data-endpoint="PUTapi-v1-teams--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthEnd"                data-endpoint="PUTapi-v1-teams--id-"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekEnd"                data-endpoint="PUTapi-v1-teams--id-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+        </form>
 
                     <h2 id="teams-DELETEapi-v1-teams--id-">Delete a team.</h2>
 
@@ -17459,7 +17787,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/title_reigns/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"championshipId\": 16,
+    \"yearStart\": 16,
+    \"monthStart\": 4,
+    \"weekStart\": 3,
+    \"yearEnd\": 16,
+    \"monthEnd\": 4,
+    \"weekEnd\": 3
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -17472,10 +17810,20 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "championshipId": 16,
+    "yearStart": 16,
+    "monthStart": 4,
+    "weekStart": 3,
+    "yearEnd": 16,
+    "monthEnd": 4,
+    "weekEnd": 3
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -17570,7 +17918,92 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the title reign. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>championshipId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="championshipId"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>yearStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearStart"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>monthStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthStart"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>weekStart</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekStart"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>yearEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="yearEnd"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>monthEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="monthEnd"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="4"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 12. Example: <code>4</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>weekEnd</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="weekEnd"                data-endpoint="PUTapi-v1-title_reigns--id-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Must be at least 1. Must not be greater than 4. Example: <code>3</code></p>
+        </div>
+        </form>
 
                     <h2 id="title-reigns-DELETEapi-v1-title_reigns--id-">Delete a title reign.</h2>
 
@@ -19035,10 +19468,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"name\": \"architecto\",
-    \"gender\": \"MALE\",
+    \"gender\": \"N\\/A\",
     \"finisherName\": \"architecto\",
-    \"allegiance\": \"HEEL\",
-    \"role\": \"MANAGER\",
+    \"allegiance\": \"FACE\",
+    \"role\": \"BOOKER\",
     \"territoryId\": 16,
     \"promotionId\": 16,
     \"popularity\": 22,
@@ -19069,10 +19502,10 @@ const headers = {
 
 let body = {
     "name": "architecto",
-    "gender": "MALE",
+    "gender": "N\/A",
     "finisherName": "architecto",
-    "allegiance": "HEEL",
-    "role": "MANAGER",
+    "allegiance": "FACE",
+    "role": "BOOKER",
     "territoryId": 16,
     "promotionId": 16,
     "popularity": 22,
@@ -19190,10 +19623,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="POSTapi-v1-wrestlers"
-               value="MALE"
+               value="N/A"
                data-component="body">
     <br>
-<p>Example: <code>MALE</code></p>
+<p>Example: <code>N/A</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
         </div>
@@ -19216,10 +19649,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="allegiance"                data-endpoint="POSTapi-v1-wrestlers"
-               value="HEEL"
+               value="FACE"
                data-component="body">
     <br>
-<p>Example: <code>HEEL</code></p>
+<p>Example: <code>FACE</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>HEEL</code></li> <li><code>FACE</code></li> <li><code>TWEENER</code></li></ul>
         </div>
@@ -19230,10 +19663,10 @@ Must be one of:
  &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-v1-wrestlers"
-               value="MANAGER"
+               value="BOOKER"
                data-component="body">
     <br>
-<p>Example: <code>MANAGER</code></p>
+<p>Example: <code>BOOKER</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
         </div>
@@ -19795,7 +20228,29 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-bash">curl --request PUT \
     "http://localhost:8000/api/v1/wrestlers/1" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"architecto\",
+    \"gender\": \"MALE\",
+    \"finisherName\": \"architecto\",
+    \"allegiance\": \"HEEL\",
+    \"role\": \"BOOKER\",
+    \"territoryId\": 16,
+    \"promotionId\": 16,
+    \"popularity\": 22,
+    \"strength\": 7,
+    \"skill\": 16,
+    \"agility\": 17,
+    \"stamina\": 15,
+    \"attitude\": 8,
+    \"managerId\": 16,
+    \"partnerId\": 16,
+    \"storyFriendId\": 16,
+    \"storyEnemyId\": 16,
+    \"realFriendId\": 16,
+    \"realEnemyId\": 16
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
@@ -19808,10 +20263,32 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "name": "architecto",
+    "gender": "MALE",
+    "finisherName": "architecto",
+    "allegiance": "HEEL",
+    "role": "BOOKER",
+    "territoryId": 16,
+    "promotionId": 16,
+    "popularity": 22,
+    "strength": 7,
+    "skill": 16,
+    "agility": 17,
+    "stamina": 15,
+    "attitude": 8,
+    "managerId": 16,
+    "partnerId": 16,
+    "storyFriendId": 16,
+    "storyEnemyId": 16,
+    "realFriendId": 16,
+    "realEnemyId": 16
+};
 
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
@@ -19906,7 +20383,242 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>The ID of the wrestler. Example: <code>1</code></p>
             </div>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="name"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="gender"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="MALE"
+               data-component="body">
+    <br>
+<p>Example: <code>MALE</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>MALE</code></li> <li><code>FEMALE</code></li> <li><code>N/A</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>finisherName</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="finisherName"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="architecto"
+               data-component="body">
+    <br>
+<p>Example: <code>architecto</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>allegiance</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="allegiance"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="HEEL"
+               data-component="body">
+    <br>
+<p>Example: <code>HEEL</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>HEEL</code></li> <li><code>FACE</code></li> <li><code>TWEENER</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="role"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="BOOKER"
+               data-component="body">
+    <br>
+<p>Example: <code>BOOKER</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>WRESTLER</code></li> <li><code>MANAGER</code></li> <li><code>BOOKER</code></li> <li><code>REFEREE</code></li> <li><code>CIVILIAN</code></li></ul>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>territoryId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="territoryId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>promotionId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="promotionId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>popularity</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="popularity"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="22"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>22</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>strength</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="strength"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="7"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>7</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>skill</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="skill"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>agility</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="agility"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="17"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>17</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>stamina</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="stamina"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="15"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>15</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>attitude</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="attitude"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="8"
+               data-component="body">
+    <br>
+<p>Must be at least 50. Must not be greater than 100. Example: <code>8</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>managerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="managerId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>partnerId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="partnerId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>storyFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyFriendId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>storyEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="storyEnemyId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>realFriendId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realFriendId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>realEnemyId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="realEnemyId"                data-endpoint="PUTapi-v1-wrestlers--id-"
+               value="16"
+               data-component="body">
+    <br>
+<p>Example: <code>16</code></p>
+        </div>
+        </form>
 
                     <h2 id="wrestlers-DELETEapi-v1-wrestlers--id-">Delete a wrestler.</h2>
 
