@@ -4,6 +4,8 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use Override;
 
 class UpdateEventRequest extends FormRequest
 {
@@ -12,7 +14,8 @@ class UpdateEventRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: add authorization
+        return true;
     }
 
     /**
@@ -22,8 +25,35 @@ class UpdateEventRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
-        ];
+        $method = $this->method();
+
+        if ($method == 'PUT') {
+            return [
+                'type' => ['required', Rule::in(['PROMO', 'MATCH', 'SEGMENT', 'BRAWL'])],
+                'placement' => ['required', Rule::in(['UNDER', 'MID', 'SEMI', 'MAIN'])],
+                'matchTypeId' => ['nullable', 'integer'],
+                'championshipId' => ['nullable', 'integer'],
+                'showId' => ['required', 'integer'],
+            ];
+        } else {
+            return [
+                'type' => ['sometimes', 'required', Rule::in(['PROMO', 'MATCH', 'SEGMENT', 'BRAWL'])],
+                'placement' => ['sometimes', 'required', Rule::in(['UNDER', 'MID', 'SEMI', 'MAIN'])],
+                'matchTypeId' => ['sometimes', 'nullable', 'integer'],
+                'championshipId' => ['sometimes', 'nullable', 'integer'],
+                'showId' => ['sometimes', 'required', 'integer'],
+            ];
+        }
+        
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'match_type_id' => $this->matchTypeId,
+            'championship_id' => $this->championshipId,
+            'show_id' => $this->showId,
+        ]);
     }
 }

@@ -4,6 +4,8 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use Override;
 
 class UpdateShowRequest extends FormRequest
 {
@@ -12,7 +14,8 @@ class UpdateShowRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: add authorization
+        return true;
     }
 
     /**
@@ -22,8 +25,35 @@ class UpdateShowRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
-        ];
+        $method = $this->method();
+
+        if ($method == 'PUT') {
+            return [
+                'name' => ['nullable'],
+                'year' => ['required', 'integer'],
+                'month' => ['required', 'integer', 'min:1', 'max:12'],
+                'week' => ['required', 'integer', 'min:1', 'max:4'],
+                'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
+                'territoryId' => ['required', 'integer']
+            ];
+        } else {
+            return [
+                'name' => ['sometimes', 'nullable'],
+                'year' => ['sometimes', 'required', 'integer'],
+                'month' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
+                'week' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],
+                'type' => ['sometimes', 'required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
+                'territoryId' => ['sometimes', 'required', 'integer']
+            ];
+        }
+        
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'territory_id' => $this->territoryId,
+        ]);
     }
 }

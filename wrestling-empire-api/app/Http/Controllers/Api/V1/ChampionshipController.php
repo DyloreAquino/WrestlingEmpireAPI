@@ -70,7 +70,7 @@ class ChampionshipController extends Controller
      */
     public function update(UpdateChampionshipRequest $request, Championship $championship)
     {
-        //
+        $championship->update($request->all());
     }
 
     /**

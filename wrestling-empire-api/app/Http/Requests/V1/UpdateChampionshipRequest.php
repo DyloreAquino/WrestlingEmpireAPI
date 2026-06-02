@@ -4,6 +4,8 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use Override;
 
 class UpdateChampionshipRequest extends FormRequest
 {
@@ -12,7 +14,8 @@ class UpdateChampionshipRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // TODO: authorization
+        return true;
     }
 
     /**
@@ -22,8 +25,29 @@ class UpdateChampionshipRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            //
-        ];
+        $method = $this->method();
+        
+        if ($method == 'PUT') {
+            return [
+                'name' => ['required', 'string'],
+                'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
+                'promotionId' => ['required', 'numeric'],
+            ];
+        } else {
+            return [
+                'name' => ['sometimes', 'required', 'string'],
+                'division' => ['sometimes', 'required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
+                'promotionId' => ['sometimes', 'required', 'numeric'],
+            ];
+        }
+        
+    }
+
+    #[Override]
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'promotion_id' => $this->promotionId
+        ]);
     }
 }
