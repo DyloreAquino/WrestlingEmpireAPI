@@ -33,8 +33,8 @@ class UpdateTeamRequest extends FormRequest
                 'monthStart' => ['required', 'integer', 'min:1', 'max:12'],
                 'weekStart' => ['required', 'integer', 'min:1', 'max:4'],
                 'yearEnd' => ['nullable', 'integer'],
-                'monthEnd' => ['required', 'integer', 'min:1', 'max:12'],
-                'weekEnd' => ['required', 'integer', 'min:1', 'max:4'],
+                'monthEnd' => ['nullable', 'integer', 'min:1', 'max:12'],
+                'weekEnd' => ['nullable', 'integer', 'min:1', 'max:4'],
             ];
         } else {
             return [
@@ -43,8 +43,8 @@ class UpdateTeamRequest extends FormRequest
                 'monthStart' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
                 'weekStart' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],
                 'yearEnd' => ['sometimes', 'nullable', 'integer'],
-                'monthEnd' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
-                'weekEnd' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],
+                'monthEnd' => ['sometimes', 'nullable', 'integer', 'min:1', 'max:12'],
+                'weekEnd' => ['sometimes', 'nullable', 'integer', 'min:1', 'max:4'],
             ];
         }
         

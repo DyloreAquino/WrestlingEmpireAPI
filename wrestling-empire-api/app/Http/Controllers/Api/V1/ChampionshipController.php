@@ -59,7 +59,7 @@ class ChampionshipController extends Controller
     public function show(Championship $championship)
     {
         return new ChampionshipResource(
-            $championship->loadMissing('titleReigns.wrestlers')
+            $championship->loadMissing('titleReigns.wrestlers', 'currentReign.wrestlers')
         );
     }
 

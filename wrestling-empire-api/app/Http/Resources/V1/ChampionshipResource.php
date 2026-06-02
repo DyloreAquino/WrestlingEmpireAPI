@@ -22,6 +22,7 @@ class ChampionshipResource extends JsonResource
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
             'titleReigns' => TitleReignResource::collection($this->whenLoaded('titleReigns')),
+            'currentReign' => new TitleReignResource($this->whenLoaded('currentReign')),
         ];
     }
 }

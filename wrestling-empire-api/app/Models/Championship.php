@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Prompts\Title;
 
 class Championship extends Model
 {
@@ -25,4 +26,9 @@ class Championship extends Model
     public function promotion() {
         return $this->belongsTo(Promotion::class);
     }
+
+    /** Returns the current holder of the championship. */
+    public function currentReign() {
+        return $this->hasOne(TitleReign::class)->whereNull('year_end');
+    }   
 }

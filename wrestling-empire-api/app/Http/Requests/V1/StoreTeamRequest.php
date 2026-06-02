@@ -30,8 +30,8 @@ class StoreTeamRequest extends FormRequest
             'monthStart' => ['required', 'integer', 'min:1', 'max:12'],
             'weekStart' => ['required', 'integer', 'min:1', 'max:4'],
             'yearEnd' => ['nullable', 'integer'],
-            'monthEnd' => ['required', 'integer', 'min:1', 'max:12'],
-            'weekEnd' => ['required', 'integer', 'min:1', 'max:4'],
+            'monthEnd' => ['nullable', 'integer', 'min:1', 'max:12'],
+            'weekEnd' => ['nullable', 'integer', 'min:1', 'max:4'],
         ];
     }
 
