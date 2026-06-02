@@ -28,7 +28,7 @@ class StoreChampionshipRequest extends FormRequest
         return [
             'name' => ['required', 'string'],
             'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
-            'promotionId' => ['required', 'numeric'],
+            'promotionId' => ['required', 'integer', 'exists:promotions,id'],
         ];
     }
 

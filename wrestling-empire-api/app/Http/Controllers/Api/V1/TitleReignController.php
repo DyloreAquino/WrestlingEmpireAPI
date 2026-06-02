@@ -81,6 +81,7 @@ class TitleReignController extends Controller
     public function update(UpdateTitleReignRequest $request, TitleReign $titleReign)
     {
         $titleReign->update($request->all());
+        return new TitleReignResource($titleReign);
     }
 
     /**

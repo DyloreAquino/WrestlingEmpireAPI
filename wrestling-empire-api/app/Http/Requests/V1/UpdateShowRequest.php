@@ -34,7 +34,7 @@ class UpdateShowRequest extends FormRequest
                 'month' => ['required', 'integer', 'min:1', 'max:12'],
                 'week' => ['required', 'integer', 'min:1', 'max:4'],
                 'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-                'territoryId' => ['required', 'integer']
+                'territoryId' => ['required', 'integer', 'exists:territories,id']
             ];
         } else {
             return [
@@ -43,7 +43,7 @@ class UpdateShowRequest extends FormRequest
                 'month' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
                 'week' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],
                 'type' => ['sometimes', 'required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-                'territoryId' => ['sometimes', 'required', 'integer']
+                'territoryId' => ['sometimes', 'required', 'integer', 'exists:territories,id']
             ];
         }
         

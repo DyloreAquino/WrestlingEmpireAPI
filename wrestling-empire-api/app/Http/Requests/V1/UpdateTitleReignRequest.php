@@ -28,7 +28,7 @@ class UpdateTitleReignRequest extends FormRequest
 
         if ($method == 'PUT') {
             return [
-                'championshipId' => ['required', 'integer'],
+                'championshipId' => ['required', 'integer', 'exists:championships,id'],
                 'yearStart' => ['required', 'integer'],
                 'monthStart' => ['required', 'integer', 'min:1', 'max:12'],
                 'weekStart' => ['required', 'integer', 'min:1', 'max:4'],
@@ -38,7 +38,7 @@ class UpdateTitleReignRequest extends FormRequest
             ];
         } else {
             return [
-                'championshipId' => ['sometimes', 'required', 'integer'],
+                'championshipId' => ['sometimes', 'required', 'integer', 'exists:championships,id'],
                 'yearStart' => ['sometimes', 'required', 'integer'],
                 'monthStart' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
                 'weekStart' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],

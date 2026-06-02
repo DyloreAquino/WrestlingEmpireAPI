@@ -31,13 +31,13 @@ class UpdateChampionshipRequest extends FormRequest
             return [
                 'name' => ['required', 'string'],
                 'division' => ['required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
-                'promotionId' => ['required', 'numeric'],
+                'promotionId' => ['required', 'integer', 'exists:promotions,id'],
             ];
         } else {
             return [
                 'name' => ['sometimes', 'required', 'string'],
                 'division' => ['sometimes', 'required', Rule::in(['TAG', 'WORLD', 'MID', 'WOMENS'])],
-                'promotionId' => ['sometimes', 'required', 'numeric'],
+                'promotionId' => ['sometimes', 'required', 'integer', 'exists:promotions,id'],
             ];
         }
         

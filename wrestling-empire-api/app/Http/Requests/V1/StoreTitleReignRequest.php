@@ -25,7 +25,7 @@ class StoreTitleReignRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'championshipId' => ['required', 'integer'],
+            'championshipId' => ['required', 'integer', 'exists:championships,id'],
             'yearStart' => ['required', 'integer'],
             'monthStart' => ['required', 'integer', 'min:1', 'max:12'],
             'weekStart' => ['required', 'integer', 'min:1', 'max:4'],

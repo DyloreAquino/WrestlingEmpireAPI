@@ -101,6 +101,7 @@ class WrestlerController extends Controller
     public function update(UpdateWrestlerRequest $request, Wrestler $wrestler)
     {
         $wrestler->update($request->all());
+        return new WrestlerResource($wrestler);
     }
 
     /**

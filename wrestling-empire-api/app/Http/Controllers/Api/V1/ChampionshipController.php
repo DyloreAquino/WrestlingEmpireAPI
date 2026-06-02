@@ -71,6 +71,7 @@ class ChampionshipController extends Controller
     public function update(UpdateChampionshipRequest $request, Championship $championship)
     {
         $championship->update($request->all());
+        return new ChampionshipResource($championship);
     }
 
     /**
@@ -80,6 +81,6 @@ class ChampionshipController extends Controller
      */
     public function destroy(Championship $championship)
     {
-        //
+        $championship->delete();
     }
 }

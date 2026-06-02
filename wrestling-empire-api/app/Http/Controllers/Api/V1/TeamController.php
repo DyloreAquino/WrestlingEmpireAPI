@@ -76,6 +76,7 @@ class TeamController extends Controller
     public function update(UpdateTeamRequest $request, Team $team)
     {
         $team->update($request->all());
+        return new TeamResource($team);
     }
 
     /**

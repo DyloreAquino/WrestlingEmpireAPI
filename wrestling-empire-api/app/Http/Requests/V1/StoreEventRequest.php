@@ -28,9 +28,9 @@ class StoreEventRequest extends FormRequest
         return [
             'type' => ['required', Rule::in(['PROMO', 'MATCH', 'SEGMENT', 'BRAWL'])],
             'placement' => ['required', Rule::in(['UNDER', 'MID', 'SEMI', 'MAIN'])],
-            'matchTypeId' => ['nullable', 'integer'],
-            'championshipId' => ['nullable', 'integer'],
-            'showId' => ['required', 'integer'],
+            'matchTypeId' => ['nullable', 'integer', 'exists:match_types,id'],
+            'championshipId' => ['nullable', 'integer', 'exists:championships,id'],
+            'showId' => ['required', 'integer', 'exists:shows,id'],
         ];
     }
 

@@ -70,6 +70,7 @@ class ShowController extends Controller
     public function update(UpdateShowRequest $request, Show $show)
     {
         $show->update($request->all());
+        return new ShowResource($show);
     }
 
     /**

@@ -31,17 +31,17 @@ class UpdateEventRequest extends FormRequest
             return [
                 'type' => ['required', Rule::in(['PROMO', 'MATCH', 'SEGMENT', 'BRAWL'])],
                 'placement' => ['required', Rule::in(['UNDER', 'MID', 'SEMI', 'MAIN'])],
-                'matchTypeId' => ['nullable', 'integer'],
-                'championshipId' => ['nullable', 'integer'],
-                'showId' => ['required', 'integer'],
+                'matchTypeId' => ['nullable', 'integer', 'exists:match_types,id'],
+                'championshipId' => ['nullable', 'integer', 'exists:championships,id'],
+                'showId' => ['required', 'integer', 'exists:shows,id'],
             ];
         } else {
             return [
                 'type' => ['sometimes', 'required', Rule::in(['PROMO', 'MATCH', 'SEGMENT', 'BRAWL'])],
                 'placement' => ['sometimes', 'required', Rule::in(['UNDER', 'MID', 'SEMI', 'MAIN'])],
-                'matchTypeId' => ['sometimes', 'nullable', 'integer'],
-                'championshipId' => ['sometimes', 'nullable', 'integer'],
-                'showId' => ['sometimes', 'required', 'integer'],
+                'matchTypeId' => ['sometimes', 'nullable', 'integer', 'exists:match_types,id'],
+                'championshipId' => ['sometimes', 'nullable', 'integer', 'exists:championships,id'],
+                'showId' => ['sometimes', 'required', 'integer', 'exists:shows,id'],
             ];
         }
         

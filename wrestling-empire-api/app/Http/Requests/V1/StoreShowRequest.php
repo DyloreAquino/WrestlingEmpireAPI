@@ -26,12 +26,12 @@ class StoreShowRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['nullable'],
+            'name' => ['nullable', 'string'],
             'year' => ['required', 'integer'],
             'month' => ['required', 'integer', 'min:1', 'max:12'],
             'week' => ['required', 'integer', 'min:1', 'max:4'],
             'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-            'territoryId' => ['required', 'integer']
+            'territoryId' => ['required', 'integer', 'exists:territories,id']
         ];
     }
 
