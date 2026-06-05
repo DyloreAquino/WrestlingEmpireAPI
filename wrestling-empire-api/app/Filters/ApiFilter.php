@@ -35,8 +35,14 @@ class ApiFilter {
       foreach($operators as $operator) {
         // actually populate the eloquent query once we find the operator needed
         if (isset($query[$operator])) {
+          $value = $query[$operator];
+
+          if ($operator === 'like') {
+              $value = '%' . $value . '%';
+          }
+
           // this is what Eloquent's where() function requires when you pass an array of conditions
-          $eloQuery[] = [$column, $this->operatorMap[$operator], $query[$operator]];
+          $eloQuery[] = [$column, $this->operatorMap[$operator], $value];
         }
       }
     }

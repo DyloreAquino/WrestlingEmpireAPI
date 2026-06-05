@@ -10,7 +10,7 @@ class WrestlersFilter extends ApiFilter {
     'id' => ['eq'],
     'createdAt' => ['eq', 'gt', 'lt'],
     'updatedAt' => ['eq', 'gt', 'lt'],
-    'name' => ['eq'],
+    'name' => ['eq', 'like'],
     'gender' => ['eq'],
     'finisherName' => ['eq'],
     'allegiance' => ['eq'],
@@ -51,6 +51,7 @@ class WrestlersFilter extends ApiFilter {
     'lt' => '<',
     'gte' => '>=',
     'lte' => '<=',
-    'ne' => '!='
+    'ne' => '!=',
+    'like' => 'like'
   ];
 }
