@@ -16,6 +16,7 @@ class ApiFilter {
   // and also because it understands snake_case and not camelCase.
   public function transform(Request $request) {
     $eloQuery = [];
+    $inQuery = [];
 
     // Go through each of the safe parameters as parm to operators
     foreach($this->safeParms as $parm => $operators) {
@@ -37,16 +38,19 @@ class ApiFilter {
         if (isset($query[$operator])) {
           $value = $query[$operator];
 
-          if ($operator === 'like') {
-              $value = '%' . $value . '%';
+          if ($operator === 'in') {
+              // explode "A,B,C" into ['A','B','C']
+              $inQuery[] = [$column, explode(',', $value)];
+          } elseif ($operator === 'like') {
+              $eloQuery[] = [$column, 'like', '%' . $value . '%'];
+          } else {
+            // this is what Eloquent's where() function requires when you pass an array of conditions
+              $eloQuery[] = [$column, $this->operatorMap[$operator], $value];
           }
-
-          // this is what Eloquent's where() function requires when you pass an array of conditions
-          $eloQuery[] = [$column, $this->operatorMap[$operator], $value];
         }
       }
     }
 
-    return $eloQuery;
+    return ['where' => $eloQuery, 'whereIn' => $inQuery];
   }
 }
