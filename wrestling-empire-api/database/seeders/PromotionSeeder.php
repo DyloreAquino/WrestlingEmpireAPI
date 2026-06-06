@@ -23,6 +23,7 @@ class PromotionSeeder extends Seeder
             ['name' => 'Strong Style Wrestling'],
             ['name' => 'All American Wrestling'],
             ['name' => 'Federation Online'],
+            ['name' => 'Legends'],
         ]);
     }
 }
