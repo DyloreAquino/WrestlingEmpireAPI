@@ -16,6 +16,7 @@ class Event extends Model
         'match_type_id', 
         'championship_id', 
         'show_id',
+        'notes'
     ];
 
     /** Returns the wrestlers participating in this event. 

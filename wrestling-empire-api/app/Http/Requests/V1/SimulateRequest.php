@@ -30,7 +30,8 @@ class SimulateRequest extends FormRequest
             'results.*.isWinner' => ['required', 'boolean'],
             'results.*.finishType' => ['required', Rule::in(
                 ['UNFINISHED', 'PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']
-            )]
+            )],
+            'notes' => ['nullable', 'string']
         ];
     }
 }

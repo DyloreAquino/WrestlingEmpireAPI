@@ -28,12 +28,12 @@ class DatabaseSeeder extends Seeder
             PromotionSeeder::class,
             StipulationSeeder::class,
             MatchTypeSeeder::class,
-            ChampionshipSeeder::class,
-            ShowSeeder::class,
-            EventSeeder::class,
-            WrestlerSeeder::class,
-            TitleReignSeeder::class,
-            TeamSeeder::class,
+            // ChampionshipSeeder::class,
+            // ShowSeeder::class,
+            // EventSeeder::class,
+            // WrestlerSeeder::class,
+            // TitleReignSeeder::class,
+            // TeamSeeder::class,
         ]);
     }
 }

@@ -34,7 +34,8 @@ class UpdateShowRequest extends FormRequest
                 'month' => ['required', 'integer', 'min:1', 'max:12'],
                 'week' => ['required', 'integer', 'min:1', 'max:4'],
                 'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-                'territoryId' => ['required', 'integer', 'exists:territories,id']
+                'territoryId' => ['required', 'integer', 'exists:territories,id'],
+                'promotionId' => ['required', 'integer', 'exists:promotions,id']
             ];
         } else {
             return [
@@ -43,7 +44,8 @@ class UpdateShowRequest extends FormRequest
                 'month' => ['sometimes', 'required', 'integer', 'min:1', 'max:12'],
                 'week' => ['sometimes', 'required', 'integer', 'min:1', 'max:4'],
                 'type' => ['sometimes', 'required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-                'territoryId' => ['sometimes', 'required', 'integer', 'exists:territories,id']
+                'territoryId' => ['sometimes', 'required', 'integer', 'exists:territories,id'],
+                'promotionId' => ['sometimes', 'required', 'integer', 'exists:promotions,id']
             ];
         }
         
@@ -55,6 +57,11 @@ class UpdateShowRequest extends FormRequest
         if ($this->territoryId) {
             $this->merge([
                 'territory_id' => $this->territoryId,
+            ]);
+        }
+        if ($this->promotionId) {
+            $this->merge([
+                'promotion_id' => $this->promotionId,
             ]);
         }
     }

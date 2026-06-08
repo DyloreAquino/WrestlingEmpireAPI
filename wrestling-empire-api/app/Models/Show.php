@@ -16,7 +16,8 @@ class Show extends Model
         'month',
         'week',
         'type',
-        'territory_id'
+        'territory_id',
+        'promotion_id'
     ];
 
     /** Returns the events that this show has. */

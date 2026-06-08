@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('match_type_id')->nullable()->constrained();
             $table->foreignId('championship_id')->nullable()->constrained();
             $table->foreignId('show_id')->constrained();
+            $table->string('notes')->nullable();
             $table->timestamps();
         });
     }

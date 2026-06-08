@@ -30,6 +30,7 @@ class EventFactory extends Factory
             'match_type_id' => $type == 'MATCH' ? MatchType::inRandomOrder()->first()->id : NULL,
             'championship_id' => $is_title_match ? Championship::factory() : NULL,
             'show_id' => Show::inRandomOrder()->first()->id,
+            'notes' => $this->faker->randomLetter(),
         ];
     }
 }

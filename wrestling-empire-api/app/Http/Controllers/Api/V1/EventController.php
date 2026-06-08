@@ -36,12 +36,13 @@ class EventController extends Controller
     public function index(Request $request)
     {
         $filter = new EventsFilter();
-        $filterItems =  $filter->transform($request);
+        $queryItems =  $filter->transform($request);
 
-        $event = Event::where($filterItems);
+        $event = Event::where($queryItems['where']);
 
-        // $includeWrestlers = $request->query('includeWrestlers');
-        // $includeStipulations = $request->query('includeStipulations');
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $event = $event->whereIn($column, $values);
+        }
 
         $event = $event->with('wrestlers');
         $event = $event->with('stipulations');
@@ -139,6 +140,9 @@ class EventController extends Controller
                 ]
             );
         }
+
+        $event->notes = $request->notes;
+        $event->save();
 
         return response()->json(['message' => 'Event simulated.']);
     }

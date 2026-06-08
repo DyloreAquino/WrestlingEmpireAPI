@@ -31,7 +31,8 @@ class StoreShowRequest extends FormRequest
             'month' => ['required', 'integer', 'min:1', 'max:12'],
             'week' => ['required', 'integer', 'min:1', 'max:4'],
             'type' => ['required', Rule::in(['TV', 'PPV', 'SPECIAL'])],
-            'territoryId' => ['required', 'integer', 'exists:territories,id']
+            'territoryId' => ['required', 'integer', 'exists:territories,id'],
+            'promotionId' => ['required', 'integer', 'exists:promotions,id']
         ];
     }
 
@@ -40,6 +41,7 @@ class StoreShowRequest extends FormRequest
     {
         $this->merge([
             'territory_id' => $this->territoryId,
+            'promotion_id' => $this->promotionId
         ]);
     }
 }
