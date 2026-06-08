@@ -22,6 +22,7 @@ class ShowResource extends JsonResource
             'week' => $this->week,
             'type' => $this->type,
             'territoryId' => $this->territory_id,
+            'promotionId' => $this->promotion_id,
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
             'events' => EventResource::collection($this->whenLoaded('events'))

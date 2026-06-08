@@ -28,9 +28,13 @@ class ChampionshipController extends Controller
     public function index(Request $request)
     {
         $filter = new ChampionshipsFilter();
-        $filterItems =  $filter->transform($request);
+        $queryItems =  $filter->transform($request);
 
-        $championship = Championship::where($filterItems);
+        $championship = Championship::where($queryItems['where']);
+
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $championship = $championship->whereIn($column, $values);
+        }
 
         $includeTitleReigns = $request->query('includeTitleReigns');
 

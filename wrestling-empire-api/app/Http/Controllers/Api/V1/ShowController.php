@@ -31,9 +31,13 @@ class ShowController extends Controller
     public function index(Request $request)
     {
         $filter = new ShowsFilter();
-        $filterItems =  $filter->transform($request);
+        $queryItems =  $filter->transform($request);
 
-        $show = Show::where($filterItems);
+        $show = Show::where($queryItems['where']);
+
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $show = $show->whereIn($column, $values);
+        }
 
         return ShowResource::collection($show->get());
     }

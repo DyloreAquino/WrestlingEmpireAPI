@@ -9,6 +9,7 @@ use App\Http\Requests\V1\UpdateWrestlerRequest;
 use App\Http\Resources\V1\WrestlerResource;
 use App\Filters\V1\WrestlersFilter;
 use Illuminate\Http\Request;
+use Log;
 
 class WrestlerController extends Controller
 {
@@ -93,7 +94,7 @@ class WrestlerController extends Controller
     public function show(Wrestler $wrestler)
     {
         return new WrestlerResource(
-            $wrestler->loadMissing('events', 'titleReigns', 'teams')
+            $wrestler->loadMissing('events', 'titleReigns', 'teams', 'events.stipulations', 'events.wrestlers')
         );
     }
 

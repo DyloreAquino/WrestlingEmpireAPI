@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Promotion;
 use App\Models\Show;
 use App\Models\Territory;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -26,7 +27,8 @@ class ShowFactory extends Factory
             'month' => $this->faker->numberBetween(1, 12),
             'week' => $this->faker->numberBetween(1, 4),
             'type' => $type,
-            'territory_id' => Territory::inRandomOrder()->first()->id
+            'territory_id' => Territory::inRandomOrder()->first()->id,
+            'promotion_id' => Promotion::inRandomOrder()->first()->id
         ];
     }
 }
