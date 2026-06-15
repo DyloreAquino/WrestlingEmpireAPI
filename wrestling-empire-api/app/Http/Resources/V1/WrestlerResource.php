@@ -33,7 +33,7 @@ class WrestlerResource extends JsonResource
             'attitude' => $this->attitude,
             'wins' => $this->wins(),
             'losses' => $this->losses(),
-            'injured' => $this->injured(),
+            'injured' => $this->injured,
             'managerId' => $this->manager_id,
             'partnerId' => $this->partner_id,
             'storyFriendId' => $this->story_friend_id,
