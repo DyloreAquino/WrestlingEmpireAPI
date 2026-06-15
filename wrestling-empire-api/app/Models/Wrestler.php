@@ -29,7 +29,8 @@ class Wrestler extends Model
         'story_friend_id',
         'story_enemy_id',
         'real_friend_id',
-        'real_enemy_id'
+        'real_enemy_id',
+        'injured'
     ];
 
     /** Returns the events that this wrestler participated in. 
