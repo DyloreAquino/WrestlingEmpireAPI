@@ -11,7 +11,10 @@ use App\Http\Requests\V1\UpdateEventRequest;
 use App\Http\Requests\V1\AssignWrestlersRequest;
 use App\Http\Requests\V1\SimulateRequest;
 use App\Http\Resources\V1\EventResource;
+use App\Models\Championship;
+use App\Models\TitleReign;
 use Illuminate\Http\Request;
+use Laravel\Prompts\Title;
 
 use function Pest\Laravel\json;
 
@@ -125,7 +128,17 @@ class EventController extends Controller
      */
     public function simulate(SimulateRequest $request, Event $event)
     {
+        // Setup the current reign's information. We need the actual object and a list of the wrestler's ids for the reign.
+        $currentReign = null;
+        $currentReignWrestlerIds = [];
+        if ($event->championship_id) {
+            $currentReign = $event->championship->currentReign;
+            $currentReignWrestlerIds = $currentReign?->wrestlers()->pluck('wrestlers.id')->toArray();
+        }   
+        
+        // Get the wrestlers for the event.
         $eventWrestlerIds = $event->wrestlers()->pluck('wrestlers.id');
+        $eventWinnerIds = [];
 
         foreach ($request->results as $result) {
             // Check for if wrestler Id is in the list of wrestlers under this event.
@@ -133,12 +146,48 @@ class EventController extends Controller
                 abort(422, "Wrestler {$result['wrestlerId']} is not in this event.");
             }
 
+            // Update the event_wrestlers table
             $event->wrestlers()->updateExistingPivot($result['wrestlerId'],
                 [
                     'is_winner'=> $result['isWinner'], 
                     'finish_type' => $result['finishType']
                 ]
             );
+
+            // If they won, put them in the winner list.
+            if ($result['isWinner'] == true) {
+                $eventWinnerIds[] = $result['wrestlerId'];
+            }
+        }
+
+        // Compare the winner list to the current reign's wrestler list.
+        sort($eventWinnerIds);
+        sort($currentReignWrestlerIds);
+        $isNewReign = $eventWinnerIds !== $currentReignWrestlerIds;
+        
+        // A new reign triggers if we have different winners from the current reign's list.
+        if ($isNewReign && $event->championship_id) {
+
+            // Get date details from show
+            $eventShow = $event->show;
+
+            // Set the end date of the current reign
+            if ($currentReign) {
+                $currentReign->year_end = $eventShow->year;
+                $currentReign->month_end = $eventShow->month;
+                $currentReign->week_end = $eventShow->week;
+                $currentReign->save();
+            }
+            
+            // Create a new reign.
+            $newReign = TitleReign::create([
+                'championship_id' => $event->championship_id,
+                'year_start' => $eventShow->year,
+                'month_start' => $eventShow->month,
+                'week_start' => $eventShow->week,
+            ]);
+
+            $newReign->wrestlers()->attach($eventWinnerIds);
         }
 
         $event->notes = $request->notes;

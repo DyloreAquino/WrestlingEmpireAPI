@@ -42,6 +42,8 @@ class ChampionshipController extends Controller
             $championship = $championship->with('titleReigns.wrestlers');
         }
 
+        $championship = $championship->with('currentReign.wrestlers');
+
         return ChampionshipResource::collection($championship->get());
     }
 

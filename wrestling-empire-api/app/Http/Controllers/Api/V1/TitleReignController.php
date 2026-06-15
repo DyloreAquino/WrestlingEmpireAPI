@@ -35,9 +35,13 @@ class TitleReignController extends Controller
     public function index(Request $request)
     {
         $filter = new TitleReignsFilter();
-        $filterItems =  $filter->transform($request);
+        $queryItems =  $filter->transform($request);
 
-        $titleReign = TitleReign::where($filterItems);
+        $titleReign = TitleReign::where($queryItems['where']);
+
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $titleReign = $titleReign->whereIn($column, $values);
+        }
 
         // $includeWrestlers = $request->query('includeWrestlers');
         $includeWrestlers = true;

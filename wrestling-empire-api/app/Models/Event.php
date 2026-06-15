@@ -27,6 +27,11 @@ class Event extends Model
             ->withPivot(['is_winner', 'finish_type']);
     }
 
+    /** Returns the championship that this event is a match of. */
+    public function championship() {
+        return $this->belongsTo(Championship::class);
+    }
+
     /** Returns the show that this event belongs to. */
     public function show() {
         return $this->belongsTo(Show::class);
