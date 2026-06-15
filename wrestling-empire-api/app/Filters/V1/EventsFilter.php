@@ -14,7 +14,8 @@ class EventsFilter extends ApiFilter {
     'placement' => ['eq', 'ne'],
     'matchTypeId' => ['eq'],
     'championshipId' => ['eq'],
-    'showId' => ['eq']
+    'showId' => ['eq'],
+    'rating' => ['eq', 'gt', 'lt', 'gte', 'lte']
   ];
 
   protected array $columnMap = [

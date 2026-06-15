@@ -48,6 +48,7 @@ class UpdateWrestlerRequest extends FormRequest
                 'storyEnemyId' => ['nullable', 'integer', 'exists:wrestlers,id'],
                 'realFriendId' => ['nullable', 'integer', 'exists:wrestlers,id'],
                 'realEnemyId' => ['nullable', 'integer', 'exists:wrestlers,id'],
+                'injured' => ['required', 'boolean']
             ];
         } else {
             return [
@@ -70,6 +71,7 @@ class UpdateWrestlerRequest extends FormRequest
                 'storyEnemyId' => ['sometimes', 'nullable', 'integer', 'exists:wrestlers,id'],
                 'realFriendId' => ['sometimes', 'nullable', 'integer', 'exists:wrestlers,id'],
                 'realEnemyId' => ['sometimes', 'nullable', 'integer', 'exists:wrestlers,id'],
+                'injured' => ['sometimes', 'required', 'boolean']
             ];
         }
         

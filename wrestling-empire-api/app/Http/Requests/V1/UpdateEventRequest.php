@@ -34,6 +34,7 @@ class UpdateEventRequest extends FormRequest
                 'matchTypeId' => ['nullable', 'integer', 'exists:match_types,id'],
                 'championshipId' => ['nullable', 'integer', 'exists:championships,id'],
                 'showId' => ['required', 'integer', 'exists:shows,id'],
+                'rating' => ['nullable', 'integer']
             ];
         } else {
             return [
@@ -42,6 +43,7 @@ class UpdateEventRequest extends FormRequest
                 'matchTypeId' => ['sometimes', 'nullable', 'integer', 'exists:match_types,id'],
                 'championshipId' => ['sometimes', 'nullable', 'integer', 'exists:championships,id'],
                 'showId' => ['sometimes', 'required', 'integer', 'exists:shows,id'],
+                'rating' => ['sometimes', 'nullable', 'integer']
             ];
         }
         

@@ -45,6 +45,7 @@ class StoreWrestlerRequest extends FormRequest
             'storyEnemyId' => ['nullable', 'integer', 'exists:wrestlers,id'],
             'realFriendId' => ['nullable', 'integer', 'exists:wrestlers,id'],
             'realEnemyId' => ['nullable', 'integer', 'exists:wrestlers,id'],
+            'injured' => ['required', 'boolean']
         ];
     }
 

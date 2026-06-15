@@ -29,6 +29,7 @@ class WrestlersFilter extends ApiFilter {
     'storyEnemyId' => ['eq'],
     'realFriendId' => ['eq'],
     'realEnemyId' => ['eq'],
+    'injured' => ['eq']
   ];
 
   protected array $columnMap = [

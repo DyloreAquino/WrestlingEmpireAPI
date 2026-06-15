@@ -31,6 +31,9 @@ class WrestlerResource extends JsonResource
             'agility' => $this->agility,
             'stamina' => $this->stamina,
             'attitude' => $this->attitude,
+            'wins' => $this->wins(),
+            'losses' => $this->losses(),
+            'injured' => $this->injured(),
             'managerId' => $this->manager_id,
             'partnerId' => $this->partner_id,
             'storyFriendId' => $this->story_friend_id,
@@ -42,8 +45,7 @@ class WrestlerResource extends JsonResource
             'teams' => TeamResource::collection($this->whenLoaded('teams')),
             'isWinner' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->is_winner),
             'finishType' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->finish_type),
-            'wins' => $this->wins(),
-            'losses' => $this->losses()
+            
         ];
     }
 }

@@ -31,6 +31,7 @@ class StoreEventRequest extends FormRequest
             'matchTypeId' => ['nullable', 'integer', 'exists:match_types,id'],
             'championshipId' => ['nullable', 'integer', 'exists:championships,id'],
             'showId' => ['required', 'integer', 'exists:shows,id'],
+            'rating' => ['nullable', 'integer']
         ];
     }
 

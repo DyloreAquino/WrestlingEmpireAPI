@@ -22,6 +22,7 @@ class EventResource extends JsonResource
             'championshipId' => $this->championship_id,
             'showId' => $this->show_id,
             'notes' => $this->notes,
+            'rating' => $this->rating,
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
             'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
