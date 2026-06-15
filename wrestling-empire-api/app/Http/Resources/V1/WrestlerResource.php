@@ -42,6 +42,8 @@ class WrestlerResource extends JsonResource
             'teams' => TeamResource::collection($this->whenLoaded('teams')),
             'isWinner' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->is_winner),
             'finishType' => $this->whenPivotLoaded('event_wrestler', fn() => $this->pivot->finish_type),
+            'wins' => $this->wins(),
+            'losses' => $this->losses()
         ];
     }
 }

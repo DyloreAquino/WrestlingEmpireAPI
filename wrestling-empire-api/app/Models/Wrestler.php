@@ -99,4 +99,18 @@ class Wrestler extends Model
     public function teams() {
         return $this->belongsToMany(Team::class);
     }
+
+    /** Returns the amount of wins this wrestler has. */
+    public function wins() {
+        return $this->events()
+            ->wherePivot('is_winner', true)
+            ->count();
+    }
+
+    /** Returns the amount of wins this wrestler has. */
+    public function losses() {
+        return $this->events()
+            ->wherePivot('is_winner', false)
+            ->count();
+    }
 }
