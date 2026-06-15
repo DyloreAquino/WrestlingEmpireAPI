@@ -11,10 +11,8 @@ use App\Http\Requests\V1\UpdateEventRequest;
 use App\Http\Requests\V1\AssignWrestlersRequest;
 use App\Http\Requests\V1\SimulateRequest;
 use App\Http\Resources\V1\EventResource;
-use App\Models\Championship;
 use App\Models\TitleReign;
 use Illuminate\Http\Request;
-use Laravel\Prompts\Title;
 
 use function Pest\Laravel\json;
 
