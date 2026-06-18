@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->enum('division', ['TAG', 'WORLD', 'MID', 'WOMENS']);
-            $table->foreignId('promotion_id')->constrained();
+            $table->foreignId('promotion_id')->constrained()->restrictOnDelete();
             $table->timestamps();
         });
     }

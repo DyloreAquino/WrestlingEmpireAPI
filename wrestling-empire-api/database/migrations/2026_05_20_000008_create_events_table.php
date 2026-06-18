@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->enum('type', ['PROMO', 'MATCH', 'SEGMENT', 'BRAWL']); // PROMO or MATCH
             $table->enum('placement', ['UNDER', 'MID', 'SEMI', 'MAIN']); // UNDER, MID, SEMI, OR MAIN
-            $table->foreignId('match_type_id')->nullable()->constrained();
-            $table->foreignId('championship_id')->nullable()->constrained();
-            $table->foreignId('show_id')->constrained();
+            $table->foreignId('match_type_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId('championship_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId('show_id')->constrained()->cascadeOnDelete();
             $table->string('notes')->nullable();
             $table->timestamps();
         });

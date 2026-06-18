@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('month'); // Jan to Dec, in integer form
             $table->integer('week'); // 1st to 4th week of the month
             $table->enum('type', ['TV', 'PPV', 'SPECIAL']); // TV, PPV, or SPECIAL
-            $table->foreignId('territory_id')->constrained(); // Where show took place
-            $table->foreignId('promotion_id')->constrained();
+            $table->foreignId('territory_id')->constrained()->restrictOnDelete(); // Where show took place
+            $table->foreignId('promotion_id')->constrained()->restrictOnDelete();
             $table->timestamps();
         });
     }

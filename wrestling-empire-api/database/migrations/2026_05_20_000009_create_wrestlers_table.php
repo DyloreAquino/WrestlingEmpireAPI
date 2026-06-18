@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('finisher_name');
             $table->enum('allegiance', ['HEEL', 'FACE', 'TWEENER']);
             $table->enum('role', ['WRESTLER', 'MANAGER', 'BOOKER', 'REFEREE', 'CIVILIAN']);
-            $table->foreignId('territory_id')->constrained();
-            $table->foreignId('promotion_id')->constrained();
+            $table->foreignId('territory_id')->constrained()->restrictOnDelete();
+            $table->foreignId('promotion_id')->constrained()->restrictOnDelete();
             // Wrestler Attributes
             $table->integer('popularity');
             $table->integer('strength');
@@ -31,12 +31,12 @@ return new class extends Migration
             $table->integer('stamina');
             $table->integer('attitude');
             // Wrestler Relationships
-            $table->foreignId('manager_id')->nullable()->constrained('wrestlers');
-            $table->foreignId('partner_id')->nullable()->constrained('wrestlers');
-            $table->foreignId('story_friend_id')->nullable()->constrained('wrestlers');
-            $table->foreignId('story_enemy_id')->nullable()->constrained('wrestlers');
-            $table->foreignId('real_friend_id')->nullable()->constrained('wrestlers');
-            $table->foreignId('real_enemy_id')->nullable()->constrained('wrestlers');
+            $table->foreignId('manager_id')->nullable()->constrained('wrestlers')->nullOnDelete();
+            $table->foreignId('partner_id')->nullable()->constrained('wrestlers')->nullOnDelete();
+            $table->foreignId('story_friend_id')->nullable()->constrained('wrestlers')->nullOnDelete();
+            $table->foreignId('story_enemy_id')->nullable()->constrained('wrestlers')->nullOnDelete();
+            $table->foreignId('real_friend_id')->nullable()->constrained('wrestlers')->nullOnDelete();
+            $table->foreignId('real_enemy_id')->nullable()->constrained('wrestlers')->nullOnDelete();
         });
     }
 

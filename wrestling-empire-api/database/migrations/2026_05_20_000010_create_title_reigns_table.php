@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('title_reigns', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('championship_id')->constrained();
+            $table->foreignId('championship_id')->constrained()->cascadeOnDelete();
             $table->integer('year_start');
             $table->integer('month_start');
             $table->integer('week_start');
