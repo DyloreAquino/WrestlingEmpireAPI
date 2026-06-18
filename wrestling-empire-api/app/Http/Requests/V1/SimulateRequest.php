@@ -31,7 +31,8 @@ class SimulateRequest extends FormRequest
             'results.*.finishType' => ['required', Rule::in(
                 ['UNFINISHED', 'PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']
             )],
-            'notes' => ['nullable', 'string']
+            'notes' => ['nullable', 'string'],
+            'rating' => ['nullable', 'integer']
         ];
     }
 }
