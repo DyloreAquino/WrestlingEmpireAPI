@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('event_wrestler', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('event_id')->constrained();
-            $table->foreignId('wrestler_id')->constrained();
+            $table->foreignId('event_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('wrestler_id')->constrained()->cascadeOnDelete();
             $table->boolean('is_winner')->default(false);
             $table->enum('finish_type', ['UNFINISHED', 'PIN', 'SUBMISSION', 'DISQUALIFICATION', 'COUNTOUT', 'TIMEOUT', 'ELIMINATION', 'SPECIAL']);
             $table->timestamps();
