@@ -92,7 +92,11 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        //
+        $event->delete();
+
+        return response()->json([
+            'message' => 'Event deleted successfully.'
+        ], 200);
     }
 
     /**
@@ -189,6 +193,7 @@ class EventController extends Controller
         }
 
         $event->notes = $request->notes;
+        $event->rating = $request->rating;
         $event->save();
 
         return response()->json(['message' => 'Event simulated.']);
