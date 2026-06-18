@@ -115,6 +115,10 @@ class WrestlerController extends Controller
      */
     public function destroy(Wrestler $wrestler)
     {
-        //
+        $wrestler->delete();
+
+        return response()->json([
+            'message' => 'Wrestler deleted successfully.'
+        ], 200);
     }
 }

@@ -84,6 +84,10 @@ class ShowController extends Controller
      */
     public function destroy(Show $show)
     {
-        //
+        $show->delete();
+
+        return response()->json([
+            'message' => 'Show deleted successfully.'
+        ], 200);
     }
 }

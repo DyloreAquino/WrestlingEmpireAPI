@@ -95,7 +95,11 @@ class TitleReignController extends Controller
      */
     public function destroy(TitleReign $titleReign)
     {
-        //
+        $titleReign->delete();
+
+        return response()->json([
+            'message' => 'Title Reign deleted successfully.'
+        ], 200);
     }
 
     /**

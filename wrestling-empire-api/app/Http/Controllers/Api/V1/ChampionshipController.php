@@ -90,5 +90,9 @@ class ChampionshipController extends Controller
     public function destroy(Championship $championship)
     {
         $championship->delete();
+
+        return response()->json([
+            'message' => 'Championship deleted successfully.'
+        ], 200);
     }
 }
