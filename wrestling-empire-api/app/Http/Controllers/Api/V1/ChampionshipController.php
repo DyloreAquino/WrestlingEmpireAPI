@@ -17,7 +17,7 @@ class ChampionshipController extends Controller
      */
     public function index(Request $request)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -49,7 +49,7 @@ class ChampionshipController extends Controller
      */
     public function store(StoreChampionshipRequest $request)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -66,7 +66,7 @@ class ChampionshipController extends Controller
      */
     public function show(Request $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -84,7 +84,7 @@ class ChampionshipController extends Controller
      */
     public function update(UpdateChampionshipRequest $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -100,7 +100,7 @@ class ChampionshipController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }

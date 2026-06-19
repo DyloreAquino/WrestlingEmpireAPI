@@ -34,7 +34,7 @@ class TitleReignController extends Controller
      */
     public function index(Request $request)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -63,7 +63,7 @@ class TitleReignController extends Controller
      */
     public function store(StoreTitleReignRequest $request)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -83,7 +83,7 @@ class TitleReignController extends Controller
      */
     public function show(Request $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -105,7 +105,7 @@ class TitleReignController extends Controller
      */
     public function update(UpdateTitleReignRequest $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -130,7 +130,7 @@ class TitleReignController extends Controller
      */
     public function destroy(Request $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -155,7 +155,7 @@ class TitleReignController extends Controller
      */
     public function assignWrestlers(AssignWrestlersRequest $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
@@ -183,7 +183,7 @@ class TitleReignController extends Controller
      */
     public function endReign(EndDateRequest $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }

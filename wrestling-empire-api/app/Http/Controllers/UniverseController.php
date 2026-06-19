@@ -15,7 +15,7 @@ class UniverseController extends Controller
         // Fetches ONLY the universes belonging to the authenticated user
         $universes = $request->user()->universes()->latest()->get();
 
-        return response()->json($universes, 200);
+        return response()->json(['data' => $universes], 200);
     }
 
     /**
@@ -25,15 +25,17 @@ class UniverseController extends Controller
     public function store(Request $request)
     {
         $fields = $request->validate([
-            'name' => 'required|string|max:255'
+            'name' => 'required|string|max:255',
+            'current_promotion_id' => 'nullable|integer|exists:promotions,id',
         ]);
 
         // Creates a universe with the user_id automatically assigned
         $universe = $request->user()->universes()->create([
-            'name' => $fields['name']
+            'name' => $fields['name'],
+            'current_promotion_id' => $fields['current_promotion_id'] ?? null,
         ]);
 
-        return response()->json($universe, 201);
+        return response()->json(['data' => $universe], 201);
     }
 
     /**
@@ -45,7 +47,7 @@ class UniverseController extends Controller
         // findOrFail here ensures a 404 is thrown if the universe doesn't exist OR belongs to someone else
         $universe = $request->user()->universes()->findOrFail($id);
 
-        return response()->json($universe, 200);
+        return response()->json(['data' => $universe], 200);
     }
 
     /**
@@ -56,17 +58,18 @@ class UniverseController extends Controller
     {
         $universe = $request->user()->universes()->findOrFail($id);
 
+        // Validate incoming data
         $fields = $request->validate([
-            'name' => 'required|string|max:255'
+            'name' => 'sometimes|required|string|max:255',
+            'current_promotion_id' => 'sometimes|nullable|integer|exists:promotions,id',
         ]);
 
-        $universe->update([
-            'name' => $fields['name']
-        ]);
+        // Update with validated data
+        $universe->update($fields);
 
         return response()->json([
             'message' => 'Universe updated successfully',
-            'universe' => $universe
+            'data' => $universe
         ], 200);
     }
 

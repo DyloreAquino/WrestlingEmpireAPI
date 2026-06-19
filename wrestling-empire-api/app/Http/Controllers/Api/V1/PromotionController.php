@@ -28,7 +28,7 @@ class PromotionController extends Controller
      */
     public function show(Request $request, $id)
     {
-        $universe = $request->active_universe;
+       $universe = $request->attributes->get('active_universe');
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
