@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Laravel\Prompts\Title;
 
 class Championship extends Model
 {
@@ -12,10 +11,16 @@ class Championship extends Model
     use HasFactory;
 
     protected $fillable = [
+        'universe_id',
         'name',
         'division',
         'promotion_id',
     ];
+
+    /** Returns the universe this championship belongs to. */
+    public function universe() {
+        return $this->belongsTo(Universe::class);
+    }
 
     /** Returns the title reigns of this championship. */
     public function titleReigns() {

@@ -16,6 +16,7 @@ class ChampionshipResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'universeId' => $this->universe_id,
             'name' => $this->name,
             'division' => $this->division,
             'promotionId' => $this->promotion_id,

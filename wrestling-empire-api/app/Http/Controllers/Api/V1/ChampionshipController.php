@@ -13,59 +13,67 @@ use Illuminate\Http\Request;
 class ChampionshipController extends Controller
 {
     /**
-     * Display all championships.
-     * 
-     * @group Championships
-     * 
-     * @queryParam includeTitleReigns bool Include all title reigns associated to this championship, along with the wrestler/s of that reign.
-     * @queryParam id integer Filter by championship ID. Operators: [eq]. Example: id[eq]=1
-     * @queryParam createdAt datetime Filter by creation date. Operators: [eq], [gt], [lt]. Example: createdAt[gt]=2026-01-01
-     * @queryParam updatedAt datetime Filter by update date. Operators: [eq], [gt], [lt]. Example: updatedAt[gt]=2026-01-01
-     * @queryParam name string Filter by championship name. Operators: [eq]. Example: name[eq]=World Heavyweight Championship
-     * @queryParam division string Filter by division (WORLD, MID, TAG, WOMENS). Operators: [eq], [ne]. Example: division[eq]=WORLD
-     * @queryParam promotionId integer Filter by promotion ID. Operators: [eq]. Example: promotionId[eq]=3
+     * Display all championships for the active universe.
      */
     public function index(Request $request)
     {
-        $filter = new ChampionshipsFilter();
-        $queryItems =  $filter->transform($request);
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
 
-        $championship = Championship::where($queryItems['where']);
+        $filter = new ChampionshipsFilter();
+        $queryItems = $filter->transform($request);
+
+        // Scope the base query to the active universe
+        $championshipQuery = Championship::where('universe_id', $universe->id)
+            ->where($queryItems['where']);
 
         foreach ($queryItems['whereIn'] as [$column, $values]) {
-            $championship = $championship->whereIn($column, $values);
+            $championshipQuery = $championshipQuery->whereIn($column, $values);
         }
 
         $includeTitleReigns = $request->query('includeTitleReigns');
 
         if ($includeTitleReigns) {
-            $championship = $championship->with('titleReigns.wrestlers');
+            $championshipQuery = $championshipQuery->with('titleReigns.wrestlers');
         }
 
-        $championship = $championship->with('currentReign.wrestlers');
+        $championshipQuery = $championshipQuery->with('currentReign.wrestlers');
 
-        return ChampionshipResource::collection($championship->get());
+        return ChampionshipResource::collection($championshipQuery->get());
     }
 
     /**
-     * Create a new championship.
-     * 
-     * @group Championships
+     * Create a new championship inside the active universe.
      */
     public function store(StoreChampionshipRequest $request)
     {
-        return new ChampionshipResource(Championship::create($request->all()));
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Merge universe_id into validated data array securely
+        $data = array_merge($request->all(), ['universe_id' => $universe->id]);
+        $championship = Championship::create($data);
+
+        return new ChampionshipResource($championship);
     }
 
     /**
      * Display one championship.
-     * 
-     * Also shows the title reigns of the championship and the current reign.
-     * 
-     * @group Championships
      */
-    public function show(Championship $championship)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Verify ownership by querying through the active universe relationship
+        $championship = Championship::where('universe_id', $universe->id)->findOrFail($id);
+
         return new ChampionshipResource(
             $championship->loadMissing('titleReigns.wrestlers', 'currentReign.wrestlers')
         );
@@ -73,22 +81,31 @@ class ChampionshipController extends Controller
 
     /**
      * Update a championship's information.
-     * 
-     * @group Championships
      */
-    public function update(UpdateChampionshipRequest $request, Championship $championship)
+    public function update(UpdateChampionshipRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $championship = Championship::where('universe_id', $universe->id)->findOrFail($id);
         $championship->update($request->all());
+
         return new ChampionshipResource($championship);
     }
 
     /**
      * Delete a championship.
-     * 
-     * @group Championships
      */
-    public function destroy(Championship $championship)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $championship = Championship::where('universe_id', $universe->id)->findOrFail($id);
         $championship->delete();
 
         return response()->json([
