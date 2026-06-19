@@ -36,20 +36,26 @@ class EventController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new EventsFilter();
-        $queryItems =  $filter->transform($request);
-
-        $event = Event::where($queryItems['where']);
-
-        foreach ($queryItems['whereIn'] as [$column, $values]) {
-            $event = $event->whereIn($column, $values);
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
         }
 
-        $event = $event->with('wrestlers');
-        $event = $event->with('stipulations');
+        $filter = new EventsFilter();
+        $queryItems = $filter->transform($request);
 
+        // Scope queries exclusively through shows belonging to this universe
+        $eventQuery = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->where($queryItems['where']);
 
-        return EventResource::collection($event->get());
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $eventQuery = $eventQuery->whereIn($column, $values);
+        }
+
+        $eventQuery = $eventQuery->with(['wrestlers', 'stipulations']);
+
+        return EventResource::collection($eventQuery->get());
     }
 
     /**
@@ -59,6 +65,19 @@ class EventController extends Controller
      */
     public function store(StoreEventRequest $request)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Security check: Validate that the targeted show belongs to the active universe
+        $universe->shows()->findOrFail($request->show_id);
+
+        // Optional: If a championship is attached, ensure it belongs to this universe too
+        if ($request->championship_id) {
+            $universe->championships()->findOrFail($request->championship_id);
+        }
+
         return new EventResource(Event::create($request->all()));
     }
 
@@ -67,8 +86,18 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function show(Event $event)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Guarantee cross-tenant privacy bounds
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
         return new EventResource(
             $event->loadMissing('wrestlers', 'stipulations')
         );
@@ -79,8 +108,21 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function update(UpdateEventRequest $request, Event $event)
+    public function update(UpdateEventRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        if ($request->show_id) {
+            $universe->shows()->findOrFail($request->show_id);
+        }
+
         $event->update($request->all());
         return new EventResource($event);
     }
@@ -90,8 +132,17 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function destroy(Event $event)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
         $event->delete();
 
         return response()->json([
@@ -104,8 +155,18 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function assignStipulations(AssignStipulationsRequest $request, Event $event)
+    public function assignStipulations(AssignStipulationsRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        // Stipulations are global metadata; no cross-universe injection checks needed here
         $event->stipulations()->sync($request->stipulationIds);
         return response()->json(['message' => 'Stipulations assigned to event.']);
     }
@@ -115,8 +176,23 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function assignWrestlers(AssignWrestlersRequest $request, Event $event)
+    public function assignWrestlers(AssignWrestlersRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        // Security check: Ensure incoming wrestler IDs belong strictly to this universe
+        $validCount = $universe->wrestlers()->whereIn('id', $request->wrestlerIds)->count();
+        if ($validCount !== count($request->wrestlerIds)) {
+            return response()->json(['message' => 'Invalid wrestler allocation for this universe state.'], 422);
+        }
+
         $event->wrestlers()->sync($request->wrestlerIds);
         return response()->json(['message' => 'Wrestlers assigned to event.']);
     }
@@ -128,35 +204,40 @@ class EventController extends Controller
      * 
      * @group Events
      */
-    public function simulate(SimulateRequest $request, Event $event)
+    public function simulate(SimulateRequest $request, $id)
     {
-        // Setup the current reign's information. We need the actual object and a list of the wrestler's ids for the reign.
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $event = Event::whereHas('show', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        // Setup the current reign's information.
         $currentReign = null;
         $currentReignWrestlerIds = [];
         if ($event->championship_id) {
             $currentReign = $event->championship->currentReign;
-            $currentReignWrestlerIds = $currentReign?->wrestlers()->pluck('wrestlers.id')->toArray();
+            $currentReignWrestlerIds = $currentReign?->wrestlers()->pluck('wrestlers.id')->toArray() ?? [];
         }   
         
-        // Get the wrestlers for the event.
+        // Get the wrestlers assigned to the event.
         $eventWrestlerIds = $event->wrestlers()->pluck('wrestlers.id');
         $eventWinnerIds = [];
 
         foreach ($request->results as $result) {
-            // Check for if wrestler Id is in the list of wrestlers under this event.
             if (!$eventWrestlerIds->contains($result['wrestlerId'])) {
                 abort(422, "Wrestler {$result['wrestlerId']} is not in this event.");
             }
 
-            // Update the event_wrestlers table
-            $event->wrestlers()->updateExistingPivot($result['wrestlerId'],
-                [
-                    'is_winner'=> $result['isWinner'], 
-                    'finish_type' => $result['finishType']
-                ]
-            );
+            // Update pivot records cleanly
+            $event->wrestlers()->updateExistingPivot($result['wrestlerId'], [
+                'is_winner'=> $result['isWinner'], 
+                'finish_type' => $result['finishType']
+            ]);
 
-            // If they won, put them in the winner list.
             if ($result['isWinner'] == true) {
                 $eventWinnerIds[] = $result['wrestlerId'];
             }
@@ -167,13 +248,10 @@ class EventController extends Controller
         sort($currentReignWrestlerIds);
         $isNewReign = $eventWinnerIds !== $currentReignWrestlerIds;
         
-        // A new reign triggers if we have different winners from the current reign's list.
+        // A new title reign logic engine execution path
         if ($isNewReign && $event->championship_id) {
-
-            // Get date details from show
             $eventShow = $event->show;
 
-            // Set the end date of the current reign
             if ($currentReign) {
                 $currentReign->year_end = $eventShow->year;
                 $currentReign->month_end = $eventShow->month;
@@ -181,7 +259,7 @@ class EventController extends Controller
                 $currentReign->save();
             }
             
-            // Create a new reign.
+            // Generate a fresh tracking history record line
             $newReign = TitleReign::create([
                 'championship_id' => $event->championship_id,
                 'year_start' => $eventShow->year,
