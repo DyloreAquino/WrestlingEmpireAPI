@@ -26,13 +26,14 @@ class PromotionController extends Controller
      * 
      * @group Promotions
      */
-    public function show(Request $request, Promotion $promotion)
+    public function show(Request $request, $id)
     {
         $universe = $request->active_universe;
-
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
+
+        $promotion = Promotion::findOrFail($id);
 
         // Eager load only the wrestlers and championships that match the active universe ID
         $promotion->universe_wrestlers = $promotion->wrestlersInUniverse($universe->id)->get();

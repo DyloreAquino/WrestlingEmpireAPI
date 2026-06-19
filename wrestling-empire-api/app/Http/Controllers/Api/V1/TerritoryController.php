@@ -26,13 +26,14 @@ class TerritoryController extends Controller
      * 
      * @group Territories
      */
-    public function show(Request $request, Territory $territory)
+    public function show(Request $request, $id)
     {
         $universe = $request->active_universe;
-
         if (!$universe) {
             return response()->json(['message' => 'No active universe selected.'], 400);
         }
+
+        $territory = Territory::findOrFail($id);
 
         // Load only wrestlers assigned to this physical territory inside THIS specific universe
         $territory->universe_wrestlers = $territory->wrestlersInUniverse($universe->id)->get();

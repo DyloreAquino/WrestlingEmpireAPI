@@ -17,12 +17,14 @@ class PromotionResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'wrestlers' => $this->when(isset($this->universe_wrestlers), function () {
-                return WrestlerResource::collection($this->universe_wrestlers);
-            }),
-            'championships' => $this->when(isset($this->universe_championships), function () {
-                return ChampionshipResource::collection($this->universe_championships);
-            }),
+            'wrestlers' => WrestlerResource::collection($this->when(
+                isset($this->universe_wrestlers), 
+                fn() => $this->universe_wrestlers
+            )),
+            'championships' => ChampionshipResource::collection($this->when(
+                isset($this->universe_championships), 
+                fn() => $this->universe_championships
+            )),
         ];
     }
 }
