@@ -55,7 +55,7 @@ Route::prefix('v1')->group(function () {
             Route::patch('teams/{team}/end', [TeamController::class, 'endTeam']);
 
             // Downstream Data
-            Route::apiResource('events', EventController::class)->except(['index', 'store']);
+            Route::apiResource('events', EventController::class);
             Route::apiResource('title_reigns', TitleReignController::class);
 
             Route::put('events/{event}/wrestlers', [EventController::class, 'assignWrestlers']);
