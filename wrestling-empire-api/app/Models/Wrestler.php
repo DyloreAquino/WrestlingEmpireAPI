@@ -11,6 +11,7 @@ class Wrestler extends Model
     use HasFactory;
 
     protected $fillable = [
+        'universe_id',
         'name',
         'gender',
         'finisher_name',
@@ -32,6 +33,11 @@ class Wrestler extends Model
         'real_enemy_id',
         'injured'
     ];
+
+    /** Returns the universe this wrestler belongs to. */
+    public function universe() {
+        return $this->belongsTo(Universe::class);
+    }
 
     /** Returns the events that this wrestler participated in. 
      * Pivot: shows the finish type and if this wrestler was the winner.

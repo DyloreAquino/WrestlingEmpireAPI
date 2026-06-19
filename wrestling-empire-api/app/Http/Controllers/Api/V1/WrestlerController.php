@@ -45,13 +45,20 @@ class WrestlerController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new WrestlersFilter();
-        $queryItems =  $filter->transform($request);
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
 
-        $wrestlers = Wrestler::where($queryItems['where']);
+        $filter = new WrestlersFilter();
+        $queryItems = $filter->transform($request);
+
+        // Scope queries exclusively to this isolated universe world
+        $wrestlersQuery = Wrestler::where('universe_id', $universe->id)
+            ->where($queryItems['where']);
 
         foreach ($queryItems['whereIn'] as [$column, $values]) {
-            $wrestlers = $wrestlers->whereIn($column, $values);
+            $wrestlersQuery = $wrestlersQuery->whereIn($column, $values);
         }
 
         $includeEvents = $request->query('includeEvents');
@@ -59,18 +66,18 @@ class WrestlerController extends Controller
         $includeTeams = $request->query('includeTeams');
 
         if ($includeEvents) {
-            $wrestlers = $wrestlers->with('events');
+            $wrestlersQuery = $wrestlersQuery->with('events');
         }
 
         if ($includeTitleReigns) {
-            $wrestlers = $wrestlers->with('titleReigns');
+            $wrestlersQuery = $wrestlersQuery->with('titleReigns');
         }
 
         if ($includeTeams) {
-            $wrestlers = $wrestlers->with('teams');
+            $wrestlersQuery = $wrestlersQuery->with('teams');
         }
 
-        return WrestlerResource::collection($wrestlers->get());
+        return WrestlerResource::collection($wrestlersQuery->get());
     }
 
     /**
@@ -80,7 +87,16 @@ class WrestlerController extends Controller
      */
     public function store(StoreWrestlerRequest $request)
     {
-        return new WrestlerResource(Wrestler::create($request->all()));
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Attach universe context before saving record instance
+        $data = array_merge($request->all(), ['universe_id' => $universe->id]);
+        $wrestler = Wrestler::create($data);
+
+        return new WrestlerResource($wrestler);
     }
 
     /**
@@ -90,8 +106,16 @@ class WrestlerController extends Controller
      * 
      * @group Wrestlers
      */
-    public function show(Wrestler $wrestler)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Protects profile lookup details from leakage across different user accounts
+        $wrestler = Wrestler::where('universe_id', $universe->id)->findOrFail($id);
+
         return new WrestlerResource(
             $wrestler->loadMissing('events', 'titleReigns', 'teams', 'events.stipulations', 'events.wrestlers')
         );
@@ -102,9 +126,16 @@ class WrestlerController extends Controller
      * 
      * @group Wrestlers
      */
-    public function update(UpdateWrestlerRequest $request, Wrestler $wrestler)
+    public function update(UpdateWrestlerRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $wrestler = Wrestler::where('universe_id', $universe->id)->findOrFail($id);
         $wrestler->update($request->all());
+
         return new WrestlerResource($wrestler);
     }
 
@@ -113,8 +144,14 @@ class WrestlerController extends Controller
      * 
      * @group Wrestlers
      */
-    public function destroy(Wrestler $wrestler)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $wrestler = Wrestler::where('universe_id', $universe->id)->findOrFail($id);
         $wrestler->delete();
 
         return response()->json([

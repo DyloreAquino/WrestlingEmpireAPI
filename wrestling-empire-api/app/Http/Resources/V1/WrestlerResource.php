@@ -16,6 +16,7 @@ class WrestlerResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'universeId' => $this->universe_id,
             'createdAt' => $this->created_at,
             'updatedAt' => $this->updated_at,
             'name' => $this->name,
