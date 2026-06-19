@@ -24,4 +24,15 @@ class Promotion extends Model
     public function championships() {
         return $this->hasMany(Championship::class);
     }
+
+    // Scoped relationships, only in-universe
+    public function wrestlersInUniverse(int $universeId)
+    {
+        return $this->hasMany(Wrestler::class)->where('universe_id', $universeId);
+    }
+
+    public function championshipsInUniverse(int $universeId)
+    {
+        return $this->hasMany(Championship::class)->where('universe_id', $universeId);
+    }
 }

@@ -20,7 +20,9 @@ class TerritoryResource extends JsonResource
             'likes' => $this->likes,
             'dislikes' => $this->dislikes,
             'updatedAt' => $this->updated_at,
-            'wrestlers' => WrestlerResource::collection($this->whenLoaded('wrestlers')),
+            'wrestlers' => $this->when(isset($this->universe_wrestlers), function () {
+                return WrestlerResource::collection($this->universe_wrestlers);
+            }),
         ];
     }
 }

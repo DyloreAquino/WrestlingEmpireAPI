@@ -28,8 +28,15 @@ class TerritoryController extends Controller
      */
     public function show(Request $request, Territory $territory)
     {
-        return new TerritoryResource(
-            $territory->loadMissing('wrestlers')
-        );
+        $universe = $request->active_universe;
+
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Load only wrestlers assigned to this physical territory inside THIS specific universe
+        $territory->universe_wrestlers = $territory->wrestlersInUniverse($universe->id)->get();
+
+        return new TerritoryResource($territory);
     }
 }

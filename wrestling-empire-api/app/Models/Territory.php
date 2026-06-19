@@ -19,4 +19,10 @@ class Territory extends Model
     public function shows() {
         return $this->hasMany(Show::class);
     }
+
+    /** Returns all wrestlers only in-universe from this territory */
+    public function wrestlersInUniverse(int $universeId)
+    {
+        return $this->hasMany(Wrestler::class)->where('universe_id', $universeId);
+    }
 }
