@@ -30,16 +30,23 @@ class ShowController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new ShowsFilter();
-        $queryItems =  $filter->transform($request);
-
-        $show = Show::where($queryItems['where']);
-
-        foreach ($queryItems['whereIn'] as [$column, $values]) {
-            $show = $show->whereIn($column, $values);
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
         }
 
-        return ShowResource::collection($show->get());
+        $filter = new ShowsFilter();
+        $queryItems = $filter->transform($request);
+
+        // Scope queries exclusively to this isolated universe world
+        $showQuery = Show::where('universe_id', $universe->id)
+            ->where($queryItems['where']);
+
+        foreach ($queryItems['whereIn'] as [$column, $values]) {
+            $showQuery = $showQuery->whereIn($column, $values);
+        }
+
+        return ShowResource::collection($showQuery->get());
     }
 
     /**
@@ -49,7 +56,16 @@ class ShowController extends Controller
      */
     public function store(StoreShowRequest $request)
     {
-        return new ShowResource(Show::create($request->all()));
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Attach universe context before saving record instance
+        $data = array_merge($request->all(), ['universe_id' => $universe->id]);
+        $show = Show::create($data);
+
+        return new ShowResource($show);
     }
 
     /**
@@ -59,8 +75,16 @@ class ShowController extends Controller
      * 
      * @group Shows
      */
-    public function show(Show $show)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Guarantees cross-tenant resource protection
+        $show = Show::where('universe_id', $universe->id)->findOrFail($id);
+
         return new ShowResource(
             $show->loadMissing('events.wrestlers', 'events.stipulations')
         );
@@ -71,9 +95,16 @@ class ShowController extends Controller
      * 
      * @group Shows
      */
-    public function update(UpdateShowRequest $request, Show $show)
+    public function update(UpdateShowRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $show = Show::where('universe_id', $universe->id)->findOrFail($id);
         $show->update($request->all());
+
         return new ShowResource($show);
     }
 
@@ -82,8 +113,14 @@ class ShowController extends Controller
      * 
      * @group Shows
      */
-    public function destroy(Show $show)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $show = Show::where('universe_id', $universe->id)->findOrFail($id);
         $show->delete();
 
         return response()->json([

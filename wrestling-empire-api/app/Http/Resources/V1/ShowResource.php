@@ -16,6 +16,7 @@ class ShowResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'universeId' => $this->universe_id,
             'name' => $this-> name,
             'year' => $this->year,
             'month' => $this->month,

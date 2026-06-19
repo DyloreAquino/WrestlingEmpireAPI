@@ -11,6 +11,7 @@ class Show extends Model
     use HasFactory;
 
     protected $fillable = [
+        'universe_id',
         'name',
         'year',
         'month',
@@ -19,6 +20,11 @@ class Show extends Model
         'territory_id',
         'promotion_id'
     ];
+
+    /** Returns the universe this show belongs to. */
+    public function universe() {
+        return $this->belongsTo(Universe::class);
+    }
 
     /** Returns the events that this show has. */
     public function events() {
