@@ -34,23 +34,26 @@ class TitleReignController extends Controller
      */
     public function index(Request $request)
     {
-        $filter = new TitleReignsFilter();
-        $queryItems =  $filter->transform($request);
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
 
-        $titleReign = TitleReign::where($queryItems['where']);
+        $filter = new TitleReignsFilter();
+        $queryItems = $filter->transform($request);
+
+        // Scope records through a relationship sub-query looking up the active universe
+        $titleReignQuery = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->where($queryItems['where']);
 
         foreach ($queryItems['whereIn'] as [$column, $values]) {
-            $titleReign = $titleReign->whereIn($column, $values);
+            $titleReignQuery = $titleReignQuery->whereIn($column, $values);
         }
 
-        // $includeWrestlers = $request->query('includeWrestlers');
-        $includeWrestlers = true;
-        
-        if ($includeWrestlers) {
-            $titleReign = $titleReign->with('wrestlers');
-        }
+        $titleReignQuery = $titleReignQuery->with('wrestlers');
 
-        return TitleReignResource::collection($titleReign->get());
+        return TitleReignResource::collection($titleReignQuery->get());
     }
 
     /**
@@ -60,6 +63,14 @@ class TitleReignController extends Controller
      */
     public function store(StoreTitleReignRequest $request)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Security check: Verify that target championship belongs to this specific universe
+        $universe->championships()->findOrFail($request->championship_id);
+
         return new TitleReignResource(TitleReign::create($request->all()));
     }
 
@@ -70,8 +81,18 @@ class TitleReignController extends Controller
      * 
      * @group Title Reigns
      */
-    public function show(TitleReign $titleReign)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Enforce data boundary ownership checks
+        $titleReign = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
         return new TitleReignResource(
             $titleReign->loadMissing('wrestlers')
         );
@@ -82,8 +103,22 @@ class TitleReignController extends Controller
      * 
      * @group Title Reigns
      */
-    public function update(UpdateTitleReignRequest $request, TitleReign $titleReign)
+    public function update(UpdateTitleReignRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $titleReign = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        // If shifting championships, confirm target exists in our sandboxed universe
+        if ($request->championship_id) {
+            $universe->championships()->findOrFail($request->championship_id);
+        }
+
         $titleReign->update($request->all());
         return new TitleReignResource($titleReign);
     }
@@ -93,8 +128,17 @@ class TitleReignController extends Controller
      * 
      * @group Title Reigns
      */
-    public function destroy(TitleReign $titleReign)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $titleReign = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
         $titleReign->delete();
 
         return response()->json([
@@ -109,8 +153,23 @@ class TitleReignController extends Controller
      * 
      * @group Title Reigns
      */
-    public function assignWrestlers(AssignWrestlersRequest $request, TitleReign $titleReign)
+    public function assignWrestlers(AssignWrestlersRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $titleReign = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
+        // Security validation check: Ensure wrestlers being assigned belong strictly to this universe
+        $validCount = $universe->wrestlers()->whereIn('id', $request->wrestlerIds)->count();
+        if ($validCount !== count($request->wrestlerIds)) {
+            return response()->json(['message' => 'Invalid wrestler assignment context for this universe.'], 422);
+        }
+
         $titleReign->wrestlers()->sync($request->wrestlerIds);
         return response()->json(['message' => 'Wrestlers assigned to title reign.']);
     }
@@ -122,12 +181,22 @@ class TitleReignController extends Controller
      * 
      * @group Title Reigns
      */
-    public function endReign(EndDateRequest $request, TitleReign $titleReign)
+    public function endReign(EndDateRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $titleReign = TitleReign::whereHas('championship', function ($query) use ($universe) {
+            $query->where('universe_id', $universe->id);
+        })->findOrFail($id);
+
         $titleReign->year_end = $request->yearEnd;
         $titleReign->month_end = $request->monthEnd;
         $titleReign->week_end = $request->weekEnd;
         $titleReign->save();
+
         return response()->json(['message' => 'Title reign ended.']);
     }
 }
