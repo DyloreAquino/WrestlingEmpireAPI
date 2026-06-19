@@ -16,6 +16,7 @@ class TeamResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'universeId' => $this->universe_id,
             'name' => $this->name,
             'yearStart' => $this->year_start,
             'monthStart' => $this->month_start,

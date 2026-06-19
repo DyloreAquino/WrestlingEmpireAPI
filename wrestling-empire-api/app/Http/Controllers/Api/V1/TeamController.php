@@ -34,14 +34,21 @@ class TeamController extends Controller
      */
     public function index(Request $request)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
         $filter = new TeamsFilter();
-        $filterItems =  $filter->transform($request);
+        $filterItems = $filter->transform($request);
 
-        $team = Team::where($filterItems);
+        // Scope queries exclusively to this isolated universe world
+        $teamQuery = Team::where('universe_id', $universe->id)
+            ->where($filterItems);
 
-        $team = $team->with('wrestlers');
+        $teamQuery = $teamQuery->with('wrestlers');
 
-        return TeamResource::collection($team->get());
+        return TeamResource::collection($teamQuery->get());
     }
 
     /**
@@ -51,7 +58,16 @@ class TeamController extends Controller
      */
     public function store(StoreTeamRequest $request)
     {
-        return new TeamResource(Team::create($request->all()));
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Attach universe context before saving record instance
+        $data = array_merge($request->all(), ['universe_id' => $universe->id]);
+        $team = Team::create($data);
+
+        return new TeamResource($team);
     }
 
     /**
@@ -61,8 +77,16 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function show(Team $team)
+    public function show(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        // Guarantees cross-tenant resource protection
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
+
         return new TeamResource(
             $team->loadMissing('wrestlers')
         );
@@ -73,9 +97,16 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function update(UpdateTeamRequest $request, Team $team)
+    public function update(UpdateTeamRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
         $team->update($request->all());
+
         return new TeamResource($team);
     }
 
@@ -84,8 +115,14 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function destroy(Team $team)
+    public function destroy(Request $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
         $team->delete();
 
         return response()->json([
@@ -100,8 +137,21 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function assignWrestlers(AssignWrestlersRequest $request, Team $team)
+    public function assignWrestlers(AssignWrestlersRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
+
+        // Security check: Ensure incoming wrestler IDs actually belong to this universe
+        $validWrestlerCount = $universe->wrestlers()->whereIn('id', $request->wrestlerIds)->count();
+        if ($validWrestlerCount !== count($request->wrestlerIds)) {
+            return response()->json(['message' => 'One or more invalid wrestler IDs provided for this universe.'], 422);
+        }
+
         $team->wrestlers()->sync($request->wrestlerIds);
         return response()->json(['message' => 'Wrestlers assigned to team.']);
     }
@@ -113,8 +163,21 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function addWrestlers(AssignWrestlersRequest $request, Team $team)
+    public function addWrestlers(AssignWrestlersRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
+
+        // Security check: Ensure incoming wrestler IDs actually belong to this universe
+        $validWrestlerCount = $universe->wrestlers()->whereIn('id', $request->wrestlerIds)->count();
+        if ($validWrestlerCount !== count($request->wrestlerIds)) {
+            return response()->json(['message' => 'One or more invalid wrestler IDs provided for this universe.'], 422);
+        }
+
         $team->wrestlers()->syncWithoutDetaching($request->wrestlerIds);
         return response()->json(['message' => 'Wrestlers added to team.']);
     }
@@ -126,12 +189,20 @@ class TeamController extends Controller
      * 
      * @group Teams
      */
-    public function endTeam(EndDateRequest $request, Team $team)
+    public function endTeam(EndDateRequest $request, $id)
     {
+        $universe = $request->active_universe;
+        if (!$universe) {
+            return response()->json(['message' => 'No active universe selected.'], 400);
+        }
+
+        $team = Team::where('universe_id', $universe->id)->findOrFail($id);
+
         $team->year_end = $request->yearEnd;
         $team->month_end = $request->monthEnd;
         $team->week_end = $request->weekEnd;
         $team->save();
+
         return response()->json(['message' => 'Team disbanded.']);
     }
 }
